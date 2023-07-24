@@ -1,0 +1,27 @@
+
+
+.header{
+    background-color: #171717;
+    padding: 17px 10PX;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.logo_name{
+color: #E1DBD5;
+font-family: 'Saira', sans-serif;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 109.091% */
+letter-spacing: 0.44px;
+}
+
+
+
+.logo{
+    display: flex;
+    align-items:baseline;
+   
+}

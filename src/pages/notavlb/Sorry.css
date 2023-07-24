@@ -1,0 +1,116 @@
+.sorry_page{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    width: 100%;
+
+}
+
+.logo_text_log{
+font-family: "Saira";
+font-size: 4rem;
+color: #2C2C2C ;
+font-weight: 600;
+line-height: 24px; /* 32.432% */
+letter-spacing: 1.48px;
+}
+
+.big_img2{
+    width: 100%;
+    height: calc(100vh - var(--sl-header-height));
+}
+
+.login_logo{
+    display: flex;
+    align-items: baseline;
+margin-bottom: 30px;
+}
+
+.login_body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social_login{
+    border-radius: 10px;
+    border: 1px solid #484848;
+    background: #171616;
+    display: flex;
+    align-items: center;
+    gap:  10px;
+    padding: 5px 15px;
+    color: white;
+    width: 65%;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.social_login:hover{
+    border: 1px solid transparent;
+    background: #355b97 ;
+    color: white;
+}
+
+
+
+
+.social_text{
+
+font-style: normal;
+font-weight: 400;
+line-height: 35px; /* 175% */
+letter-spacing: 1.6px;
+color: white;
+}
+
+.login_text{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ancor_login{
+    color: #FA7D09;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.ancor_login:hover{
+    opacity: 0.6;
+}
+
+.text_sorry{
+    text-align: center;
+    color: #2E2E2E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.sorry_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+@media screen and (max-width: 750px) and (min-width: 0px){
+ 
+    .big_img2{
+       display: none;
+    }
+  
+    .sorry_page{
+        display: grid;
+        grid-template-columns: unset;
+    
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 0px){
+ 
+    .logo_text_log{
+        font-size:2rem;
+        }
+}
