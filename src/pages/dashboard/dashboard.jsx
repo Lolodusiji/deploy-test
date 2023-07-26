@@ -10,7 +10,8 @@ import { PiMountainsFill } from 'react-icons/pi';
 import ProgressBar from "@ramonak/react-progress-bar";
 import Speedometer from '../../../public/imgs/speedometer';
 import Mout from '../../../public/imgs/mout';
-
+import * as Icon from "react-icons/fi";
+import Checkbox from "react-custom-checkbox";
 function dashboard() {
     const [trends, settrends] = useState()
     const [years, setyears] = useState()
@@ -125,7 +126,18 @@ function dashboard() {
                         return(
                         <div key={i} className="search_res">
                             <div className="result_val">
-                                <input className='dash_checkbox' type="checkbox" />
+                            <Checkbox
+                                icon={<Icon.FiCheck color="#174A41" size={14} />}
+
+                                onChange={(value, event) => {
+                                let p = {
+                                    isTrue: value,
+                                };
+                                
+                                }}
+                                borderColor="black"
+                                style={{ cursor: "pointer",border:"1px solid black" }}
+                            />
                                 <div style={{fontWeight:"500"}}>{keywords.keywords[i]}</div>
                             </div>
                                 <h4>{keywords.volume[i]}</h4>
