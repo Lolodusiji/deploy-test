@@ -130,7 +130,7 @@ function Socail() {
                         <th style={{borderRadius:"0 10px 0 0"}}>Competition</th>
                     </tr>
                    { table?.items.map((e,i)=>{
-                    console.log(e);
+             
                     return(
                         <tr key={i}>
                             <td>{e.query}</td>

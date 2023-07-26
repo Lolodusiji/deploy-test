@@ -31,7 +31,7 @@ function sidebar() {
             // set CSS as a value
             document.documentElement.style.setProperty("--sl-header-height", real+"px");
           
-            console.log(window.innerWidth);
+           
             if(window.innerWidth < 800){
                 setclosed(true)
             }

@@ -37,12 +37,12 @@ function dashboard() {
         })
         fetch(`${import.meta.env.VITE_BACKEND_API}/apis/dashboard/total_reachable_market/`).then((res)=> res.json())
         .then((data)=>{
-            console.log(data.total_reachable_market);
+  
             setmarket(data.total_reachable_market)
         })
         fetch(`${import.meta.env.VITE_BACKEND_API}/apis/dashboard/business_score/`).then((res)=> res.json())
         .then((data)=>{
-            console.log(data.business_score);
+         
             setbussins(data.business_score)
         })
 

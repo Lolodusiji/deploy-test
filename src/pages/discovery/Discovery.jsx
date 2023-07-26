@@ -16,7 +16,7 @@ function Discovery() {
       })
     }).then((res)=> res.json())
     .then((data)=>{
-      console.log(data.response);
+     
 
     })
   
@@ -51,7 +51,7 @@ function Discovery() {
       })
     }).then((res)=> res.json())
     .then((data)=>{
-      console.log(data);
+    
       received_mess_append(data.response)
     })
     const chat_body = document.querySelector(".chat_body")

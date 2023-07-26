@@ -25,3 +25,88 @@ letter-spacing: 0.44px;
     align-items:baseline;
    
 }
+
+.calender{
+    display: grid;
+    grid-template-columns: 9% 9% 9% 9% 9% 9% 9%;
+    width: 100%;
+    justify-items: center;
+    justify-content: center
+}
+
+.days{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: grey;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.number_day{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.today{
+    border-radius: 20px;
+    background: #FFF;
+    padding: 5px 16px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media screen and (max-width: 800px) and (min-width: 341px){
+   
+    .calender{
+        display: grid;
+        grid-template-columns: 13% 13% 13% 13% 13% 13% 13%;
+        width: 100%;
+        justify-items: center;
+        justify-content: center
+    }
+    
+}
+@media screen and (max-width: 340px) and (min-width: 0px){
+   
+    .calender{
+        display: grid;
+        grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+        width: 100%;
+        justify-items: center;
+        justify-content: center
+    }
+    
+    .number_day{
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    .today{
+        color: white !important;
+        font-size: 10px;
+        background-color: unset;
+    }
+
+    .days{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: grey;
+        text-align: center;
+        font-family: "Inter";
+        font-size: 9px;
+    }
+}

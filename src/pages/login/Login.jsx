@@ -40,7 +40,7 @@ function Login() {
 
     const handleClick =()=>{
       signInWithPopup(auth,provider).then((data)=>{
-        console.log(data.user);
+     
         setemail(data.user.email)
         setusername(data.user.displayName)
         localStorage.setItem("user",data.user.displayName)
