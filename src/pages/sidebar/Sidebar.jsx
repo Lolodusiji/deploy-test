@@ -73,17 +73,17 @@ function sidebar() {
 
                 }}
             >
-            <MenuItem component={<Link to="/" />} active={window.location.pathname === "/discovery"} icon={<BiSearchAlt2 style={{transform:"rotate(90deg)"}}size={20}/>}
+            <MenuItem component={<Link to="/" />} active={window.location.pathname === "/discovery"} icon={<BiSearchAlt2 style={{transform:"rotate(90deg)"}}size={25}/>}
             >Discovery</MenuItem>
-            <MenuItem component={<Link to="/dashboard" />}  active={window.location.pathname === "/dashboard"} icon={<MdDashboardCustomize style={{transform:"rotate(180deg)"}}size={20}/>}
+            <MenuItem component={<Link to="/dashboard" />}  active={window.location.pathname === "/dashboard"} icon={<MdDashboardCustomize style={{transform:"rotate(180deg)"}}size={25}/>}
             > Dashboard</MenuItem>
-            <MenuItem component={<Link to="/social" />}  active={window.location.pathname === "/social"} icon={<PiChartLineUpBold size={20}/>}
+            <MenuItem component={<Link to="/social" />}  active={window.location.pathname === "/social"} icon={<PiChartLineUpBold size={25}/>}
             > Social</MenuItem>
-            <MenuItem component={<Link to="/segmentation" />} active={window.location.pathname === "/segmentation"} icon={<BsFillPersonFill size={20}/>}
+            <MenuItem component={<Link to="/segmentation" />} active={window.location.pathname === "/segmentation"} icon={<BsFillPersonFill size={25}/>}
             > Segmentation</MenuItem>
-            <MenuItem component={<Link to="/competitors" />} active={window.location.pathname === "/competitors"} icon={<PiChartPieSliceFill size={20}/>}
+            <MenuItem component={<Link to="/competitors" />} active={window.location.pathname === "/competitors"} icon={<PiChartPieSliceFill size={25}/>}
             > Competitors </MenuItem>
-            <MenuItem component={<Link to="/channels" />} active={window.location.pathname === "/channels"} icon={<RiFileChartFill size={20}/>}
+            <MenuItem component={<Link to="/channels" />} active={window.location.pathname === "/channels"} icon={<RiFileChartFill size={25}/>}
             > Channels</MenuItem>
                         </Menu>
                         {closed== false&&
@@ -169,6 +169,7 @@ function sidebar() {
             }                
         <Outlet />
     </div>
+    
     </>
   )
 }

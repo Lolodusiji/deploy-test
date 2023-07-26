@@ -68,13 +68,28 @@ function dashboard() {
         scales: {
             x: {
                 ticks: {
-                    color: 'white',
+                    
+                    color: 'rgba(255, 255, 255, 60%)',
+                    font: {
+                        size: 11
+                    }
                 },
+                grid: {
+                    
+                    drawBorder: false,
+                    display: false,
+                  },
             },
             y: {
                 ticks: {
-                    color: 'white',
-                },
+                    color: 'rgba(255, 255, 255, 60%)',
+                    font: {
+                        size: 11
+                    }
+                },  
+                 grid: {
+                    color: 'rgba(255, 255, 255, 7%)',
+                  },
             },
         },
     };
@@ -83,7 +98,7 @@ function dashboard() {
         labels:years,
         // labels:["2002",'2004','2006','2008',"2010","2012","2014","2016","2018","2020","2022"],
         datasets: [{
-            label: 'My First Dataset',
+           
             data: trends,
             // data: [65, 59, 80, 81, 56, 55, 40,80,100,20,70],
             fill: false,
@@ -97,7 +112,10 @@ function dashboard() {
             <div className="line_grid">
                 <h1>Market Growth</h1>
                 <h6 className="h6_tit">The market research industry has seen consistent growth over the last 5 years, and is expected to grow by 12.3% in 2023</h6>
-                 <Line options={options} data={line_data1} />
+                 <div style={{height:"40vh"}} className='line_div'>
+                     <Line options={options} data={line_data1} style={{height:"100%",width:"100%"}}/>
+                 </div>
+                 
             </div>
 
             <div className='google_sear'>
@@ -107,8 +125,8 @@ function dashboard() {
                         return(
                         <div key={i} className="search_res">
                             <div className="result_val">
-                                <input type="checkbox" />
-                                <div>{keywords.keywords[i]}</div>
+                                <input className='dash_checkbox' type="checkbox" />
+                                <div style={{fontWeight:"500"}}>{keywords.keywords[i]}</div>
                             </div>
                                 <h4>{keywords.volume[i]}</h4>
                         </div>
@@ -144,7 +162,7 @@ function dashboard() {
             <div className='loader_chart'>
                 <div className='loader_title'>
                     <Mout/>
-                    <h6>+ 23</h6> 
+                    <h6 style={{color:"black",fontWeight:"700"}}>+ 23</h6> 
                  </div>
                 <div className='loader_cont'> 
                     <div style={{fontSize:"14px",fontWeight:"400"}}>Division of market share among the market players</div>
@@ -159,7 +177,7 @@ function dashboard() {
             </div>
 
             <div className='info_wid'>
-                <h1>TOTAL REACHABLE MARKET</h1>
+                <h1 style={{fontSize:"1.5rem"}}>TOTAL REACHABLE MARKET</h1>
                 <div style={{fontSize:"12px",fontWeight:"600",color:" rgba(255, 255, 255, 0.40)"}}>Estimated number of people you can reach online every month</div>
                 <h1>{market}</h1>
             </div>

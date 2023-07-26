@@ -119,6 +119,34 @@ function Discovery() {
               </div>
               <hr />
           </div>
+
+            <div className='checklist_lower'>
+              <div className='checklist_items'>
+                 
+                  <input type="checkbox" />
+                  
+                  <div className='checklist_item_header'>
+                      <div>Tutorial Video</div>
+                      <img src="/imgs/tutorial.png" alt="" />
+                  </div>
+                  
+              </div>
+              <div className='checklist_items'>
+                 
+                  <input type="checkbox" />
+                  
+                  <div className='checklist_item_header'>
+                     <div>Explain Your Business To Savanna</div>
+                     <div style={{fontSize:"12px",color:"#525151",fontWeight:"400"}}>Tell her about your idea and answer her questions</div>
+                  </div>
+                  
+              </div>
+              
+            </div>
+            <div className='btn_div'>
+             <button className='genrate_btn'>Generate Data</button>
+            </div>
+           
         </div>
     </div>
   )

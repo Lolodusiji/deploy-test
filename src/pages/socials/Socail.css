@@ -3,12 +3,15 @@
     grid-template-columns: 66% 30%;
     justify-content: space-between;
     width: 100%;
-    padding: 10px 0 0 10px;
+    padding: 0 0 0 10px;
+    background: #F6F6F6;
+    border-radius: 12px;
 }
 
 .market{
     display: grid;
-    gap: 10px;
+    gap: 30px;
+    margin-top: 10px;
 }
 
 .market_stats{
@@ -61,7 +64,7 @@
     background-color: #F1F1F1;
     padding: 10px;
     border-radius: 7px;
-    gap: 10px;
+    gap: 20px;
 }
 
 .import{
@@ -94,7 +97,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #454545;
+    color: black;
+    
 }
 
 .bar_market{
@@ -113,12 +117,12 @@ table {
   
   th{
     background-color: #dddddd;
-    text-align: center;
+    text-align: left;
     padding: 8px;
   }
   td {
     /* border: 1px solid #dddddd; */
-    text-align: center;
+    text-align: left;
     padding: 8px;
   }
   
@@ -144,13 +148,15 @@ table tr:last-child td:last-child {
 
   .chat_market{
     border-radius: 0px 12px 12px 0px;
-    background: rgba(120, 120, 120, 0.10);
+    background: rgba(120, 120, 120, 0.1);
     box-shadow: -24px 0px 80px 0px rgba(49, 79, 124, 0.02);
-    margin-right: 10px;
     height: 77vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end
+    justify-content: flex-end;
+    position: sticky !important;
+    top:  var(--sl-header-height) ;
+    z-index: 99999999;
   }
 
   .market_input{
@@ -161,7 +167,7 @@ table tr:last-child td:last-child {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    margin: 10px;
     padding: 10px;
   }
 
@@ -175,6 +181,46 @@ table tr:last-child td:last-child {
   .market_input>input::placeholder{
     color: #8C8C8C;
   }
+
+  .inner_sent2{
+   
+    color: #363636;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; 
+    padding: 10px;
+}
+
+.received_message2{
+    display: flex;
+    justify-content: start;
+    width: 98%;
+   
+}
+
+.inner_received2{
+    margin-left: 5px;
+    display: flex;
+    gap: 5px;
+    color: #363636;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; 
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+
+.img_class{
+    width: 24px;
+    height: 17.143px;
+    flex-shrink: 0;
+}
 
   @media screen and (max-width: 1000px) and (min-width: 0px){
  
