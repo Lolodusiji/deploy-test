@@ -3,6 +3,8 @@ import './Discovery.css'
 import { BsSendFill } from 'react-icons/bs';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import * as Icon from "react-icons/fi";
+import Checkbox from "react-custom-checkbox";
 
 function Discovery() {
   const [message, setmessage] = useState('')
@@ -123,8 +125,19 @@ function Discovery() {
             <div className='checklist_lower'>
               <div className='checklist_items'>
                  
-                  <input type="checkbox" />
-                  
+              <Checkbox
+                icon={<Icon.FiCheck color="#174A41" size={14} />}
+
+                onChange={(value, event) => {
+                  let p = {
+                    isTrue: value,
+                  };
+                 
+                }}
+                borderColor="black"
+                style={{ cursor: "pointer",border:"1px solid black" }}
+              />
+                          
                   <div className='checklist_item_header'>
                       <div>Tutorial Video</div>
                       <img src="/imgs/tutorial.png" alt="" />
@@ -133,7 +146,18 @@ function Discovery() {
               </div>
               <div className='checklist_items'>
                  
-                  <input type="checkbox" />
+              <Checkbox
+                icon={<Icon.FiCheck color="#174A41" size={14} />}
+
+                onChange={(value, event) => {
+                  let p = {
+                    isTrue: value,
+                  };
+                 
+                }}
+                borderColor="black"
+                style={{ cursor: "pointer",border:"1px solid black" }}
+              />
                   
                   <div className='checklist_item_header'>
                      <div>Explain Your Business To Savanna</div>

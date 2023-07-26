@@ -36,7 +36,7 @@ function Socail() {
     
     const sent_mess_append = ()=>{
         const sent_mess = document.createElement("div")
-        sent_mess.classList.add("sent_message")
+        sent_mess.classList.add("sent_message2")
         const inner_sent = document.createElement("div")
         inner_sent.classList.add("inner_sent2")
         inner_sent.innerText=message
@@ -183,7 +183,7 @@ function Socail() {
             </div>
 
             <div className='search_table'>
-                <h2></h2>
+                <h2 style={{fontSize:"28px",fontWeight:"700"}}>What People Are Searching</h2>
                 <table>
                     <tr>
                         <th style={{borderRadius:"10px 0 0 0"}}>Query</th>

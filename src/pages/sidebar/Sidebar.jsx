@@ -73,7 +73,7 @@ function sidebar() {
 
                 }}
             >
-            <MenuItem component={<Link to="/" />} active={window.location.pathname === "/discovery"} icon={<BiSearchAlt2 style={{transform:"rotate(90deg)"}}size={25}/>}
+            <MenuItem component={<Link to="/" />} active={window.location.pathname === "/"} icon={<BiSearchAlt2 style={{transform:"rotate(90deg)"}}size={25}/>}
             >Discovery</MenuItem>
             <MenuItem component={<Link to="/dashboard" />}  active={window.location.pathname === "/dashboard"} icon={<MdDashboardCustomize style={{transform:"rotate(180deg)"}}size={25}/>}
             > Dashboard</MenuItem>
@@ -134,7 +134,7 @@ function sidebar() {
 
                 }}
             >
-            <MenuItem component={<Link to="/" />} active={window.location.pathname === "/discovery"} icon={<BiSearchAlt2 style={{transform:"rotate(90deg)"}}size={20}/>}
+            <MenuItem component={<Link to="/" />} active={window.location.pathname === "/"} icon={<BiSearchAlt2 style={{transform:"rotate(90deg)"}}size={20}/>}
             >Discovery</MenuItem>
             <MenuItem component={<Link to="/dashboard" />}  active={window.location.pathname === "/dashboard"} icon={<MdDashboardCustomize style={{transform:"rotate(180deg)"}}size={20}/>}
             > Dashboard</MenuItem>

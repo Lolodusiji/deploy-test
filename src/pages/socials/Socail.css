@@ -65,6 +65,7 @@
     padding: 10px;
     border-radius: 7px;
     gap: 20px;
+    color: rgb(0 0 0 / 81%);
 }
 
 .import{
@@ -196,10 +197,16 @@ table tr:last-child td:last-child {
 .received_message2{
     display: flex;
     justify-content: start;
-    width: 98%;
+    width: 90%;
    
 }
 
+.sent_message2{
+    display: flex;
+    justify-content: end;
+    width: 90%;
+    position: relative;
+}
 .inner_received2{
     margin-left: 5px;
     display: flex;
@@ -221,7 +228,17 @@ table tr:last-child td:last-child {
     height: 17.143px;
     flex-shrink: 0;
 }
+.facts_url{
+    text-decoration: none;
+    color: rgb(0 0 0 / 81%);
+  }
 
+  .search_table{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
   @media screen and (max-width: 1000px) and (min-width: 0px){
  
     .socail{
@@ -256,6 +273,3 @@ table tr:last-child td:last-child {
     }
   }
 
-  .facts_url{
-    text-decoration: none;
-  }
