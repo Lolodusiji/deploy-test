@@ -280,7 +280,7 @@ function Socail() {
         
        
             <div className='chat_market'>
-            <div className='chat_body' style={{background:"unset"}}>
+            <div className='chat_body scrollbar' style={{background:"unset"}}>
 
             {/* <div className='sent_message'>
                 <div className='inner_sent2'>kasjadsjsdjsjasdsadasdasdsadsadsdasdsd</div>
