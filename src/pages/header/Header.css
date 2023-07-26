@@ -68,7 +68,7 @@ letter-spacing: 0.44px;
     line-height: normal;
 }
 
-@media screen and (max-width: 800px) and (min-width: 341px){
+@media screen and (max-width: 800px) and (min-width: 501px){
    
     .calender{
         display: grid;
@@ -79,7 +79,7 @@ letter-spacing: 0.44px;
     }
     
 }
-@media screen and (max-width: 340px) and (min-width: 0px){
+@media screen and (max-width:500px) and (min-width: 0px){
    
     .calender{
         display: grid;
