@@ -1,5 +1,6 @@
 import { BsSendFill } from "react-icons/bs";
 import React, { useState } from "react";
+import "./Chat.css";
 
 const Chat = () => {
   const [message, setmessage] = useState("");

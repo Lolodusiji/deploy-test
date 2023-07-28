@@ -1,0 +1,177 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+
+.segmentation {
+  display: grid;
+  grid-template-columns: 66% 30%;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0 0 10px;
+  background: #f6f6f6;
+  border-radius: 12px;
+}
+
+.distributions {
+  display: grid;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.geo-container {
+  /* color: #fff; */
+  background: #eaeaea;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.flex-geo {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  /* margin: 8px; */
+  line-height: 2.5;
+  /* border-radius: 8px; */
+}
+
+.flex-traffic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.progress {
+  width: 50%;
+}
+
+.flex-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.countries {
+  min-width: 240px;
+  border-right: 1px solid #bdbdbd;
+  padding-left: 4px;
+}
+
+.Traffic {
+  min-width: 240px;
+}
+
+.Traffic > div {
+  padding-left: 1rem;
+}
+
+.Trend {
+  min-width: 160px;
+  text-align: right;
+}
+
+.countries > h3 {
+  background: #b8b8b8;
+  padding-left: 6px;
+}
+
+.countries > div {
+  padding-left: 6px;
+}
+
+.Traffic > h3 {
+  background: #d9d9d9;
+  padding-left: 84px;
+  padding-right: 314px;
+}
+
+.Trend > h3 {
+  background: #d9d9d9;
+  padding-right: 30px;
+}
+
+.Trend > div {
+  padding-right: 30px;
+}
+
+.demographic {
+  background: #eaeaea;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.General {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 68% 31%;
+  justify-content: space-between;
+  gap: 13px;
+  padding: 13px;
+  border-radius: 8px;
+}
+
+.flex-income {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12rem;
+}
+
+.demographic > div:nth-child(3) > h3 {
+  margin-top: 3rem;
+}
+
+.flex-Edu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Edu-Container {
+  line-height: 2.5;
+  margin-top: 2rem;
+  /* display: flex;
+  align-items: flex-start; */
+}
+
+.Employment-container {
+  margin-top: 2rem;
+  line-height: 2.5;
+  /* display: flex;
+  align-items: flex-start; */
+}
+
+.Age-container{
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-Aundience{
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.outside-demographic{
+  margin-top: 2rem;
+}
+
+.Education{
+  text-align: center;
+}
+/* .Education > span{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+} */
+
+h1{
+  font-size: 22px;
+  /* font-weight: 500; */
+}
