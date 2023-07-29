@@ -7,6 +7,7 @@ import Discovery from "./pages/discovery/Discovery";
 import Socail from "./pages/socials/Socail";
 import Sorry from "./pages/notavlb/Sorry";
 import Segmentation from "./pages/segmentation/Segmentation";
+import Competitor from "./pages/competitor/competitor";
 
 export default function Router() {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ export default function Router() {
         { path: "dashboard", element: <Dashboard /> },
         { path: "Social", element: <Socail /> },
         { path: "segmentation", element: <Segmentation /> },
-        { path: "competitors", element: <Sorry /> },
+        { path: "competitors", element: <Competitor /> },
         { path: "channels", element: <Sorry /> },
       ],
     },

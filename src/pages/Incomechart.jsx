@@ -14,7 +14,7 @@ const data = [
   {
     name: "Page C",
     uv: 2000,
-    pv: 9800,
+    pv: 4500,
     
     // amt: 2400
   },

@@ -5,10 +5,47 @@ import Chat from "../../components/Chat";
 import ProgressBar from "../../components/ProgressBar";
 import Chart from "../Chart";
 import Income from "../Incomechart";
+import axios from "axios";
 // import Retail from "../../../public/im"
 // import data from "../../components/chart";
 
 const Segmentation = () => {
+  const [Geographic, setGeographic] = React.useState("");
+  const [Demographic, setDemographic] = React.useState("")
+  const [Audience, setAudience] = React.useState("")
+  // const [worldMap, setWorldMap] = useState();
+  // const [topConversations, setTopConverastion] = useState([]);
+
+  const fetchGeographic = async () => {
+    const response = await axios.get(
+      `${import.meta.env.VITE_BACKEND_API}/apis/segmentation/geographic_distribution/`
+    );
+    setGeographic(response.data?.posts);
+  };
+  React.useEffect(()=>{
+  fetchGeographic()
+  },[])
+
+  const fetchDemographic = async () => {
+    const response = await axios.get(
+      `${import.meta.env.VITE_BACKEND_API}/apis/segmentation/demographic_distribution/`
+    );
+    setDemographic(response.data?.posts);
+  };
+  React.useEffect(()=>{
+  fetchDemographic()
+  },[])
+
+  const fetchAudience = async () => {
+    const response = await axios.get(
+      `${import.meta.env.VITE_BACKEND_API}/apis/segmentation/audience_interest_behaviour/`
+    );
+    setAudience(response.data?.posts);
+  };
+  React.useEffect(()=>{
+  fetchAudience()
+  },[])
+  
   return (
     <div className="General">
       <section>
