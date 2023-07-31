@@ -82,14 +82,9 @@ const competitor = () => {
             <div className="geography">
             <h2>Geography</h2>
               <div className="flex-geography">
-              <tr>
-              <th style={{ borderRadius: "10px 0 0 0" }}>Country</th>
-              <th>Traffic</th>
-              <th style={{ borderRadius: "0 10px 0 0" }}>Changes</th>
-              <div className="flex-table">
-               {/* COUNTRIES SECTION */}
-               <div className="countries-cont">
-                  {/* <h3>Countries</h3> */}
+                {/* COUNTRIES SECTION */}
+                <div className="countries-cont">
+                  <h3>Countries</h3>
 
                   <div>
                     {[
@@ -109,7 +104,7 @@ const competitor = () => {
 
                 {/* TRAFFIC SECTION */}
                 <div className="Traffic-cont">
-                  {/* <h3>Traffic</h3> */}
+                  <h3>Traffic</h3>
                   <div>
                     {[
                       { text: "67.66%", value: 67.66 },
@@ -127,7 +122,7 @@ const competitor = () => {
 
                 {/* TREND SECTION */}
                 <div className="changes-cont">
-                  {/* <h3>Changes</h3>/ */}
+                  <h3>Changes</h3>
                   <div>
                     {["-10.4%", "-21.57%", "+26.07%", "-4.76%", "+1.76%"].map(
                       (changes) => (
@@ -136,13 +131,97 @@ const competitor = () => {
                     )}
                   </div>
                 </div>
-                </div>
-            </tr>
-               
               </div>
             </div>
           </div>
         </div>
+
+        <table>
+        <thead>
+          <tr>
+            <th>Competitor</th>
+            <th>Total</th>
+            <th>Direct</th>
+            <th>Referral</th>
+            <th>Organic Search</th>
+            <th>Paid Search</th>
+            <th>Organic Social</th>
+            <th>Paid Social</th>
+            <th>Email</th>
+            <th>Display Ads</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <img className='big_img3' src="/public/imgs/ebay.svg" alt="" />
+            <td>1,236,000</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>19.45%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+          </tr>
+          <tr>
+          <img className='big_img3' src="/public/imgs/amazon.svg" alt="" />
+            <td>1,236,000</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>19.45%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+          </tr>
+          <tr>
+          <img className='big_img3' src="/public/imgs/flipkart.svg" alt="" />
+            <td>1,236,000</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>19.45%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+          </tr>
+          <tr>
+          <img className='big_img3' src="/public/imgs/myntra.svg" alt="" />
+            <td>1,236,000</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>19.45%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+          </tr>
+
+          <tr>
+          <img className='big_img3' src="/public/imgs/ajio.svg" alt="" />
+            <td>1,236,000</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>19.45%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+            <td>11.18%</td>
+          </tr>
+        </tbody>
+        </table>
+
+      <div className="market-price">
+        <h2>Market Price</h2>
+        <div className="coming-soon">
+          <h3>Coming Soon</h3>
+    </div>
+      </div>
       </section>
       <Chat />
     </div>

@@ -6,15 +6,25 @@ const ProgressBar = ({ value, variant }) => {
   let height = "";
   let radius_out = "";
   let radius_in = "";
+  let background = "";
+  let color ="";
   // let borderRadius = "";
 
   switch (variant) {
     case "md":
-      width = "630px";
-      height = "20px";
+      width = "610px";
+      height = "16px";
       radius_out = "8px";
       radius_in = "8px";
       // borderRadius ="8px";
+      break;
+      case "fs":
+      width = "650px";
+      height = "15px";
+      radius_out = "8px";
+      radius_in = "8px";
+      background = "#C8C7C7";
+      color = "#C8C7C7";
       break;
     default:
       width = "300px";
@@ -34,7 +44,7 @@ const ProgressBar = ({ value, variant }) => {
       style={{
         width: width,
         height: height,
-        border: "1px solid #ccc",
+        // border: "1px solid #ccc",
         borderRadius: radius_out,
         backgroundColor: "#D9D9D9",
       }}

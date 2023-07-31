@@ -274,12 +274,12 @@ const Segmentation = () => {
         </div>
 
         <div class="outside-demographic">
-          <h1>Audience interests and Behaviors</h1>
+          <h2>Audience interests and Behaviors</h2>
 
           <div className="flex-Aundience">
             <div className="Education">
               <span>
-          <img className='ratail' src="../../../public/imgs/Retail.svg" alt="" />
+          <img className='retail' src="/public/imgs/Retail.svg" alt="" />
           <h4>60.46%</h4>
           <p>Retail</p>
               </span>
@@ -287,7 +287,7 @@ const Segmentation = () => {
 
             <div className="Education">
               <span>
-          <img className='ratail' src="../../../public/imgs/Education.svg" alt="" />
+          <img className='retail' src="/public/imgs/Education.svg" alt="" />
           <h4>60.36%</h4>
           <p>Education</p>
               </span>
@@ -295,7 +295,7 @@ const Segmentation = () => {
 
             <div className="Education">
               <span>
-          <img className='ratail' src="../../../public/imgs/Computer.svg" alt="" />
+          <img className='retail' src="/public/imgs/Computer.svg" alt="" />
           <h4>59.31%</h4>
           <p>Software</p>
               </span>
@@ -303,7 +303,7 @@ const Segmentation = () => {
 
             <div className="Education">
               <span>
-          <img className='ratail' src="../../../public/imgs/Finance.svg" alt="" />
+          <img className='retail' src="/public/imgs/Finance.svg" alt="" />
           <h4>41.05%</h4>
           <p>Finance</p>
               </span>
@@ -311,7 +311,7 @@ const Segmentation = () => {
 
             <div className="Education">
               <span>
-          <img className='ratail' src="../../../public/imgs/Government.svg" alt="" />
+          <img className='retail' src="/public/imgs/Government.svg" alt="" />
           <h4>37.23%</h4>
           <p>Government</p>
               </span>
