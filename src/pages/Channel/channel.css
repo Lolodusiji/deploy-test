@@ -24,6 +24,7 @@
   .Website{
     background: #EAEAEA;
     padding: 12px 24px;
+    border-radius: 12px;
   }
 
   .Website > h2{
@@ -66,6 +67,7 @@
     background: linear-gradient(0deg, #B4B4B4 0%, #DCDCDC 57.6%, #F3F3F3 100%);
     margin-top: 1rem;
     padding: 98px 12px 12px 12px;
+    border-radius: 6px;
   }
   
   .coming-soon >h3{

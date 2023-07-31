@@ -43,7 +43,7 @@ const competitor = () => {
 
           <div className="flex-target">
             <div className="socio">
-                <h2>Socioeconomics</h2>
+              <h2>Socioeconomics</h2>
               <div className="Grid-socio">
                 <div className="household" id="household">
                   <span>
@@ -80,7 +80,7 @@ const competitor = () => {
             </div>
 
             <div className="geography">
-            <h2>Geography</h2>
+              <h2>Geography</h2>
               <div className="flex-geography">
                 {/* COUNTRIES SECTION */}
                 <div className="countries-cont">
@@ -135,93 +135,107 @@ const competitor = () => {
             </div>
           </div>
         </div>
+        <div className="market-share">
+          <h1>Market share</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Competitor</th>
+                <th>Total</th>
+                <th>Direct</th>
+                <th>Referral</th>
+                <th>Organic Search</th>
+                <th>Paid Search</th>
+                <th>Organic Social</th>
+                <th>Paid Social</th>
+                <th>Email</th>
+                <th>Display Ads</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <img className="big_img3" src="/public/imgs/ebay.svg" alt="" />
+                <td>1,236,000</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>19.45%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+              </tr>
+              <tr>
+                <img
+                  className="big_img3"
+                  src="/public/imgs/amazon.svg"
+                  alt=""
+                />
+                <td>1,236,000</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>19.45%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+              </tr>
+              <tr>
+                <img
+                  className="big_img3"
+                  src="/public/imgs/flipkart.svg"
+                  alt=""
+                />
+                <td>1,236,000</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>19.45%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+              </tr>
+              <tr>
+                <img
+                  className="big_img3"
+                  src="/public/imgs/myntra.svg"
+                  alt=""
+                />
+                <td>1,236,000</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>19.45%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+              </tr>
 
-        <table>
-        <thead>
-          <tr>
-            <th>Competitor</th>
-            <th>Total</th>
-            <th>Direct</th>
-            <th>Referral</th>
-            <th>Organic Search</th>
-            <th>Paid Search</th>
-            <th>Organic Social</th>
-            <th>Paid Social</th>
-            <th>Email</th>
-            <th>Display Ads</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-          <img className='big_img3' src="/public/imgs/ebay.svg" alt="" />
-            <td>1,236,000</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>19.45%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-          </tr>
-          <tr>
-          <img className='big_img3' src="/public/imgs/amazon.svg" alt="" />
-            <td>1,236,000</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>19.45%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-          </tr>
-          <tr>
-          <img className='big_img3' src="/public/imgs/flipkart.svg" alt="" />
-            <td>1,236,000</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>19.45%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-          </tr>
-          <tr>
-          <img className='big_img3' src="/public/imgs/myntra.svg" alt="" />
-            <td>1,236,000</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>19.45%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-          </tr>
+              <tr>
+                <img className="big_img3" src="/public/imgs/ajio.svg" alt="" />
+                <td>1,236,000</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>19.45%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+                <td>11.18%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-          <tr>
-          <img className='big_img3' src="/public/imgs/ajio.svg" alt="" />
-            <td>1,236,000</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>19.45%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-            <td>11.18%</td>
-          </tr>
-        </tbody>
-        </table>
-
-      <div className="market-price">
-        <h2>Market Price</h2>
-        <div className="coming-soon">
-          <h3>Coming Soon</h3>
-    </div>
-      </div>
+        <div className="market-price">
+          <h2>Market Price</h2>
+          <div className="coming-soon">
+            <h3>Coming Soon</h3>
+          </div>
+        </div>
       </section>
       <Chat />
     </div>

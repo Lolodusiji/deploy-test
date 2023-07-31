@@ -11,41 +11,47 @@ import axios from "axios";
 
 const Segmentation = () => {
   const [Geographic, setGeographic] = React.useState("");
-  const [Demographic, setDemographic] = React.useState("")
-  const [Audience, setAudience] = React.useState("")
+  const [Demographic, setDemographic] = React.useState("");
+  const [Audience, setAudience] = React.useState("");
   // const [worldMap, setWorldMap] = useState();
   // const [topConversations, setTopConverastion] = useState([]);
 
   const fetchGeographic = async () => {
     const response = await axios.get(
-      `${import.meta.env.VITE_BACKEND_API}/apis/segmentation/geographic_distribution/`
+      `${
+        import.meta.env.VITE_BACKEND_API
+      }/apis/segmentation/geographic_distribution/`
     );
     setGeographic(response.data?.posts);
   };
-  React.useEffect(()=>{
-  fetchGeographic()
-  },[])
+  React.useEffect(() => {
+    fetchGeographic();
+  }, []);
 
   const fetchDemographic = async () => {
     const response = await axios.get(
-      `${import.meta.env.VITE_BACKEND_API}/apis/segmentation/demographic_distribution/`
+      `${
+        import.meta.env.VITE_BACKEND_API
+      }/apis/segmentation/demographic_distribution/`
     );
     setDemographic(response.data?.posts);
   };
-  React.useEffect(()=>{
-  fetchDemographic()
-  },[])
+  React.useEffect(() => {
+    fetchDemographic();
+  }, []);
 
   const fetchAudience = async () => {
     const response = await axios.get(
-      `${import.meta.env.VITE_BACKEND_API}/apis/segmentation/audience_interest_behaviour/`
+      `${
+        import.meta.env.VITE_BACKEND_API
+      }/apis/segmentation/audience_interest_behaviour/`
     );
     setAudience(response.data?.posts);
   };
-  React.useEffect(()=>{
-  fetchAudience()
-  },[])
-  
+  React.useEffect(() => {
+    fetchAudience();
+  }, []);
+
   return (
     <div className="General">
       <section>
@@ -130,7 +136,7 @@ const Segmentation = () => {
 
         <div className="demographic">
           <h1>Demographic Distribution</h1>
-          <div className="Age-container"> 
+          <div className="Age-container">
             <h3>Age</h3>
             <Chart />
           </div>
@@ -138,24 +144,24 @@ const Segmentation = () => {
           <div>
             <h3>Income</h3>
             <div className="flex-cont">
-            <div class="flex-income">
-              <span>
-                <h4>Low</h4>
-                <p>64.02%</p>
-              </span>
-              <span>
-                <h4>Medium</h4>
-                <p>26.34%</p>
-              </span>
-              <span>
-                <h4>High</h4>
-                <p>9.25%</p>
-              </span>
+              <div class="flex-income">
+                <span>
+                  <h4>Low</h4>
+                  <p>64.02%</p>
+                </span>
+                <span>
+                  <h4>Medium</h4>
+                  <p>26.34%</p>
+                </span>
+                <span>
+                  <h4>High</h4>
+                  <p>9.25%</p>
+                </span>
+              </div>
+              <div className="graph">
+                <Income />
+              </div>
             </div>
-            <div className="graph">
-            <Income />
-            </div>
-          </div>
           </div>
 
           <div className="Edu-Container">
@@ -193,9 +199,8 @@ const Segmentation = () => {
             </div>
           </div>
 
-
           <div className="Employment-container">
-          <h3>Employment</h3>
+            <h3>Employment</h3>
             <div className="Edu-progress">
               <div className="flex-Edu">
                 <p>Full-time work</p>
@@ -244,7 +249,6 @@ const Segmentation = () => {
               <ProgressBar value={5.6} variant="md" />
             </div>
 
-            
             <div className="Edu-progress">
               <div className="flex-Edu">
                 <p>Retired</p>
@@ -253,7 +257,6 @@ const Segmentation = () => {
               <ProgressBar value={4.81} variant="md" />
             </div>
 
-            
             <div className="Edu-progress">
               <div className="flex-Edu">
                 <p>Leave Of Absence</p>
@@ -262,7 +265,6 @@ const Segmentation = () => {
               <ProgressBar value={1.24} variant="md" />
             </div>
 
-            
             <div className="Edu-progress">
               <div className="flex-Edu">
                 <p>Parental Leave</p>
@@ -279,44 +281,55 @@ const Segmentation = () => {
           <div className="flex-Aundience">
             <div className="Education">
               <span>
-          <img className='retail' src="/public/imgs/Retail.svg" alt="" />
-          <h4>60.46%</h4>
-          <p>Retail</p>
+                <img className="retail" src="/public/imgs/Retail.svg" alt="" />
+                <h4>60.46%</h4>
+                <p>Retail</p>
               </span>
             </div>
 
             <div className="Education">
               <span>
-          <img className='retail' src="/public/imgs/Education.svg" alt="" />
-          <h4>60.36%</h4>
-          <p>Education</p>
+                <img
+                  className="retail"
+                  src="/public/imgs/Education.svg"
+                  alt=""
+                />
+                <h4>60.36%</h4>
+                <p>Education</p>
               </span>
             </div>
 
             <div className="Education">
               <span>
-          <img className='retail' src="/public/imgs/Computer.svg" alt="" />
-          <h4>59.31%</h4>
-          <p>Software</p>
+                <img
+                  className="retail"
+                  src="/public/imgs/Computer.svg"
+                  alt=""
+                />
+                <h4>59.31%</h4>
+                <p>Software</p>
               </span>
             </div>
 
             <div className="Education">
               <span>
-          <img className='retail' src="/public/imgs/Finance.svg" alt="" />
-          <h4>41.05%</h4>
-          <p>Finance</p>
+                <img className="retail" src="/public/imgs/Finance.svg" alt="" />
+                <h4>41.05%</h4>
+                <p>Finance</p>
               </span>
             </div>
 
             <div className="Education">
               <span>
-          <img className='retail' src="/public/imgs/Government.svg" alt="" />
-          <h4>37.23%</h4>
-          <p>Government</p>
+                <img
+                  className="retail"
+                  src="/public/imgs/Government.svg"
+                  alt=""
+                />
+                <h4>37.23%</h4>
+                <p>Government</p>
               </span>
             </div>
-
           </div>
         </div>
       </section>
