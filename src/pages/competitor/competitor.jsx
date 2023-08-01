@@ -3,6 +3,73 @@ import "../competitor/competitor.css";
 import Chat from "../../components/Chat";
 
 const competitor = () => {
+  const [Competitive, setCompetitive] = React.useState("");
+  const [Socio, setSocio] = React.useState("");
+  const [Geography, setGeography] = React.useState("");
+  const [Marketshare, setMarketshare] = React.useState("");
+  const [Marketprice, setMarketprice] = React.useState("");
+
+  const fetchCompetitive = async () => {
+    const response = await axios.get(
+      `${
+        import.meta.env.VITE_BACKEND_API
+      }/apis/competitor/competitive_targeting/`
+    );
+    setCompetitive(response.data?.posts);
+  };
+  React.useEffect(() => {
+    fetchCompetitive();
+  }, []);
+
+  const fetchSocio = async () => {
+    const response = await axios.get(
+      `${
+        import.meta.env.VITE_BACKEND_API
+      }/apis/competitor/socioeconomics/`
+    );
+    setSocio(response.data?.posts);
+  };
+  React.useEffect(() => {
+    fetchSocio();
+  }, []);
+
+  const fetchGeography = async () => {
+    const response = await axios.get(
+      `${
+        import.meta.env.VITE_BACKEND_API
+      }/apis/competitor/geography/`
+    );
+    setGeography(response.data?.posts);
+  };
+  React.useEffect(() => {
+    fetchGeography();
+  }, []);
+
+  const fetchMarketshare = async () => {
+    const response = await axios.get(
+      `${
+        import.meta.env.VITE_BACKEND_API
+      }/apis/competitor/market_share/`
+    );
+    setMarketshare(response.data?.posts);
+  };
+  React.useEffect(() => {
+    fetchMarketshare();
+  }, []);
+
+  const fetchMarketprice = async () => {
+    const response = await axios.get(
+      `${
+        import.meta.env.VITE_BACKEND_API
+      }/apis/competitor/market_prices/`
+    );
+    setMarketprice(response.data?.posts);
+  };
+  React.useEffect(() => {
+    fetchMarketprice();
+  }, []);
+
+
   return (
     <div className="General">
       <section>

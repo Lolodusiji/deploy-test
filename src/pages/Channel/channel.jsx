@@ -5,6 +5,47 @@ import Benchmark from "../Benchmark";
 import ProgressBar from "../../components/ProgressBar";
 
 const channel = () => {
+  const [Website, setWebsite] = React.useState("");
+  const [Channel, setChannel] = React.useState("");
+  const [Channelstrategy, setChannelstrategy] = React.useState("");
+
+  const fetchWebsite = async () => {
+    const response = await axios.get(
+      `${
+        import.meta.env.VITE_BACKEND_API
+      }/apis/channels/website_benchmarking/`
+    );
+    setWebsite(response.data?.posts);
+    console.log(setWebsite);
+  };
+  React.useEffect(() => {
+    fetchWebsite();
+  }, []);
+
+  const fetchChannel = async () => {
+    const response = await axios.get(
+      `${
+        import.meta.env.VITE_BACKEND_API
+      }/apis/channels/channel_distribution/`
+    );
+    setChannel(response.data?.posts);
+  };
+  React.useEffect(() => {
+    fetchChannel();
+  }, []);
+
+  const fetchChannelstrategy = async () => {
+    const response = await axios.get(
+      `${
+        import.meta.env.VITE_BACKEND_API
+      }/apis/channels/channel_strategy/`
+    );
+    setChannelstrategy(response.data?.posts);
+  };
+  React.useEffect(() => {
+    fetchChannelstrategy();
+  }, []);
+
   return (
     <div className="General">
       <section>

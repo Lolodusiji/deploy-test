@@ -12,14 +12,14 @@ const ProgressBar = ({ value, variant }) => {
 
   switch (variant) {
     case "md":
-      width = "610px";
+      width = "100%";
       height = "16px";
       radius_out = "8px";
       radius_in = "8px";
       // borderRadius ="8px";
       break;
       case "fs":
-      width = "650px";
+      width = "100%";
       height = "15px";
       radius_out = "8px";
       radius_in = "8px";
