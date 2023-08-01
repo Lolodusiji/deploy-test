@@ -31,10 +31,10 @@ const Chart = () => {
         <XAxis
           dataKey={"Age"}
           color="#0000"
-          stroke="#fff"
+          stroke="#000"
           style={{ color: "0000" }}
         />
-        <YAxis stroke="#00000" />
+        <YAxis stroke="#000" />
         <Tooltip />
         <Bar dataKey={"age"} fill="#B8B8B8" />
         {/* <Legend /> */}

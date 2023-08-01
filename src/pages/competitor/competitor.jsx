@@ -81,64 +81,49 @@ const competitor = () => {
 
             <div className="geography">
               <h2>Geography</h2>
-              <div className="flex-geography">
-                {/* COUNTRIES SECTION */}
-                <div className="countries-cont">
-                  <h3>Countries</h3>
-
-                  <div>
-                    {[
-                      "United States",
-                      "United Kingdom",
-                      "Brazil",
-                      "Germany",
-                      "India",
-                    ].map((country) => (
-                      <p key={country}>
-                        {/* <span>&gt;</span> */}
-                        {country}
-                      </p>
-                    ))}
-                  </div>
-                </div>
-
-                {/* TRAFFIC SECTION */}
-                <div className="Traffic-cont">
-                  <h3>Traffic</h3>
-                  <div>
-                    {[
-                      { text: "67.66%", value: 67.66 },
-                      { text: "2.64%", value: 2.64 },
-                      { text: "1.81%", value: 1.81 },
-                      { text: "1.77%", value: 1.77 },
-                      { text: "1.73%", value: 1.73 },
-                    ].map((traffic) => (
-                      <div className="flex-traffic" key={traffic.text}>
-                        <p>{traffic.text}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* TREND SECTION */}
-                <div className="changes-cont">
-                  <h3>Changes</h3>
-                  <div>
-                    {["-10.4%", "-21.57%", "+26.07%", "-4.76%", "+1.76%"].map(
-                      (changes) => (
-                        <p key={changes}>{changes}</p>
-                      )
-                    )}
-                  </div>
-                </div>
-              </div>
+              <table className="stat">
+                <thead className="head">
+                <tr className="row">
+                <th className="content">Competitor</th>
+                <th className="content">Traffic</th>
+                <th className="content">Changes</th>
+                </tr>
+                </thead>
+                <tbody>
+                  <tr className="row">
+                    <th className="content">United States</th>
+                    <th className="content">67.66%</th>
+                    <th className="content">9.15%</th>
+                  </tr>
+                  <tr className="row">
+                    <th className="content">United Kingdom</th>
+                    <th className="content">30.97%</th>
+                    <th className="content">2.03%</th>
+                  </tr>
+                  <tr className="row">
+                    <th className="content">Germany</th>
+                    <th className="content">30.41%</th>
+                    <th className="content">4.59%</th>
+                  </tr>
+                  <tr className="row">
+                    <th className="content">Mexico</th>
+                    <th className="content">39.95%</th>
+                    <th className="content">1.05%</th>
+                  </tr>
+                  <tr>
+                    <th className="content">Canada</th>
+                    <th className="content">38.01%</th>
+                    <th className="content">8.99%</th>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
         <div className="market-share">
           <h1>Market share</h1>
-          <table>
-            <thead>
+          <table className="share-table">
+            <thead className="head2">
               <tr>
                 <th>Competitor</th>
                 <th>Total</th>
@@ -154,7 +139,7 @@ const competitor = () => {
             </thead>
             <tbody>
               <tr>
-                <img className="big_img3" src="/public/imgs/ebay.svg" alt="" />
+                <td><img className="big_img3" src="/public/imgs/ebay.svg" alt="" /></td>
                 <td>1,236,000</td>
                 <td>11.18%</td>
                 <td>11.18%</td>
@@ -166,11 +151,11 @@ const competitor = () => {
                 <td>11.18%</td>
               </tr>
               <tr>
-                <img
+                <td><img
                   className="big_img3"
                   src="/public/imgs/amazon.svg"
                   alt=""
-                />
+                /></td>
                 <td>1,236,000</td>
                 <td>11.18%</td>
                 <td>11.18%</td>
@@ -182,11 +167,11 @@ const competitor = () => {
                 <td>11.18%</td>
               </tr>
               <tr>
-                <img
+               <td><img
                   className="big_img3"
                   src="/public/imgs/flipkart.svg"
                   alt=""
-                />
+                /></td> 
                 <td>1,236,000</td>
                 <td>11.18%</td>
                 <td>11.18%</td>
@@ -198,11 +183,11 @@ const competitor = () => {
                 <td>11.18%</td>
               </tr>
               <tr>
-                <img
+                <td><img
                   className="big_img3"
                   src="/public/imgs/myntra.svg"
                   alt=""
-                />
+                /></td>
                 <td>1,236,000</td>
                 <td>11.18%</td>
                 <td>11.18%</td>
@@ -215,7 +200,7 @@ const competitor = () => {
               </tr>
 
               <tr>
-                <img className="big_img3" src="/public/imgs/ajio.svg" alt="" />
+                <td><img className="big_img3" src="/public/imgs/ajio.svg" alt="" /></td>
                 <td>1,236,000</td>
                 <td>11.18%</td>
                 <td>11.18%</td>
