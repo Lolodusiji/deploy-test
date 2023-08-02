@@ -151,36 +151,36 @@ const competitor = () => {
               <table className="stat">
                 <thead className="head">
                 <tr className="row">
-                <th className="content">Competitor</th>
-                <th className="content">Traffic</th>
-                <th className="content">Changes</th>
+                <th >Competitor</th>
+                <th >Traffic</th>
+                <th >Changes</th>
                 </tr>
                 </thead>
                 <tbody>
                   <tr className="row">
-                    <th className="content">United States</th>
-                    <th className="content">67.66%</th>
-                    <th className="content">9.15%</th>
+                    <td>United States</td>
+                    <td>67.66%</td>
+                    <td>9.15%</td>
                   </tr>
                   <tr className="row">
-                    <th className="content">United Kingdom</th>
-                    <th className="content">30.97%</th>
-                    <th className="content">2.03%</th>
+                    <td>United Kingdom</td>
+                    <td>30.97%</td>
+                    <td>2.03%</td>
                   </tr>
                   <tr className="row">
-                    <th className="content">Germany</th>
-                    <th className="content">30.41%</th>
-                    <th className="content">4.59%</th>
+                    <td>Germany</td>
+                    <td>30.41%</td>
+                    <td>4.59%</td>
                   </tr>
                   <tr className="row">
-                    <th className="content">Mexico</th>
-                    <th className="content">39.95%</th>
-                    <th className="content">1.05%</th>
+                    <td>Mexico</td>
+                    <td>39.95%</td>
+                    <td>1.05%</td>
                   </tr>
                   <tr>
-                    <th className="content">Canada</th>
-                    <th className="content">38.01%</th>
-                    <th className="content">8.99%</th>
+                    <td>Canada</td>
+                    <td>38.01%</td>
+                    <td>8.99%</td>
                   </tr>
                 </tbody>
               </table>
