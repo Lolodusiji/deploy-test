@@ -3,6 +3,7 @@ import "./channel.css";
 import Chat from "../../components/Chat";
 import Benchmark from "../Benchmark";
 import ProgressBar from "../../components/ProgressBar";
+import Youtube from "../../../public/imgs/youtube.svg";
 
 const channel = () => {
   const [Website, setWebsite] = React.useState("");
@@ -104,7 +105,7 @@ const channel = () => {
                   {" "}
                   <img
                     className="big_img3"
-                    src="/public/imgs/youtube.svg"
+                    src={Youtube}
                     alt=""
                   />
                   Youtube
