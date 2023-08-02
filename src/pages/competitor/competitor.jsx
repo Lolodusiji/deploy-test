@@ -1,6 +1,11 @@
 import React from "react";
 import "../competitor/competitor.css";
 import Chat from "../../components/Chat";
+import Ebay from "../../../public/imgs/ebay.svg";
+import Amazon from "../../../public/imgs/amazon.svg";
+import Flipkart from "../../../public/imgs/flipkart.svg";
+import Myntra from "../../../public/imgs/myntra.svg";
+import Ajio from "../../../public/imgs/ajio.svg";
 
 const competitor = () => {
   const [Competitive, setCompetitive] = React.useState("");
@@ -206,7 +211,7 @@ const competitor = () => {
             </thead>
             <tbody>
               <tr>
-                <td><img className="big_img3" src="/public/imgs/ebay.svg" alt="" /></td>
+                <td><img className="big_img3" src={Ebay} alt="" /></td>
                 <td>1,236,000</td>
                 <td>11.18%</td>
                 <td>11.18%</td>
@@ -220,7 +225,7 @@ const competitor = () => {
               <tr>
                 <td><img
                   className="big_img3"
-                  src="/public/imgs/amazon.svg"
+                  src={Amazon}
                   alt=""
                 /></td>
                 <td>1,236,000</td>
@@ -236,7 +241,7 @@ const competitor = () => {
               <tr>
                <td><img
                   className="big_img3"
-                  src="/public/imgs/flipkart.svg"
+                  src={Flipkart}
                   alt=""
                 /></td> 
                 <td>1,236,000</td>
@@ -252,7 +257,7 @@ const competitor = () => {
               <tr>
                 <td><img
                   className="big_img3"
-                  src="/public/imgs/myntra.svg"
+                  src={Myntra}
                   alt=""
                 /></td>
                 <td>1,236,000</td>
@@ -267,7 +272,7 @@ const competitor = () => {
               </tr>
 
               <tr>
-                <td><img className="big_img3" src="/public/imgs/ajio.svg" alt="" /></td>
+                <td><img className="big_img3" src={Ajio} alt="" /></td>
                 <td>1,236,000</td>
                 <td>11.18%</td>
                 <td>11.18%</td>
