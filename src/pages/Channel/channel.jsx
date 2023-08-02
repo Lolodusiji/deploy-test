@@ -4,6 +4,18 @@ import Chat from "../../components/Chat";
 import Benchmark from "../Benchmark";
 import ProgressBar from "../../components/ProgressBar";
 import Youtube from "../../../public/imgs/youtube.svg";
+import Facebook from "../../../public/imgs/Facebook.svg";
+import Instagram from "../../../public/imgs/Instagram.svg";
+import Twitter from "../../../public/imgs/Twitter.svg";
+import Reddit from "../../../public/imgs/Reddit.svg";
+import Tiktok from "../../../public/imgs/Tiktok.svg";
+import Linkedin from "../../../public/imgs/Linkedin.svg";
+
+
+
+
+
+
 
 const channel = () => {
   const [Website, setWebsite] = React.useState("");
@@ -121,10 +133,10 @@ const channel = () => {
                   {" "}
                   <img
                     className="big_img3"
-                    src="/public/imgs/Facebook.svg"
+                    src={Facebook}
                     alt=""
                   />
-                  Facebbok
+                  Facebook
                 </p>
                 <h5>35.63%</h5>
               </div>
@@ -137,7 +149,7 @@ const channel = () => {
                   {" "}
                   <img
                     className="big_img3"
-                    src="/public/imgs/Instagram.svg"
+                    src={Instagram}
                     alt=""
                   />
                   Instagram
@@ -153,7 +165,7 @@ const channel = () => {
                   {" "}
                   <img
                     className="big_img3"
-                    src="/public/imgs/Twitter.svg"
+                    src={Twitter}
                     alt=""
                   />
                   Twitter
@@ -169,7 +181,7 @@ const channel = () => {
                   {" "}
                   <img
                     className="big_img3"
-                    src="/public/imgs/Reddit.svg"
+                    src={Reddit}
                     alt=""
                   />
                   Reddit
@@ -185,7 +197,7 @@ const channel = () => {
                   {" "}
                   <img
                     className="big_img3"
-                    src="/public/imgs/Tiktok.svg"
+                    src={Tiktok}
                     alt=""
                   />
                   Tiktok
@@ -201,7 +213,7 @@ const channel = () => {
                   {" "}
                   <img
                     className="big_img3"
-                    src="/public/imgs/Linkedin.svg"
+                    src={Linkedin}
                     alt=""
                   />
                   Linkedin
