@@ -20,7 +20,7 @@ import React , { useState, useEffect } from 'react'
             break;
             case "fs":
             width = "100%";
-            height = "15px";
+            height = "12px";
             radius_out = "8px";
             radius_in = "8px";
             background = "#C8C7C7";

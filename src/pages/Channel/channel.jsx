@@ -12,11 +12,6 @@ import Tiktok from "../../../public/imgs/Tiktok.svg";
 import Linkedin from "../../../public/imgs/Linkedin.svg";
 
 
-
-
-
-
-
 const channel = () => {
   const [Website, setWebsite] = React.useState("");
   const [Channel, setChannel] = React.useState("");

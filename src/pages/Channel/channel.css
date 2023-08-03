@@ -16,10 +16,9 @@
 
   .flex-bench{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
     margin-top: 2rem;
-    gap: 1.5rem;
+    justify-content: space-evenly;
   }
 
   .Website{
@@ -73,7 +72,7 @@
   .coming-soon{
     background: linear-gradient(0deg, #B4B4B4 0%, #DCDCDC 57.6%, #F3F3F3 100%);
     margin-top: 1rem;
-    padding: 98px 12px 12px 12px;
+    padding: 150px 12px 12px 12px;
     border-radius: 6px;
   }
   

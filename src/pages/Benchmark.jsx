@@ -9,48 +9,58 @@ import {
     Tooltip,
     Legend
   } from "recharts";
-  
+
+  // const barColors = ["#1f77b4", "#ff7f0e", "#2ca02c" ,"#7116CB" , "#7116CB", "#fff" , "#9ED56A" ]
   const data = [
     {
       name: "Page C",
-      uv: 2000,
-      pv: 4500,
+      // uv: 1500,
+      pv: 50,
+      fill : "#2594F2"
+
     },
 
     {
       name: "Page C",
-      uv: 2000,
-      pm: 4500,
+      // uv: 11.16,
+      pv: 20,
+      fill : "#9ED56A"
+
     },
 
     {
       name: "Page C",
-      uv: 2000,
-      am: 4500,
+      // uv: 2000,
+      pv: 30,
+      fill : "#FA4D5C"
     },
 
     {
       name: "Page C",
-      uv: 2000,
-      fs: 4500,
+      // uv: 2000,
+      pv: 12,
+      fill : "#7116CB"
     },
 
     {
       name: "Page C",
-      uv: 2000,
-      st: 4500,
+      // uv: 2000,
+      pv: 30,
+      fill : "#93CFFB"
     },
 
     {
       name: "Page C",
-      uv: 2000,
-      pw: 4500,
+      // uv: 2000,
+      pv: 5,
+      fill : "#FA4D5C"
     },
 
     {
       name: "Page C",
-      uv: 2000,
-      pu: 4500,
+      // uv: 2000,
+      pv: 15,
+      fill : "#2594F2"
     },
     
   ];
@@ -65,7 +75,7 @@ import {
           top: 5,
           // right: 8,
           // left: 20,
-          bottom: 5
+          bottom: 5,
         }}
         barSize={80}
       >
@@ -75,16 +85,10 @@ import {
         {/* <Legend /> */}
         {/* <CartesianGrid strokeDasharray="3 3" /> */}
         border-radius={10}
-        <Bar dataKey="pv" fill="#2594F2" background={{ fill: "#D9D9D9" }} border-radius="10"
-            // dataKey="am" fill="#9ED56A" background={{ fill: "#D9D9D9" }} border-radius="10"
+        <Bar dataKey="pv" background={{ fill: "#D9D9D9" }} borderRadius={[10, 10, 10, 10]}
+           
         />
-        {/* <Bar dataKey="pv" fill="#B8B8B8" background={{ fill: "#D9D9D9" }} border-radius="10px"/> */}
-        {/* <Bar dataKey="pv" fill="#B8B8B8" background={{ fill: "#D9D9D9" }} border-radius="10px"/> */}
-        {/* <Bar dataKey="pv" fill="#B8B8B8" background={{ fill: "#D9D9D9" }} border-radius="10px"/> */}
-        {/* <Bar dataKey="pv" fill="#B8B8B8" background={{ fill: "#D9D9D9" }} border-radius="10px"/> */}
-        {/* <Bar dataKey="pv" fill="#B8B8B8" background={{ fill: "#D9D9D9" }} border-radius="10px"/> */}
-        {/* <Bar dataKey="pv" fill="#B8B8B8" background={{ fill: "#D9D9D9" }} border-radius="10px"/> */}
-
+    
       </BarChart>
     );
   }

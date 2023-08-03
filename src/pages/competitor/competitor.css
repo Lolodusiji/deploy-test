@@ -178,17 +178,33 @@ td{
   border-right:1px solid #dddddd;
 }
 
-table tbody tr {
-  border-bottom: 1px solid #dddddd;
+.column{
+  border: none ;
 }
 
+/* .column:last-of-type{
+  border-right:1px solid #dddddd;
+} */
+
+
+td:last-of-type{
+  border: none;
+}
+
+/* table tbody tr {
+  border-bottom: 1px solid #dddddd;
+} */
+
 .stat{
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   /* margin: 25px 0; */
   font-size: 0.9em;
   /* min-width: 400px; */
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
+  margin-top: 2px;
+  border-bottom: 1px solid #dddddd;
   overflow: hidden;
+  outline: 1px solid #dddddd;
   /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
 }
 
@@ -207,12 +223,13 @@ table tbody tr.active-row {
 
 .coming-soon {
   background: linear-gradient(0deg, #b4b4b4 0%, #dcdcdc 57.6%, #f3f3f3 100%);
-  padding: 98px 12px 12px 12px;
+  padding: 150px 12px 12px 12px;
   border-radius: 6px;
 }
 
 .coming-soon > h3 {
   font-size: 30px;
+  color: #E1E1E199;
 }
 
 .market-share > h1 {

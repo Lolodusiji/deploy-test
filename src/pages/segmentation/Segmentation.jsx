@@ -6,6 +6,20 @@ import ProgressBar from "../../components/ProgressBar";
 import Chart from "../Chart";
 import Income from "../Incomechart";
 import axios from "axios";
+import One from "../../../public/imgs/1person.svg";
+import Two from "../../../public/imgs/2person.svg";
+import Three from "../../../public/imgs/3person.svg";
+import Four from "../../../public/imgs/4person.svg";
+import Retail from "../../../public/imgs/Retail.svg";
+import Education from "../../../public/imgs/Education.svg";
+import Computer from "../../../public/imgs/Computer.svg";
+import Finance from "../../../public/imgs/Finance.svg";
+import Government from "../../../public/imgs/Government.svg";
+
+
+
+
+
 // import Retail from "../../../public/im"
 // import data from "../../components/chart";
 
@@ -199,6 +213,33 @@ const Segmentation = () => {
             </div>
           </div>
 
+          <div className="Household-container">
+            <h3>Household Size</h3>
+            <div className="flex-general">
+            <div className="flex-ontop">
+              <div className="top_1"></div>
+              <div className="top_2"></div>
+              <div className="top_3"></div>
+              <div className="top_4"></div>
+            </div>
+            <div className="flex-beside">
+            <div className="person">
+              <p><img src={One}/>1 Person</p>
+              <p><img src={Two}/>2 Person</p>
+              <p><img src={Three}/>3 Person</p>
+              <p><img src={Four}/>4 Person</p>
+            </div>
+            <div className="percentage">
+              <p>23.40%</p>
+              <p>23.40%</p>
+              <p>42.13%</p>
+              <p>21.53%</p>
+            </div>
+            </div>
+          </div>
+          </div>
+          
+
           <div className="Employment-container">
             <h3>Employment</h3>
             <div className="Edu-progress">
@@ -281,7 +322,7 @@ const Segmentation = () => {
           <div className="flex-Aundience">
             <div className="Education">
               <span>
-                <img className="retail" src="/public/imgs/Retail.svg" alt="" />
+                <img className="retail" src={Retail} alt="" />
                 <h4>60.46%</h4>
                 <p>Retail</p>
               </span>
@@ -291,7 +332,7 @@ const Segmentation = () => {
               <span>
                 <img
                   className="retail"
-                  src="/public/imgs/Education.svg"
+                  src={Education}
                   alt=""
                 />
                 <h4>60.36%</h4>
@@ -303,7 +344,7 @@ const Segmentation = () => {
               <span>
                 <img
                   className="retail"
-                  src="/public/imgs/Computer.svg"
+                  src={computer}
                   alt=""
                 />
                 <h4>59.31%</h4>
@@ -313,7 +354,7 @@ const Segmentation = () => {
 
             <div className="Education">
               <span>
-                <img className="retail" src="/public/imgs/Finance.svg" alt="" />
+                <img className="retail" src={Finance}alt="" />
                 <h4>41.05%</h4>
                 <p>Finance</p>
               </span>
@@ -323,7 +364,7 @@ const Segmentation = () => {
               <span>
                 <img
                   className="retail"
-                  src="/public/imgs/Government.svg"
+                  src={Government}
                   alt=""
                 />
                 <h4>37.23%</h4>

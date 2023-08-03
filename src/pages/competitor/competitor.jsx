@@ -163,29 +163,29 @@ const competitor = () => {
                 </thead>
                 <tbody>
                   <tr className="row">
-                    <td>United States</td>
-                    <td>67.66%</td>
-                    <td>9.15%</td>
+                    <td className="column">United States</td>
+                    <td className="column">67.66%</td>
+                    <td className="column">9.15%</td>
                   </tr>
                   <tr className="row">
-                    <td>United Kingdom</td>
-                    <td>30.97%</td>
-                    <td>2.03%</td>
+                    <td className="column">United Kingdom</td>
+                    <td className="column">30.97%</td>
+                    <td className="column">2.03%</td>
                   </tr>
                   <tr className="row">
-                    <td>Germany</td>
-                    <td>30.41%</td>
-                    <td>4.59%</td>
+                    <td className="column">Germany</td>
+                    <td className="column">30.41%</td>
+                    <td className="column">4.59%</td>
                   </tr>
                   <tr className="row">
-                    <td>Mexico</td>
-                    <td>39.95%</td>
-                    <td>1.05%</td>
+                    <td className="column">Mexico</td>
+                    <td className="column">39.95%</td>
+                    <td className="column">1.05%</td>
                   </tr>
-                  <tr>
-                    <td>Canada</td>
-                    <td>38.01%</td>
-                    <td>8.99%</td>
+                  <tr className="row"> 
+                    <td className="column">Canada</td>
+                    <td className="column">38.01%</td>
+                    <td className="column">8.99%</td>
                   </tr>
                 </tbody>
               </table>
