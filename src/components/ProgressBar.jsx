@@ -27,7 +27,7 @@ const ProgressBar = ({ value, variant }) => {
       color = "#C8C7C7";
       break;
     default:
-      width = "300px";
+      width = "70%";
       height = "10px";
       radius_out = "10px";
       radius_in = "10px";
