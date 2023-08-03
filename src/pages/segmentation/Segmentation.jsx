@@ -344,7 +344,7 @@ const Segmentation = () => {
               <span>
                 <img
                   className="retail"
-                  src={computer}
+                  src={Computer}
                   alt=""
                 />
                 <h4>59.31%</h4>
