@@ -45,7 +45,7 @@ function Login() {
         setusername(data.user.displayName)
         localStorage.setItem("user",data.user.displayName)
         localStorage.setItem("email",data.user.email)
-        localStorage.setItem("profile picture",data.user.profilepicture)
+        // localStorage.setItem("profile picture",data.user.profilepicture)
         // console.log(user,email,profilepicture)
           // alert(`${data.user.email}`)
       })

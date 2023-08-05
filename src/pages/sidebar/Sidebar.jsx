@@ -261,7 +261,7 @@ function sidebar() {
                     
                 <div className="user_info">
                   <div className="user_img">
-                    <img src={profilepicture} alt="" />
+                    <img src="/imgs/user.png" alt="" />
                     <div className="user_status">Legacy User</div>
                   </div>
 
