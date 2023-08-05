@@ -261,12 +261,12 @@ function sidebar() {
                     
                 <div className="user_info">
                   <div className="user_img">
-                    <img src="/imgs/user.png" alt="" />
+                    <img src={profilepicture} alt="" />
                     <div className="user_status">Legacy User</div>
                   </div>
 
                   <div className="user_data">
-                    <h3>{username.usernam}</h3>
+                    <h3>{username.username}</h3>
                     {/* <h3>Josh Willer</h3> */}
                     <p
                       style={{
