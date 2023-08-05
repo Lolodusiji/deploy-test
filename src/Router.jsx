@@ -9,6 +9,8 @@ import Sorry from "./pages/notavlb/Sorry";
 import Segmentation from "./pages/segmentation/Segmentation";
 import Competitor from "./pages/competitor/competitor";
 import Channel from "./pages/Channel/channel";
+import Support from "./pages/Support/Support";
+
 
 export default function Router() {
   const navigate = useNavigate();
@@ -29,6 +31,7 @@ export default function Router() {
         { path: "segmentation", element: <Segmentation /> },
         { path: "competitors", element: <Competitor /> },
         { path: "channels", element: <Channel /> },
+        { path: "Support", element: <Support /> },
       ],
     },
   ]);

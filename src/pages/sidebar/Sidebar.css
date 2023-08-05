@@ -1,6 +1,5 @@
 .sidebar{
     border-right-width:0 !important;
-  
 }
 
 .css-kpxwru{
@@ -57,4 +56,12 @@
 }
 .css-1almjat >.ps-menu-button:hover{
     border-radius: 12px;
+}
+
+.support{
+    margin-top: 2rem;
+}
+
+.Support{
+    margin-top:4rem;
 }

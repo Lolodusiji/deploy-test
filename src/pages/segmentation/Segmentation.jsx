@@ -38,9 +38,7 @@ const Segmentation = () => {
     );
     setGeographic(response.data?.posts);
   };
-  React.useEffect(() => {
-    fetchGeographic();
-  }, []);
+
 
   const fetchDemographic = async () => {
     const response = await axios.get(
@@ -50,9 +48,7 @@ const Segmentation = () => {
     );
     setDemographic(response.data?.posts);
   };
-  React.useEffect(() => {
-    fetchDemographic();
-  }, []);
+  
 
   const fetchAudience = async () => {
     const response = await axios.get(
@@ -62,8 +58,28 @@ const Segmentation = () => {
     );
     setAudience(response.data?.posts);
   };
+
+  React.useEffect(() => {
+    fetchGeographic();
+  }, []);
+
+  React.useEffect(() => {
+    fetchDemographic();
+  }, []);
+  
   React.useEffect(() => {
     fetchAudience();
+  }, []);
+
+  React.useEffect(() => {
+    if (window.Tawk_API) {
+      window.Tawk_API.hideWidget();
+    }
+    return () => {
+      if (window.Tawk_API) {
+        window.Tawk_API.showWidget();
+      }
+    };
   }, []);
 
   return (

@@ -64,6 +64,9 @@ import {
     },
     
   ];
+
+  
+
   
   export default function App() {
     return (
@@ -77,18 +80,17 @@ import {
           // left: 20,
           bottom: 5,
         }}
+        // radius={10}
         barSize={80}
       >
         {/* <XAxis dataKey="name" scale="point" padding={{ left: 10, right: 10 }} /> */}
-        {/* <YAxis /> */}
+        {/* <YAxis borderRadius="10px" /> */}
         {/* <Tooltip /> */}
-        {/* <Legend /> */}
-        {/* <CartesianGrid strokeDasharray="3 3" /> */}
-        border-radius={10}
-        <Bar dataKey="pv" background={{ fill: "#D9D9D9" }} borderRadius={[10, 10, 10, 10]}
-           
-        />
-    
+        {/* <Legend   /> */}
+        {/* <CartesianGrid borderRadius="10px" /> */}
+        {/* border-radius={10} */}
+        <Bar dataKey="pv" background={{ fill: "#D9D9D9" }} />
+      
       </BarChart>
     );
   }
