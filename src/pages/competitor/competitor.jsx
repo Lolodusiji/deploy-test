@@ -1,11 +1,11 @@
 import React from "react";
 import "../competitor/competitor.css";
 import Chat from "../../components/Chat";
-import Ebay from "../../../public/imgs/ebay.svg";
-import Amazon from "../../../public/imgs/amazon.svg";
-import Flipkart from "../../../public/imgs/flipkart.svg";
-import Myntra from "../../../public/imgs/myntra.svg";
-import Ajio from "../../../public/imgs/ajio.svg";
+import Ebay from "/imgs/ebay.svg";
+import Amazon from "/imgs/amazon.svg";
+import Flipkart from "/imgs/flipkart.svg";
+import Myntra from "/imgs/myntra.svg";
+import Ajio from "/imgs/ajio.svg";
 
 const competitor = () => {
   const [Competitive, setCompetitive] = React.useState("");

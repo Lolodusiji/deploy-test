@@ -3,13 +3,13 @@ import "./channel.css";
 import Chat from "../../components/Chat";
 import Benchmark from "../Benchmark";
 import Distribution from "../../components/Distribution";
-import Youtube from "../../../public/imgs/youtube.svg";
-import Facebook from "../../../public/imgs/Facebook.svg";
-import Instagram from "../../../public/imgs/Instagram.svg";
-import Twitter from "../../../public/imgs/Twitter.svg";
-import Reddit from "../../../public/imgs/Reddit.svg";
-import Tiktok from "../../../public/imgs/Tiktok.svg";
-import Linkedin from "../../../public/imgs/Linkedin.svg";
+import Youtube from "/imgs/youtube.svg";
+import Facebook from "/imgs/Facebook.svg";
+import Instagram from "/imgs/Instagram.svg";
+import Twitter from "/imgs/Twitter.svg";
+import Reddit from "/imgs/Reddit.svg";
+import Tiktok from "/imgs/Tiktok.svg";
+import Linkedin from "/imgs/Linkedin.svg";
 
 
 const channel = () => {
@@ -54,16 +54,7 @@ const channel = () => {
     fetchChannelstrategy();
   }, []);
 
-  React.useEffect(() => {
-    if (window.Tawk_API) {
-      window.Tawk_API.hideWidget();
-    }
-    return () => {
-      if (window.Tawk_API) {
-        window.Tawk_API.showWidget();
-      }
-    };
-  }, []);
+  
 
   return (
     <div className="General">
