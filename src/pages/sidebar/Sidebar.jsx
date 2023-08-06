@@ -168,7 +168,6 @@ function sidebar() {
                   >
                     {email}
                   </p>
-                  {/* <p style={{fontSize:"10px",color:"#E9E9E9",fontWeight:"300"}}>joshwiller@gmail.com</p> */}
                 </div>
               </div>
             )}
