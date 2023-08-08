@@ -91,7 +91,7 @@ console.log(window.location.pathname);
 
   return (
     <div className='support-container'>
-      <h1>heyy</h1>
+      {/* <h1>heyy</h1> */}
 
     {/* <div className='chat'>
       <div className='chat_body'>

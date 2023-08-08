@@ -259,9 +259,9 @@ const Segmentation = () => {
           <h3 id="heading">Gender</h3>
           <div className="gender-group">
           {/* <Check/> */}
-            <div className="female">Female</div>
+            <div className="female">Female <p>33.97%</p></div>
             {/* <RiCheckboxBlankCircleLine /> */}
-            <div className="male">Male</div>
+            <div className="male">Male <p>66.03%</p></div>
           </div>
           </div>
 
