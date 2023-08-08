@@ -161,7 +161,7 @@ function sidebar() {
             Support
             </MenuItem>
             </Menu>
-            <button onClick={handleLogOut} style={{color: 'red', width: '100%'}}>Log out</button>
+            {/* <button onClick={handleLogOut} style={{color: 'red', width: '100%'}}>Log out</button> */}
 
             {closed == false && (
               <div className="user_info">
@@ -180,7 +180,10 @@ function sidebar() {
                       fontWeight: "300",
                     }}
                   >
-                    {displayEmail}
+                    {displayEmail?.length > 25
+                  ? `${displayEmail?.slice(0, 25)}...`
+                  : displayEmail}
+                    {/* {displayEmail} */}
                   </p>
                   {/* <p style={{fontSize:"10px",color:"#E9E9E9",fontWeight:"300"}}>joshwiller@gmail.com</p> */}
                 </div>

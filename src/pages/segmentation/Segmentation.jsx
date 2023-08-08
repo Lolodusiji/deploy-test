@@ -16,7 +16,7 @@ import Education from "../../../public/imgs/Education.svg";
 import Computer from "../../../public/imgs/Computer.svg";
 import Finance from "../../../public/imgs/Finance.svg";
 import Government from "../../../public/imgs/Government.svg";
-// import Check from "../../../public/imgs/check.svg";
+import Check from "../../../public/imgs/check.svg";
 // import {RiCheckboxBlankCircleLine} from 'react-icons/Ri'
 
 // import Retail from "../../../public/im"
@@ -259,9 +259,9 @@ const Segmentation = () => {
           <h3 id="heading">Gender</h3>
           <div className="gender-group">
           {/* <Check/> */}
-            <div className="female">Female <p>33.97%</p></div>
+            <div className="female"><img src={Check}/>Female <p>33.97%</p></div>
             {/* <RiCheckboxBlankCircleLine /> */}
-            <div className="male">Male <p>66.03%</p></div>
+            <div className="male"><img src={Check}/>Male <p>66.03%</p></div>
           </div>
           </div>
 
