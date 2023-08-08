@@ -53,7 +53,7 @@ const ProgressBar = ({ value, variant }) => {
         style={{
           width: `${progress}%`,
           height: "100%",
-          backgroundColor: "#F94144",
+          backgroundColor: "#FD6333",
           borderRadius: radius_in,
         }}
         data-in

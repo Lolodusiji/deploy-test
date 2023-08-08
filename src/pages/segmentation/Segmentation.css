@@ -171,6 +171,9 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 width: 50%;
+/* padding: 12px 24px; */
+padding: 0px 8px 0 0px;
+border-radius: 6px; 
 }
 
 .gender-cont{
@@ -181,7 +184,9 @@ width: 50%;
 }
 
 .female{
-  background: red;
+  background: #FD6333;
+  padding: 12px 35px;
+  border-radius: 6px;
 }
 
 .Employment-container {
