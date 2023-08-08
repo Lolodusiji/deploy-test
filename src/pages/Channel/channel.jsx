@@ -74,33 +74,37 @@ const channel = () => {
                 <h6>Referral</h6>
                 <h5>11.16%</h5>
               </span>
-              {/* <Benchmark /> */}
             </div>
+            <div className="directt">
             <span>
               <h6>Organic Search</h6>
               <h5>25.5%</h5>
-              {/* <Benchmark /> */}
             </span>
+            </div>
+            <div className="direct">
             <span>
               <h6>Paid Search</h6>
               <h5>0.15%</h5>
-              {/* <Benchmark /> */}
             </span>
+            </div>
+            <div className="direct">
             <span>
               <h6>Organic Search</h6>
               <h5>2.5%</h5>
-              {/* <Benchmark /> */}
             </span>
+            </div>
+            <div className="direct">
             <span>
               <h6>Paid Search</h6>
               <h5>0.01%</h5>
-              {/* <Benchmark /> */}
             </span>
+            </div>
+            <div className="direct">
             <span>
               <h6>Email</h6>
               <h5>0.69%</h5>
-              {/* <Benchmark /> */}
             </span>
+            </div>
           </div>
             <Benchmark />
             </div>

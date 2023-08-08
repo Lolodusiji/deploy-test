@@ -1,60 +1,62 @@
-// import "./styles.css";
 import React from "react";
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend
-} from "recharts";
+import { Bar } from "react-chartjs-2";
+import "./income.css";
 
-const data = [
-  {
-    name: "Page C",
-    uv: 2000,
-    pv: 4500,
-    
-    // amt: 2400
-  },
-  {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    
-    // amt: 2210
-  },
-  {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    // amt: 2290
-  },
-  
-];
+const StackedBarsOnTopWithoutScales = () => {
+  const chartData = {
+    labels: ["A", "B", "C", "D", "E"],
+    datasets: [
+      {
+        // label: 'Stack 1',
+        data: [10, 20, 15],
+        backgroundColor: "rgba(75, 192, 192, 0.6)", // Background color for stack 1
+        borderRadius: "8",
+      },
+      {
+        // label: 'Stack 2',
+        data: [5, 15, 10],
+        backgroundColor: "rgba(255, 99, 132, 0.6)", // Background color for stack 2
+        borderRadius: "8",
+      },
+      // Add more datasets for additional stacks
+    ],
+  };
 
-export default function App() {
+  const chartOptions = {
+    scales: {
+      x: {
+        display: false, // Hide x-axis scale
+        stacked: true, // Enable stacking
+      },
+      y: {
+        display: false, // Hide y-axis scale
+        stacked: true, // Enable stacking
+      },
+    },
+    plugins: {
+      legend: {
+        // display: true,
+      },
+    },
+  };
+
+  let data = 30;
+  const someRandomHeight = (data / 100) * 100;
+
   return (
-    <BarChart
-      width={600}
-      height={200}
-      data={data}
-      margin={{
-        top: 5,
-        right: 30,
-        left: 20,
-        bottom: 5
-      }}
-      barSize={80}
-    >
-      {/* <XAxis dataKey="name" scale="point" padding={{ left: 10, right: 10 }} /> */}
-      {/* <YAxis /> */}
-      {/* <Tooltip /> */}
-      {/* <Legend /> */}
-      {/* <CartesianGrid strokeDasharray="3 3" /> */}
-      border-radius={10}
-      <Bar dataKey="pv" fill="#B8B8B8" background={{ fill: "#D9D9D9" }} border-radius="10px"/>
-    </BarChart>
+    <div>
+      {/* <Bar data={chartData} options={chartOptions} /> */}
+
+      {/* CUSTOM BAR CHART SETUP */}
+      <div className="container">
+        {[59.97, 31.16, 25.0].map((item) => (
+          <div className="columnn">
+            <div className="inner" style={{ height: `${item}%` }}></div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
-}
+};
+
+export default StackedBarsOnTopWithoutScales;

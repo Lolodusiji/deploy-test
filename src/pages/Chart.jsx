@@ -17,7 +17,7 @@ const Chart = () => {
   return (
     <div>
       <BarChart
-        width={600}
+        width={550}
         height={300}
         data={barChartData}
         margin={{
@@ -35,7 +35,7 @@ const Chart = () => {
           style={{ color: "0000" }}
         />
         <YAxis stroke="#000" />
-        <Tooltip />
+        {/* <Tooltip /> */}
         <Bar dataKey={"age"} fill="#B8B8B8" />
         {/* <Legend /> */}
       </BarChart>

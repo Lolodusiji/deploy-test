@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Segmentation.css";
 // import '../socials/socail.css'
 import Chat from "../../components/Chat";
@@ -6,6 +6,7 @@ import ProgressBar from "../../components/ProgressBar";
 import Chart from "../Chart";
 import Income from "../Incomechart";
 import axios from "axios";
+import { Bar } from "react-chartjs-2";
 import One from "../../../public/imgs/1person.svg";
 import Two from "../../../public/imgs/2person.svg";
 import Three from "../../../public/imgs/3person.svg";
@@ -15,15 +16,16 @@ import Education from "../../../public/imgs/Education.svg";
 import Computer from "../../../public/imgs/Computer.svg";
 import Finance from "../../../public/imgs/Finance.svg";
 import Government from "../../../public/imgs/Government.svg";
-
-
-
-
+// import {RiCheckboxBlankCircleLine} from 'react-icons/Ri'
 
 // import Retail from "../../../public/im"
 // import data from "../../components/chart";
 
 const Segmentation = () => {
+  const [bar_info, setbar_info] = useState();
+  const [graph_data, setgraph_data] = useState();
+  const [graph_val, setgraph_val] = useState();
+  const [table, settable] = useState();
   const [Geographic, setGeographic] = React.useState("");
   const [Demographic, setDemographic] = React.useState("");
   const [Audience, setAudience] = React.useState("");
@@ -39,7 +41,6 @@ const Segmentation = () => {
     setGeographic(response.data?.posts);
   };
 
-
   const fetchDemographic = async () => {
     const response = await axios.get(
       `${
@@ -48,7 +49,6 @@ const Segmentation = () => {
     );
     setDemographic(response.data?.posts);
   };
-  
 
   const fetchAudience = async () => {
     const response = await axios.get(
@@ -66,7 +66,7 @@ const Segmentation = () => {
   React.useEffect(() => {
     fetchDemographic();
   }, []);
-  
+
   React.useEffect(() => {
     fetchAudience();
   }, []);
@@ -81,6 +81,83 @@ const Segmentation = () => {
       }
     };
   }, []);
+  const option = {
+    responsive: true,
+    maintainAspectRatio: true,
+    plugins: {
+      legend: {
+        position: "bottom",
+        ltr: true,
+        display: false,
+        labels: {
+          usePointStyle: true,
+          pointStyle: "circle",
+          // padding: 20,
+          color: "#D2D2D2",
+          scales: {
+            x: {
+              grid: {
+                display: false, // Remove vertical gridlines
+              },
+            },
+            y: {
+              beginAtZero: false,
+              display: false, // Remove vertical gridlines
+            },
+            plugins: {
+              legend: {
+                display: false,
+              },
+            },
+          },
+        },
+      },
+    },
+    scales: {
+      x: {
+        ticks: {
+          color: "black",
+          // autoSkip: true,
+          maxTicksLimit: 6,
+        },
+        grid: {
+          drawBorder: false,
+          display: false,
+        },
+      },
+      y: {
+        ticks: {
+          color: "#999999",
+          // color: "black",
+          maxTicksLimit: 6,
+        },
+      },
+    },
+  };
+  const data = {
+    // labels: graph_data,
+    labels : ['18-24','25-34','35-44','45-54','55-65','66+'],
+
+
+    datasets: [
+      {
+        // label:"Sep 1, 2022",
+        // data: graph_val,
+        data:[15,50,21,11,5,3],
+        backgroundColor: [
+          '#B8B8B8', // Red
+          '#D2D2D2', // Blue
+          '#C5C4C4', // Yellow
+          '#AEAEAE', // Green
+          '#999999', // Purple
+          '#7F7F7F', // Purple
+        ],
+        borderRadius: 6,
+        // width:[500]
+        minBarLength: 6,
+      },
+    ],
+  };
 
   return (
     <div className="General">
@@ -105,7 +182,10 @@ const Segmentation = () => {
                   "Germany",
                   "India",
                 ].map((country) => (
-                  <p key={country}>
+                  <p
+                    style={{ display: "flex", gap: "5px", fontWeight: "600" }}
+                    key={country}
+                  >
                     <span>&gt;</span>
                     {country}
                   </p>
@@ -167,12 +247,24 @@ const Segmentation = () => {
         <div className="demographic">
           <h1>Demographic Distribution</h1>
           <div className="Age-container">
-            <h3>Age</h3>
-            <Chart />
+            <div className="Text">
+            <h3 id="heading">Age</h3></div>
+            <div className="bar-cont" style={{width:"500px"}}>
+            <Bar options={option} data={data} />
+          </div>
           </div>
 
-          <div>
-            <h3>Income</h3>
+          <div className="gender-cont">
+          <h3 id="heading">Gender</h3>
+          <div className="gender-group">
+            <div className="female">Female</div>
+            <div className="male">Male</div>
+          </div>
+          </div>
+
+          <div className="Income-cont">
+          <div className="Text">
+            <h3 id="heading">Income</h3></div>
             <div className="flex-cont">
               <div class="flex-income">
                 <span>
@@ -188,146 +280,160 @@ const Segmentation = () => {
                   <p>9.25%</p>
                 </span>
               </div>
-              <div className="graph">
+              <div className="graph" style={{width:"500px"}}>
                 <Income />
               </div>
             </div>
           </div>
 
           <div className="Edu-Container">
-            <h3>Education</h3>
-            <div className="Edu-progress">
-              <div className="flex-Edu">
-                <p>Compulsory or High School</p>
-                <h5>47.31%</h5>
+          <div className="Text1">
+            <h3 id="heading">Education</h3></div>
+            <div className="groupflex2">
+              <div className="Edu-progress">
+                <div className="flex-Edu">
+                  <p>Compulsory or High School</p>
+                  <h5 id="h5">47.31%</h5>
+                </div>
+                <ProgressBar value={47.31} variant="md" />
               </div>
-              <ProgressBar value={47.31} variant="md" />
-            </div>
 
-            <div className="Edu-progress">
-              <div className="flex-Edu">
-                <p>Univerity or College</p>
-                <h5>42.85%</h5>
+              <div className="Edu-progress">
+                <div className="flex-Edu">
+                  <p>Univerity or College</p>
+                  <h5 id="h5">42.85%</h5>
+                </div>
+                <ProgressBar value={42.85} variant="md" />
               </div>
-              <ProgressBar value={42.85} variant="md" />
-            </div>
 
-            <div className="Edu-progress">
-              <div className="flex-Edu">
-                <p>Postgraduate</p>
-                <h5>6.33%</h5>
+              <div className="Edu-progress">
+                <div className="flex-Edu">
+                  <p>Postgraduate</p>
+                  <h5 id="h5">6.33%</h5>
+                </div>
+                <ProgressBar value={6.33} variant="md" />
               </div>
-              <ProgressBar value={6.33} variant="md" />
-            </div>
 
-            <div className="Edu-progress">
-              <div className="flex-Edu">
-                <p>Non Completed</p>
-                <h5>3.51%</h5>
+              <div className="Edu-progress">
+                <div className="flex-Edu">
+                  <p>Non Completed</p>
+                  <h5 id="h5">3.51%</h5>
+                </div>
+                <ProgressBar value={3.51} variant="md" />
               </div>
-              <ProgressBar value={3.51} variant="md" />
             </div>
           </div>
 
           <div className="Household-container">
-            <h3>Household Size</h3>
+          <div className="Text">
+            <h3 id="heading">Household Size</h3></div>
             <div className="flex-general">
-            <div className="flex-ontop">
-              <div className="top_1"></div>
-              <div className="top_2"></div>
-              <div className="top_3"></div>
-              <div className="top_4"></div>
-            </div>
-            <div className="flex-beside">
-            <div className="person">
-              <p><img src={One}/>1 Person</p>
-              <p><img src={Two}/>2 Person</p>
-              <p><img src={Three}/>3 Person</p>
-              <p><img src={Four}/>4 Person</p>
-            </div>
-            <div className="percentage">
-              <p>23.40%</p>
-              <p>23.40%</p>
-              <p>42.13%</p>
-              <p>21.53%</p>
-            </div>
+              <div className="flex-ontop">
+                <div className="top_1"></div>
+                <div className="top_2"></div>
+                <div className="top_3"></div>
+                <div className="top_4"></div>
+              </div>
+              <div className="flex-beside">
+                <div className="person">
+                  <p>
+                    <img src={One} />1 Person
+                  </p>
+                  <p>
+                    <img src={Two} />2 Person
+                  </p>
+                  <p>
+                    <img src={Three} />3 Person
+                  </p>
+                  <p>
+                    <img src={Four} />4 Person
+                  </p>
+                </div>
+                <div className="percentage">
+                  <p>23.40%</p>
+                  <p>23.40%</p>
+                  <p>42.13%</p>
+                  <p>21.53%</p>
+                </div>
+              </div>
             </div>
           </div>
-          </div>
-          
 
           <div className="Employment-container">
-            <h3>Employment</h3>
-            <div className="Edu-progress">
-              <div className="flex-Edu">
-                <p>Full-time work</p>
-                <h5>42.68%</h5>
+          <div className="Text1">
+            <h3 id="heading">Employment</h3></div>
+            <div className="groupflex">
+              <div className="Edu-progress">
+                <div className="flex-Edu">
+                  <p>Full-time work</p>
+                  <h5 id="h5">42.68%</h5>
+                </div>
+                <ProgressBar value={42.68} variant="md" />
               </div>
-              <ProgressBar value={42.68} variant="md" />
-            </div>
 
-            <div className="Edu-progress">
-              <div className="flex-Edu">
-                <p>Unemployed</p>
-                <h5>14.86%</h5>
+              <div className="Edu-progress">
+                <div className="flex-Edu1">
+                  <p>Unemployed</p>
+                  <h5 id="h5">14.86%</h5>
+                </div>
+                <ProgressBar value={14.86} variant="md" />
               </div>
-              <ProgressBar value={14.86} variant="md" />
-            </div>
 
-            <div className="Edu-progress">
-              <div className="flex-Edu">
-                <p>Part-time work</p>
-                <h5>11.99%</h5>
+              <div className="Edu-progress">
+                <div className="flex-Edu1">
+                  <p>Part-time work</p>
+                  <h5 id="h5">11.99%</h5>
+                </div>
+                <ProgressBar value={11.99} variant="md" />
               </div>
-              <ProgressBar value={11.99} variant="md" />
-            </div>
 
-            <div className="Edu-progress">
-              <div className="flex-Edu">
-                <p>Homemaker</p>
-                <h5>9.91%</h5>
+              <div className="Edu-progress">
+                <div className="flex-Edu1">
+                  <p>Homemaker</p>
+                  <h5 id="h5">9.91%</h5>
+                </div>
+                <ProgressBar value={9.91} variant="md" />
               </div>
-              <ProgressBar value={9.91} variant="md" />
-            </div>
 
-            <div className="Edu-progress">
-              <div className="flex-Edu">
-                <p>Student</p>
-                <h5>8.41%</h5>
+              <div className="Edu-progress">
+                <div className="flex-Edu1">
+                  <p>Student</p>
+                  <h5 id="h5">8.41%</h5>
+                </div>
+                <ProgressBar value={8.41} variant="md" />
               </div>
-              <ProgressBar value={8.41} variant="md" />
-            </div>
 
-            <div className="Edu-progress">
-              <div className="flex-Edu">
-                <p>Business Owner</p>
-                <h5>5.6%</h5>
+              <div className="Edu-progress">
+                <div className="flex-Edu1">
+                  <p>Business Owner</p>
+                  <h5 id="h5">5.6%</h5>
+                </div>
+                <ProgressBar value={5.6} variant="md" />
               </div>
-              <ProgressBar value={5.6} variant="md" />
-            </div>
 
-            <div className="Edu-progress">
-              <div className="flex-Edu">
-                <p>Retired</p>
-                <h5>4.81%</h5>
+              <div className="Edu-progress">
+                <div className="flex-Edu1">
+                  <p>Retired</p>
+                  <h5 id="h5">4.81%</h5>
+                </div>
+                <ProgressBar value={4.81} variant="md" />
               </div>
-              <ProgressBar value={4.81} variant="md" />
-            </div>
 
-            <div className="Edu-progress">
-              <div className="flex-Edu">
-                <p>Leave Of Absence</p>
-                <h5>1.24%</h5>
+              <div className="Edu-progress">
+                <div className="flex-Edu1">
+                  <p>Leave Of Absence</p>
+                  <h5 id="h5">1.24%</h5>
+                </div>
+                <ProgressBar value={3.24} variant="md" />
               </div>
-              <ProgressBar value={1.24} variant="md" />
-            </div>
 
-            <div className="Edu-progress">
-              <div className="flex-Edu">
-                <p>Parental Leave</p>
-                <h5>0.49%</h5>
+              <div className="Edu-progress">
+                <div className="flex-Edu1">
+                  <p>Parental Leave</p>
+                  <h5 id="h5">0.49%</h5>
+                </div>
+                <ProgressBar value={2.49} variant="md" />
               </div>
-              <ProgressBar value={0.49} variant="md" />
             </div>
           </div>
         </div>
@@ -346,11 +452,7 @@ const Segmentation = () => {
 
             <div className="Education">
               <span>
-                <img
-                  className="retail"
-                  src={Education}
-                  alt=""
-                />
+                <img className="retail" src={Education} alt="" />
                 <h4>60.36%</h4>
                 <p>Education</p>
               </span>
@@ -358,11 +460,7 @@ const Segmentation = () => {
 
             <div className="Education">
               <span>
-                <img
-                  className="retail"
-                  src={Computer}
-                  alt=""
-                />
+                <img className="retail" src={Computer} alt="" />
                 <h4>59.31%</h4>
                 <p>Software</p>
               </span>
@@ -370,7 +468,7 @@ const Segmentation = () => {
 
             <div className="Education">
               <span>
-                <img className="retail" src={Finance}alt="" />
+                <img className="retail" src={Finance} alt="" />
                 <h4>41.05%</h4>
                 <p>Finance</p>
               </span>
@@ -378,11 +476,7 @@ const Segmentation = () => {
 
             <div className="Education">
               <span>
-                <img
-                  className="retail"
-                  src={Government}
-                  alt=""
-                />
+                <img className="retail" src={Government} alt="" />
                 <h4>37.23%</h4>
                 <p>Government</p>
               </span>

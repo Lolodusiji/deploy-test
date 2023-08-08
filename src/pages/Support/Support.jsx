@@ -92,6 +92,7 @@ console.log(window.location.pathname);
   return (
     <div className='support-container'>
       <h1>heyy</h1>
+
     {/* <div className='chat'>
       <div className='chat_body'>
       </div>
@@ -157,12 +158,11 @@ console.log(window.location.pathname);
       
   </div>
   
-</div>
-<div className='btn_div'>
- <button className='genrate_btn'>Generate Data</button>
+  </div>
+  <div className='btn_div'>
+  <button className='genrate_btn'>Generate Data</button>
 </div> */}
 {window.location.pathname === '/support' && <TawkTo/>}
-
 
 </div>
 // </div>

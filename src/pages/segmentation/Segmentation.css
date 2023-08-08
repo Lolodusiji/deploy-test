@@ -49,8 +49,8 @@
 .flex-cont{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
+  align-items: baseline;
+  /* width:50%; */
 }
 
 .countries {
@@ -117,7 +117,12 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  /* width:50%; */
   gap: 12rem;
+}
+
+ #h5{
+  font-size: 14px;
 }
 
 .demographic > div:nth-child(3) > h3 {
@@ -128,18 +133,65 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap:24rem;
+  /* width: 50%; */
+}
+
+.flex-Edu1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:28rem;
 }
 
 .Edu-Container {
-  line-height: 2.5;
+  line-height: 2.2;
   margin-top: 2rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: start;
+  gap:2rem;
+  width: 100%;
   /* display: flex;
   align-items: flex-start; */
+}
+
+.Income-cont{
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.gender-group{
+background: #B9B9B9;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 50%;
+}
+
+.gender-cont{
+  display: flex;
+  align-items: baseline;
+  gap: 3rem;
+  /* justify-content: center; */
+}
+
+.female{
+  background: red;
 }
 
 .Employment-container {
   margin-top: 2rem;
   line-height: 2.5;
+  display: flex;
+  align-items: baseline;
+  justify-content: start;
+  gap:1rem;
+  width: 100%;
   /* display: flex;
   align-items: flex-start; */
 }
@@ -148,8 +200,17 @@
   margin-top: 2rem;
   display: flex;
   align-items: flex-start;
+  width: 100%;
+  gap: 5rem;
 }
 
+/* .Text{
+  width: 10%;
+} */
+
+/* .bar-cont{
+  width:50%;
+} */
 .flex-Aundience{
   display: flex;
   margin-top: 3rem;
@@ -229,10 +290,11 @@ h1{
 }
 
 .Household-container{
-    gap: 2rem;
+    /* gap: 2rem; */
     display: flex;
     align-items: flex-start;
     margin-top: 2rem;
+    width: 100%;
 }
 
 .flex-general{
@@ -240,5 +302,9 @@ h1{
   align-items: baseline;
   gap: 2rem;
   justify-content: space-around;
+  width: 50%;
 }
 
+#heading{
+  font-size: 16px;
+}

@@ -1,96 +1,81 @@
-import React from 'react'
+import React from "react";
+import { Bar } from "react-chartjs-2";
+import "./Benchmark.css";
 
-import {
-    BarChart,
-    Bar,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip,
-    Legend
-  } from "recharts";
+const StackedBarsOnTopWithoutScales = () => {
+  const chartData = {
+    labels: ["A", "B", "C", "D", "E"],
+    datasets: [
+      {
+        // label: 'Stack 1',
+        data: [10, 20, 15],
+        backgroundColor: "rgba(75, 192, 192, 0.6)", // Background color for stack 1
+        borderRadius: "8",
+      },
+      {
+        // label: 'Stack 2',
+        data: [5, 15, 10],
+        backgroundColor: "rgba(255, 99, 132, 0.6)", // Background color for stack 2
+        borderRadius: "8",
+      },
+      // Add more datasets for additional stacks
+    ],
+  };
 
-  // const barColors = ["#1f77b4", "#ff7f0e", "#2ca02c" ,"#7116CB" , "#7116CB", "#fff" , "#9ED56A" ]
-  const data = [
-    {
-      name: "Page C",
-      // uv: 1500,
-      pv: 50,
-      fill : "#2594F2"
-
+  const chartOptions = {
+    scales: {
+      x: {
+        display: false, // Hide x-axis scale
+        stacked: true, // Enable stacking
+      },
+      y: {
+        display: false, // Hide y-axis scale
+        stacked: true, // Enable stacking
+      },
     },
-
-    {
-      name: "Page C",
-      // uv: 11.16,
-      pv: 20,
-      fill : "#9ED56A"
-
+    plugins: {
+      legend: {
+        // display: true,
+      },
     },
+  };
 
-    {
-      name: "Page C",
-      // uv: 2000,
-      pv: 30,
-      fill : "#FA4D5C"
-    },
+  let data = 30;
+  const someRandomHeight = (data / 100) * 100;
+  // let barColors = [
+    // "#2594F2"
+  //   // "#9ED56A",
+  //   // "#FA4D5C",
+  //   // "#7116CB",
+  //   // "#93CFFB",
+  //   // "#FA4D5C",
+  //   // "#2594F2"
+  // ]
 
-    {
-      name: "Page C",
-      // uv: 2000,
-      pv: 12,
-      fill : "#7116CB"
-    },
+return (
+  <div>
+    {/* <Bar data={chartData} options={chartOptions} /> */}
 
-    {
-      name: "Page C",
-      // uv: 2000,
-      pv: 30,
-      fill : "#93CFFB"
-    },
-
-    {
-      name: "Page C",
-      // uv: 2000,
-      pv: 5,
-      fill : "#FA4D5C"
-    },
-
-    {
-      name: "Page C",
-      // uv: 2000,
-      pv: 15,
-      fill : "#2594F2"
-    },
+    {/* CUSTOM BAR CHART SETUP */}
     
-  ];
-
-  
-
-  
-  export default function App() {
-    return (
-      <BarChart
-        width={600}
-        height={80}
-        data={data}
-        margin={{
-          top: 5,
-          // right: 8,
-          // left: 20,
-          bottom: 5,
-        }}
-        // radius={10}
-        barSize={80}
-      >
-        {/* <XAxis dataKey="name" scale="point" padding={{ left: 10, right: 10 }} /> */}
-        {/* <YAxis borderRadius="10px" /> */}
-        {/* <Tooltip /> */}
-        {/* <Legend   /> */}
-        {/* <CartesianGrid borderRadius="10px" /> */}
-        {/* border-radius={10} */}
-        <Bar dataKey="pv" background={{ fill: "#D9D9D9" }} />
-      
-      </BarChart>
-    );
-  }
+    <div className="container1">
+    {[
+                  { data: "59.97%", background: "#2594F2" },
+                  { data: "11.16%", background: "#9ED56A" },
+                  { data: "25.5%", background: "#FA4D5C" },
+                  { data: "3.2%", background: "#7116CB" },
+                  { data: "5.1%", background: "#93CFFB" },
+                  { data: "2.2%", background: "#FA4D5C" },
+                  { data: "3%", background: "#2594F2"},   
+                ]
+      .map((item) => (
+        <div className="column1">
+          <div className="inner1" style={{ height: item.data ,background :item.background }}>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+      }
+export default StackedBarsOnTopWithoutScales;

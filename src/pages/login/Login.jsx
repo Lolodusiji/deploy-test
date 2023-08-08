@@ -40,11 +40,14 @@ function Login() {
 
     const handleClick =()=>{
       signInWithPopup(auth,provider).then((data)=>{
-     
+        console.log(data.user.photoURL)
+        
         setemail(data.user.email)
         setusername(data.user.displayName)
         localStorage.setItem("user",data.user.displayName)
+        localStorage.setItem("profilePic",data.user.photoURL)
         localStorage.setItem("email",data.user.email)
+        localStorage.setItem("")
         // localStorage.setItem("profile picture",data.user.profilepicture)
         // console.log(user,email,profilepicture)
           // alert(`${data.user.email}`)

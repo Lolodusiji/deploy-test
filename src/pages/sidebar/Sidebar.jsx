@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { MdDashboardCustomize } from "react-icons/md";
 import { PiChartLineUpBold } from "react-icons/pi";
@@ -8,17 +8,24 @@ import { PiChartPieSliceFill } from "react-icons/pi";
 import { BsFillPersonFill } from "react-icons/bs";
 import { RiFileChartFill } from "react-icons/ri";
 import { PiChatTeardropTextBold } from "react-icons/pi";
-
+// import {auth} from "../../firebase"
 import "./Sidebar.css";
 import Header from "../header/Header";
 import { useContext } from "react";
 import { MainContext } from "../../../utils/MainContext";
+import { signOut } from "firebase/auth";
+import {auth} from '../../firebase'
 
 function sidebar() {
   const [closed, setclosed] = useState(false);
   const [menu, setmenu] = useState(false);
   const { username, setusername } = useContext(MainContext);
   const { email, setemail } = useContext(MainContext);
+  const displayName = localStorage.getItem("user")
+  const navigate = useNavigate()
+  const displayEmail = localStorage.getItem("email")
+  const profilePic = localStorage.getItem('profilePic')
+  
   useEffect(() => {
     const header = document.querySelector(".header");
 
@@ -42,6 +49,12 @@ function sidebar() {
     setusername(localStorage.getItem("user"));
     setemail(localStorage.getItem("email"));
   }, []);
+
+  const handleLogOut = () => {
+    signOut(auth)
+    localStorage.clear()
+    navigate('/signup')
+  }
 
   return (
     <>
@@ -147,17 +160,18 @@ function sidebar() {
             {" "}
             Support
             </MenuItem>
-                </Menu>
+            </Menu>
+            <button onClick={handleLogOut} style={{color: 'red', width: '100%'}}>Log out</button>
 
             {closed == false && (
               <div className="user_info">
                 <div className="user_img">
-                  <img src="/imgs/user.png" alt="" />
+                  <img src={profilePic} alt="" />
                   <div className="user_status">Legacy User</div>
                 </div>
 
                 <div className="user_data">
-                  <h3>{username}</h3>
+                  <h3>{displayName}</h3>
                   {/* <h3>Josh Willer</h3> */}
                   <p
                     style={{
@@ -166,7 +180,7 @@ function sidebar() {
                       fontWeight: "300",
                     }}
                   >
-                    {email}
+                    {displayEmail}
                   </p>
                   {/* <p style={{fontSize:"10px",color:"#E9E9E9",fontWeight:"300"}}>joshwiller@gmail.com</p> */}
                 </div>
@@ -258,11 +272,13 @@ function sidebar() {
                     Channels
                   </MenuItem>
                 </Menu>
+
                     
                 <div className="user_info">
                   <div className="user_img">
                     <img src="/imgs/user.png" alt="" />
-                    <div className="user_status">Legacy User</div>
+                    <div className="user_status">Legacy User
+                    </div>
                   </div>
 
                   <div className="user_data">

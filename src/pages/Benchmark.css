@@ -1,0 +1,29 @@
+.container1 {
+    min-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 2rem; */
+    gap: 1rem;
+  }
+  
+  .column1 {
+    width: 150px;
+    height: 70px;
+    position: relative;
+    border-radius: 6px;
+    background-color: #d9d9d9;
+    gap: 2rem;
+  }
+  
+  .inner1 {
+    position: absolute;
+    bottom: 0;
+    /* top: 1px; */
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 0 0 6px 6px;
+    background: #9c9c9c;
+  }
+  
