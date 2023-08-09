@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Facts from './Facts'
+import "./Latest.css";
 
 function Latest() {
 
@@ -14,7 +15,7 @@ function Latest() {
     }, [])
   return (
     <div className='import'>
-    <h1>Latest Conversation</h1>
+    <h1 id="latest">Latest Conversation</h1>
     <div className='facts_body'>
     {impo?.posts?.map((e,i)=>{
 
@@ -28,7 +29,7 @@ function Latest() {
             )
         })
         }
-        {/* <Facts title={"Where to do market research"} date={"5 mins"}
+        <Facts title={"Where to do market research"} date={"5 mins"}
             body={"Hi everyone, I wanted a little info since I have half an idea that has been buzzing me for a lifetime. Where do you do all your market research?"}
         />
         <hr  className='facts_hr'/>
@@ -47,7 +48,7 @@ function Latest() {
         <Facts title={"The number one marketing mistake indie developers make is not doing any market research."} date={"9 hours"}
             body={"When they hear the word marketing, most developers think of posting on social networks and sending keys to YouTubers, but they completely ignore market research, the first and most important part of marketing."}
         />
-        <hr  className='facts_hr'/> */}
+        <hr  className='facts_hr'/>
     </div>
 </div>
   )

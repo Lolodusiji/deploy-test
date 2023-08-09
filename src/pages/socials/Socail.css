@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 66% 30%;
   justify-content: space-between;
-  width: 100%;
+  width: 78%;
   padding: 0 0 0 10px;
   background: #f6f6f6;
   border-radius: 12px;
@@ -32,7 +32,7 @@
 }
 
 .per_num {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 700;
 }
 

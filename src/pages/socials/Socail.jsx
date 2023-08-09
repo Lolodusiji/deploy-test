@@ -89,22 +89,22 @@ function Socail() {
             Market Sentiment
           </h2>
           <div className="stats_wrapper">
-            <div className="percent">
+            <div className="per-cont">
               <div className="per_num">{`${bar_info?.positive}%`}</div>
               <div className="per_name">Positive</div>
             </div>
 
-            <div className="percent">
+            <div className="per-cont">
               <div className="per_num">{`${bar_info?.neutral}%`}</div>
               <div className="per_name">Neutral</div>
             </div>
 
-            <div className="percent">
+            <div className="per-cont">
               <div className="per_num">{`${bar_info?.negative}%`}</div>
               <div className="per_name">Negative</div>
             </div>
 
-            <div className="percent">
+            <div className="per-cont">
               <div className="per_num">{`${bar_info?.mixed}%`}</div>
               <div className="per_name">Mixed</div>
             </div>

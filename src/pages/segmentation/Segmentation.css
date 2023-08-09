@@ -334,3 +334,8 @@ h1{
 #heading{
   font-size: 16px;
 }
+
+.scrollbar::-webkit-scrollbar {
+  width: 0;
+  /* height: 2em */
+}
