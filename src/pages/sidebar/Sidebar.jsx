@@ -13,8 +13,8 @@ import "./Sidebar.css";
 import Header from "../header/Header";
 import { useContext } from "react";
 import { MainContext } from "../../../utils/MainContext";
-import { signOut } from "firebase/auth";
-import {auth} from '../../firebase'
+// import { signOut } from "firebase/auth";
+// import {auth} from '../../firebase'
 
 function sidebar() {
   const [closed, setclosed] = useState(false);

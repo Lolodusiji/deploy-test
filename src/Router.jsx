@@ -14,13 +14,13 @@ import Support from "./pages/Support/Support";
 
 export default function Router() {
   const navigate = useNavigate();
-  useEffect(() => {
-    if (!localStorage.getItem("user")) {
-      navigate("/signup");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (!localStorage.getItem("user")) {
+  //     navigate("/signup");
+  //   }
+  // }, []);
   return useRoutes([
-    { path: "/signup", element: <Login /> },
+    // { path: "/signup", element: <Login /> },
     {
       path: "/",
       element: <Sidebar />,
