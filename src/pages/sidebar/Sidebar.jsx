@@ -161,7 +161,7 @@ function sidebar() {
             Support
             </MenuItem>
             </Menu>
-            <button onClick={handleLogOut} style={{color: 'red', width: '100%'}}>Log out</button>
+            {/* <button onClick={handleLogOut} style={{color: 'red', width: '100%'}}>Log out</button> */}
 
             {closed == false && (
               <div className="user_info">
