@@ -140,7 +140,7 @@ function Discovery() {
                           
                   <div className='checklist_item_header'>
                       <div>Tutorial Video</div>
-                      <img src="/imgs/tutorial.png" alt="" />
+                      <img  className="tutorial" src="/imgs/tutorial.png" alt="" />
                   </div>
                   
               </div>

@@ -9,6 +9,10 @@
     height: fit-content;
 }
 
+.tutorial{
+    width:100%;
+}
+
 .chat{
     display: flex;
     border-radius: 20px;
