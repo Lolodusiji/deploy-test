@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Navigate, useRoutes, useNavigate } from "react-router-dom";
 import Dashboard from "./pages/dashboard/dashboard";
 import Sidebar from "./pages/sidebar/Sidebar";
-import Login from "./pages/login/Login";
+// import Login from "./pages/login/Login";
 import Discovery from "./pages/discovery/Discovery";
 import Socail from "./pages/socials/Socail";
 import Sorry from "./pages/notavlb/Sorry";
@@ -13,7 +13,7 @@ import Support from "./pages/Support/Support";
 
 
 export default function Router() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   // useEffect(() => {
   //   if (!localStorage.getItem("user")) {
   //     navigate("/signup");
@@ -22,7 +22,7 @@ export default function Router() {
   return useRoutes([
     // { path: "/signup", element: <Login /> },
     {
-      path: "/",
+      // path: "/",
       element: <Sidebar />,
       children: [
         { path: "/", element: <Discovery /> },

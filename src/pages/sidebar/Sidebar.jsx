@@ -21,10 +21,10 @@ function sidebar() {
   const [menu, setmenu] = useState(false);
   const { username, setusername } = useContext(MainContext);
   const { email, setemail } = useContext(MainContext);
-  const displayName = localStorage.getItem("user")
-  const navigate = useNavigate()
-  const displayEmail = localStorage.getItem("email")
-  const profilePic = localStorage.getItem('profilePic')
+  // const displayName = localStorage.getItem("user")
+  // const navigate = useNavigate()
+  // const displayEmail = localStorage.getItem("email")
+  // const profilePic = localStorage.getItem('profilePic')
   
   useEffect(() => {
     const header = document.querySelector(".header");
@@ -51,9 +51,9 @@ function sidebar() {
   }, []);
 
   const handleLogOut = () => {
-    signOut(auth)
-    localStorage.clear()
-    navigate('/signup')
+    // signOut(auth)
+    // localStorage.clear()
+    // navigate('/signup')
   }
 
   return (
@@ -161,17 +161,17 @@ function sidebar() {
             Support
             </MenuItem>
             </Menu>
-            {/* <button onClick={handleLogOut} style={{color: 'red', width: '100%'}}>Log out</button> */}
+            <button onClick={handleLogOut} style={{color: 'red', width: '100%'}}>Log out</button>
 
             {closed == false && (
               <div className="user_info">
                 <div className="user_img">
-                  <img src={profilePic} alt="" />
+                  {/* <img src={profilePic} alt="" /> */}
                   <div className="user_status">Legacy User</div>
                 </div>
 
                 <div className="user_data">
-                  <h3>{displayName}</h3>
+                  {/* <h3>{displayName}</h3> */}
                   {/* <h3>Josh Willer</h3> */}
                   <p
                     style={{
@@ -180,9 +180,9 @@ function sidebar() {
                       fontWeight: "300",
                     }}
                   >
-                    {displayEmail?.length > 25
+                    {/* {displayEmail?.length > 25
                   ? `${displayEmail?.slice(0, 25)}...`
-                  : displayEmail}
+                  : displayEmail} */}
                     {/* {displayEmail} */}
                   </p>
                   {/* <p style={{fontSize:"10px",color:"#E9E9E9",fontWeight:"300"}}>joshwiller@gmail.com</p> */}
