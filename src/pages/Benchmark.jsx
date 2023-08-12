@@ -43,7 +43,7 @@ const StackedBarsOnTopWithoutScales = () => {
   let data = 30;
   const someRandomHeight = (data / 100) * 100;
   // let barColors = [
-    // "#2594F2"
+  // "#2594F2"
   //   // "#9ED56A",
   //   // "#FA4D5C",
   //   // "#7116CB",
@@ -52,30 +52,35 @@ const StackedBarsOnTopWithoutScales = () => {
   //   // "#2594F2"
   // ]
 
-return (
-  <div>
-    {/* <Bar data={chartData} options={chartOptions} /> */}
+  return (
+    <div>
+      {/* <Bar data={chartData} options={chartOptions} /> */}
 
-    {/* CUSTOM BAR CHART SETUP */}
-    
-    <div className="container1">
-    {[
-                  { data: "59.97%", background: "#2594F2" },
-                  { data: "11.16%", background: "#9ED56A" },
-                  { data: "25.5%", background: "#FA4D5C" },
-                  { data: "3.2%", background: "#7116CB" },
-                  { data: "5.1%", background: "#93CFFB" },
-                  { data: "2.2%", background: "#FA4D5C" },
-                  { data: "3%", background: "#2594F2"},   
-                ]
-      .map((item) => (
-        <div className="column1">
-          <div className="inner1" style={{ height: item.data ,background :item.background }}>
+      {/* CUSTOM BAR CHART SETUP */}
+
+      <div className="container1">
+        {[
+          { data: "59.97%", text: "Direct", background: "#2594F2" },
+          { data: "11.16%", text: "Referral", background: "#9ED56A" },
+          { data: "25.5%", text: "Organic Search", background: "#FA4D5C" },
+          { data: "3.2%", text: "Paid Search", background: "#7116CB" },
+          { data: "5.1%", text: "Oganic Social", background: "#93CFFB" },
+          { data: "2.2%", text: "Paid Social", background: "#FA4D5C" },
+          { data: "3%", text: "Email", background: "#2594F2" },
+        ].map((item) => (
+          <div>
+            <h2>{item.text}</h2>
+            <p>{item.data}</p>
+            <div className="column1">
+              <div
+                className="inner1"
+                style={{ height: item.data, background: item.background }}
+              ></div>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  </div>
-);
-      }
+  );
+};
 export default StackedBarsOnTopWithoutScales;

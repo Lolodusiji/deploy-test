@@ -1,101 +1,111 @@
 * {
-    font-family: "Poppins", sans-serif;
-    font-size: 12px;
-  } 
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
 
 .General {
-    background: #fff;
-    display: grid;
-    grid-template-columns: 68% 31%;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 13px;
-    border-radius: 8px;
-    width:76%;
-  }
-
-  .flex-bench{
-    display: flex;
-    align-items: baseline;
-    margin-top: 2rem;
-    justify-content: space-evenly;
-    gap: 2rem;
-  }
-
-  .directt{
-    margin-left: 1.5rem;
-  }
-
-  .Website{
-    background: #EAEAEA;
-    padding: 12px 24px;
-    border-radius: 12px;
-  }
-
-  .Website > h2{
-    font-size: 22px;
-  }
-
-  h6{
-    font-size: 10px;
-    color: #0C78C7;
-  }
-
-  h5{
-    font-size: 16px;
-  }
-
-  .flex-channel {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .flex-channel >p{
-    display: flex;
-    align-items: center;
-    gap:12px;
-    font-size: 14px;
-    /* justify-content: space-around; */
-  }
-
-  .channel-group{
-    line-height: 2.5;
-    margin-top: 2rem;
-  }
-
-  .Channel >h2{
-    margin-top: 2rem;
-    font-size: 22px;
-  }
-
-  .Channel-strategy > h2{
-    font-size: 30px;
-  }
+  background: #fff;
+  display: grid;
+  grid-template-columns: 68% 31%;
+  justify-content: space-between;
+  gap: 1rem;
+  /* padding: 13px; */
+  border-radius: 8px;
+  width: 76%;
+}
 
 
-  .coming-soon{
-    background: linear-gradient(0deg, #B4B4B4 0%, #DCDCDC 57.6%, #F3F3F3 100%);
-    margin-top: 1rem;
-    padding: 150px 12px 12px 12px;
-    border-radius: 6px;
-  }
-  
-  .coming-soon >h3{
-    font-size: 20px;
-  }
+.flex-bench {
+  display: flex;
+  align-items: baseline;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
 
-  .Channel-strategy > h2{
-    margin-top: 2rem;
-  }
 
-  .big_img3{
-    width: 100%;
-  }
-  
 
-  @media screen and (max-width: 1255px) {
-    .fs{
-      width: 600px;
-    }
+.directt {
+  margin-left: 1.5rem;
+}
+
+.Website {
+  background: #eaeaea;
+  padding: 12px 9px;
+  border-radius: 12px;
+  margin: 12px;
+}
+
+.Website > h2 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 10px;
+  color: #0c78c7;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+.flex-channel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-channel > p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  /* justify-content: space-around; */
+}
+
+.channel-group {
+  line-height: 2.5;
+  margin-top: 2rem;
+}
+
+.Channel{
+  margin: 12px;
+}
+
+.Channel > h2 {
+  margin-top: 2rem;
+  font-size: 22px;
+}
+
+.Channel-strategy{
+  margin: 12px;
+}
+
+.Channel-strategy > h2 {
+  font-size: 30px;
+}
+
+.coming-soon {
+  background: linear-gradient(0deg, #b4b4b4 0%, #dcdcdc 57.6%, #f3f3f3 100%);
+  margin-top: 1rem;
+  padding: 150px 12px 12px 12px;
+  border-radius: 6px;
+}
+
+.coming-soon > h3 {
+  font-size: 20px;
+}
+
+.Channel-strategy > h2 {
+  margin-top: 2rem;
+}
+
+.big_img3 {
+  width: 100%;
+}
+
+@media screen and (max-width: 1255px) {
+  .fs {
+    width: 600px;
   }
+}

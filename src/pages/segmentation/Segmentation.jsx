@@ -7,16 +7,16 @@ import Chart from "../Chart";
 import Income from "../Incomechart";
 import axios from "axios";
 import { Bar } from "react-chartjs-2";
-import One from "../../../public/imgs/1person.svg";
-import Two from "../../../public/imgs/2person.svg";
-import Three from "../../../public/imgs/3person.svg";
-import Four from "../../../public/imgs/4person.svg";
-import Retail from "../../../public/imgs/Retail.svg";
-import Education from "../../../public/imgs/Education.svg";
-import Computer from "../../../public/imgs/Computer.svg";
-import Finance from "../../../public/imgs/Finance.svg";
-import Government from "../../../public/imgs/Government.svg";
-import Check from "../../../public/imgs/check.svg";
+import One from "/imgs/1person.svg";
+import Two from "/imgs/2person.svg";
+import Three from "/imgs/3person.svg";
+import Four from "/imgs/4person.svg";
+import Retail from "/imgs/Retail.svg";
+import Education from "/imgs/Education.svg";
+import Computer from "/imgs/Computer.svg";
+import Finance from "/imgs/Finance.svg";
+import Government from "/imgs/Government.svg";
+import Check from "/imgs/check.svg";
 // import {RiCheckboxBlankCircleLine} from 'react-icons/Ri'
 
 // import Retail from "../../../public/im"
@@ -162,8 +162,8 @@ const Segmentation = () => {
 
   return (
     <div className="General">
-      <section>
-        <div className="geo-container">
+      <section className="segmentation">
+        <div className="Geo-container">
           <h1>Geographic Distribution</h1>
           <div className="flex-geo">
             {/* COUNTRIES SECTION */}

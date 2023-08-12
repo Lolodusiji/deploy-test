@@ -3,14 +3,25 @@
   font-size: 12px;
 }
 
-.segmentation {
+.General {
   display: grid;
   grid-template-columns: 66% 30%;
   justify-content: space-between;
-  width: 100%;
-  padding: 0 0 0 10px;
+  width: 78%;
+  /* padding: 0 0 0 10px; */
   background: #f6f6f6;
   border-radius: 12px;
+  /* background-color: red !important; */
+}
+
+.segmentation {
+  padding: 13px;
+}
+
+.Geo-container {
+  background: #eaeaea;
+  padding: 15px 20px;
+  border-radius: 8px;
 }
 
 .distributions {
@@ -19,12 +30,7 @@
   margin-top: 10px;
 }
 
-.geocontainer {
-  /* color: #fff; */
-  background: #eaeaea;
-  padding: 15px 20px;
-  border-radius: 8px;
-}
+
 
 .flex-geo {
   display: flex;
@@ -46,7 +52,7 @@
   width: 50%;
 }
 
-.flex-cont{
+.flex-cont {
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -56,7 +62,7 @@
 .countries {
   min-width: 240px;
   border-right: 1px solid #bdbdbd;
-  padding-left: 4px;
+  /* padding-left: 4px; */
 }
 
 .Traffic {
@@ -68,7 +74,7 @@
 }
 
 .Trend {
-  min-width: 160px;
+  min-width: 115px;
   text-align: right;
 }
 
@@ -83,8 +89,8 @@
 
 .Traffic > h3 {
   background: #d9d9d9;
-  padding-left: 84px;
-  padding-right: 314px;
+  padding-left: 60px;
+  padding-right: 294px;
 }
 
 .Trend > h3 {
@@ -103,16 +109,6 @@
   margin-top: 2rem;
 }
 
-.General {
-  background: #fff;
-  display: grid;
-  grid-template-columns: 68% 31%;
-  justify-content: space-between;
-  gap: 13px;
-  padding: 13px;
-  border-radius: 8px;
-}
-
 .flex-income {
   display: flex;
   align-items: center;
@@ -121,7 +117,7 @@
   gap: 12rem;
 }
 
- #h5{
+#h5 {
   font-size: 14px;
 }
 
@@ -133,15 +129,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap:24rem;
+  gap: 24rem;
   /* width: 50%; */
 }
 
-.flex-Edu1{
+.flex-Edu1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap:28rem;
+  gap: 28rem;
 }
 
 .Edu-Container {
@@ -150,13 +146,13 @@
   display: flex;
   align-items: baseline;
   justify-content: start;
-  gap:2rem;
+  gap: 2rem;
   width: 100%;
   /* display: flex;
   align-items: flex-start; */
 }
 
-.Income-cont{
+.Income-cont {
   display: flex;
   align-items: baseline;
   justify-content: flex-start;
@@ -165,18 +161,18 @@
   width: 100%;
 }
 
-.gender-group{
-background: #B9B9B9;
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 66%;
-/* padding: 12px 24px; */
-padding: 0px 8px 0 0px;
-border-radius: 6px; 
+.gender-group {
+  background: #b9b9b9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 66%;
+  /* padding: 12px 24px; */
+  padding: 0px 8px 0 0px;
+  border-radius: 6px;
 }
 
-.gender-cont{
+.gender-cont {
   display: flex;
   align-items: baseline;
   gap: 3rem;
@@ -184,8 +180,8 @@ border-radius: 6px;
   /* justify-content: center; */
 }
 
-.female{
-  background: #FD6333;
+.female {
+  background: #fd6333;
   padding: 12px 16px;
   border-radius: 6px;
   display: flex;
@@ -194,17 +190,17 @@ border-radius: 6px;
   color: #fff;
 }
 
-.female > p{
+.female > p {
   font-size: 16px;
   font-weight: 600;
 }
 
-.male > p{
+.male > p {
   font-size: 16px;
   font-weight: 600;
 }
 
-.male{
+.male {
   display: flex;
   gap: 5px;
   font-size: 16px;
@@ -216,13 +212,13 @@ border-radius: 6px;
   display: flex;
   align-items: baseline;
   justify-content: start;
-  gap:1rem;
+  gap: 1rem;
   width: 100%;
   /* display: flex;
   align-items: flex-start; */
 }
 
-.Age-container{
+.Age-container {
   margin-top: 2rem;
   display: flex;
   align-items: flex-start;
@@ -237,18 +233,18 @@ border-radius: 6px;
 /* .bar-cont{
   width:50%;
 } */
-.flex-Aundience{
+.flex-Aundience {
   display: flex;
   margin-top: 3rem;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.outside-demographic{
+.outside-demographic {
   margin-top: 2rem;
 }
 
-.Education{
+.Education {
   text-align: center;
 }
 /* .Education > span{
@@ -258,72 +254,71 @@ border-radius: 6px;
   flex-direction: column;
 } */
 
-h1{
+h1 {
   font-size: 22px;
   /* font-weight: 500; */
 }
 
-.flex-ontop{
+.flex-ontop {
   display: flex;
   flex-direction: column;
-  gap:-2px;
+  gap: -2px;
 }
 
-.flex-beside{
+.flex-beside {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
   line-height: 3;
 }
 
-.person >p{
+.person > p {
   display: flex;
-    align-items: center;
-    gap: 8px;
+  align-items: center;
+  gap: 8px;
 }
 
-
-.top_1{
+.top_1 {
   height: 25px;
-  width:100px;
+  width: 100px;
   margin-bottom: -2px;
-  background: #DBDBDB;
+  background: #dbdbdb;
   border-radius: 6px 6px 0px 0px;
 }
 
-.top_2{
+.top_2 {
   height: 35px;
-  width:100px;
+  width: 100px;
   margin-bottom: -2px;
-  background: #B9B9B9;
+  background: #b9b9b9;
   border-radius: 6px 6px 0px 0px;
 }
 
-.top_3{
+.top_3 {
   height: 45px;
-  width:100px;
+  width: 100px;
   margin-bottom: -2px;
-  background: #7C7C7C;
+  background: #7c7c7c;
   border-radius: 6px 6px 0px 0px;
 }
 
-.top_4{
+.top_4 {
   height: 55px;
-  width:100px;
+  width: 100px;
   margin-bottom: -2px;
-  background: #5B5B5B;
+  background: #5b5b5b;
   border-radius: 6px 6px 6px 6px;
 }
 
-.Household-container{
-    /* gap: 2rem; */
-    display: flex;
-    align-items: flex-start;
-    margin-top: 2rem;
-    width: 100%;
+.Household-container {
+  /* gap: 2rem; */
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2rem;
+  width: 100%;
 }
 
-.flex-general{
+.flex-general {
   display: flex;
   align-items: baseline;
   gap: 2rem;
@@ -331,7 +326,7 @@ h1{
   width: 50%;
 }
 
-#heading{
+#heading {
   font-size: 16px;
 }
 
