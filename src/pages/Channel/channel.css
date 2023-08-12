@@ -11,7 +11,8 @@
   gap: 1rem;
   /* padding: 13px; */
   border-radius: 8px;
-  width: 76%;
+  padding: 0 0 0 10px;
+  width: 78%;
 }
 
 
@@ -33,7 +34,7 @@
   background: #eaeaea;
   padding: 12px 9px;
   border-radius: 12px;
-  margin: 12px;
+  margin: 12px 5px;
 }
 
 .Website > h2 {
@@ -69,7 +70,7 @@ h5 {
 }
 
 .Channel{
-  margin: 12px;
+  margin: 12px 5px;
 }
 
 .Channel > h2 {
@@ -78,7 +79,7 @@ h5 {
 }
 
 .Channel-strategy{
-  margin: 12px;
+  margin: 12px 5px;
 }
 
 .Channel-strategy > h2 {
