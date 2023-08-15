@@ -10,7 +10,6 @@ import Segmentation from "./pages/segmentation/Segmentation";
 import Competitor from "./pages/competitor/competitor";
 import Channel from "./pages/Channel/channel";
 import Support from "./pages/Support/Support";
-import Wrapper from "./components/Wrapper";
 
 
 export default function Router() {
@@ -32,8 +31,7 @@ export default function Router() {
         { path: "segmentation", element: <Segmentation /> },
         { path: "competitors", element: <Competitor /> },
         { path: "channels", element: <Channel /> },
-        {path: "Support",element: (<Wrapper><Support /></Wrapper>), },
-        // { path: "Support", element: <Support /> },
+        { path: "Support", element: <Support /> },
       ],
     },
   ]);

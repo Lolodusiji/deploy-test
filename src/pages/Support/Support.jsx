@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import * as Icon from "react-icons/fi";
 import Checkbox from "react-custom-checkbox";
-// import TawkTo from '../../components/Tawkto';
+import TawkTo from '../../components/Tawkto';
 
 
 function Support () {
@@ -162,7 +162,7 @@ console.log(window.location.pathname);
   <div className='btn_div'>
   <button className='genrate_btn'>Generate Data</button>
 </div> */}
-{/* {window.location.pathname === '/support' && <TawkTo/>} */}
+{window.location.pathname === '/support' && <TawkTo/>}
 
 </div>
 // </div>
