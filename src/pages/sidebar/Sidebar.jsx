@@ -155,7 +155,29 @@ function sidebar() {
 
             </Menu>
             {/* <button onClick={handleLogOut} style={{color: 'red', width: '100%'}}>Log out</button> */}
-            <Menu>
+            <div className="Group-info">
+            <Menu
+            menuItemStyles={{
+              // button: {
+
+              //     '&:hover': {
+              //        backgroundColor: 'green',
+              //     },
+              // },
+
+              button: ({ level, active, disabled }) => {
+                // only apply styles on first level elements of the tree
+                if (level === 0)
+                  return {
+                    color: active ? "white" : "#9FA8C7",
+                    backgroundColor: active ? "#2A2D34" : undefined,
+                    "&:hover": {
+                      backgroundColor: "#2A2D34",
+                    },
+                  };
+              },
+            }}
+            >
                 <MenuItem className="Support"
             component={<Link to="/support" />}
             active={window.location.pathname === "/support"}
@@ -192,6 +214,7 @@ function sidebar() {
                 </div>
               </div>
             )}
+            </div>
           </div>
         </Sidebar>
         {menu == true && (

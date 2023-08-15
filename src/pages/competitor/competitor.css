@@ -193,6 +193,11 @@ table thead tr {
 .stat th,
 .stat td {
   padding: 8px 5px;
+  /* padding: 8px 5px; */
+    color: #444444;
+    font-size: 12px;
+    font-weight: 500;
+    border-bottom: 1px solid #C3C3C3;
 }
 
 #share-head{
@@ -243,9 +248,21 @@ td{
   /* border-right:1px solid #dddddd; */
 }
 
-.column{
+#column{
   border: none ;
   text-align: left;
+}
+
+#coluumn{
+  border: none ;
+  text-align: center; 
+  color:#06B818
+}
+
+#colummn{
+  border: none ;
+  text-align: center; 
+  color:#E01717
 }
 
 /* .column:last-of-type{

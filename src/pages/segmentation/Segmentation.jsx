@@ -76,11 +76,11 @@ const Segmentation = () => {
     if (window.Tawk_API) {
       window.Tawk_API.hideWidget();
     }
-    return () => {
-      if (window.Tawk_API) {
-        window.Tawk_API.showWidget();
-      }
-    };
+    // return () => {
+    //   if (window.Tawk_API) {
+    //     window.Tawk_API.showWidget();
+    //   }
+    // };
   }, []);
   const option = {
     responsive: true,

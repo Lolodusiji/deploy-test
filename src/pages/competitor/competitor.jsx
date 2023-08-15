@@ -28,9 +28,7 @@ const competitor = () => {
 
   const fetchSocio = async () => {
     const response = await axios.get(
-      `${
-        import.meta.env.VITE_BACKEND_API
-      }/apis/competitor/socioeconomics/`
+      `${import.meta.env.VITE_BACKEND_API}/apis/competitor/socioeconomics/`
     );
     setSocio(response.data?.posts);
   };
@@ -40,9 +38,7 @@ const competitor = () => {
 
   const fetchGeography = async () => {
     const response = await axios.get(
-      `${
-        import.meta.env.VITE_BACKEND_API
-      }/apis/competitor/geography/`
+      `${import.meta.env.VITE_BACKEND_API}/apis/competitor/geography/`
     );
     setGeography(response.data?.posts);
   };
@@ -52,9 +48,7 @@ const competitor = () => {
 
   const fetchMarketshare = async () => {
     const response = await axios.get(
-      `${
-        import.meta.env.VITE_BACKEND_API
-      }/apis/competitor/market_share/`
+      `${import.meta.env.VITE_BACKEND_API}/apis/competitor/market_share/`
     );
     setMarketshare(response.data?.posts);
   };
@@ -64,9 +58,7 @@ const competitor = () => {
 
   const fetchMarketprice = async () => {
     const response = await axios.get(
-      `${
-        import.meta.env.VITE_BACKEND_API
-      }/apis/competitor/market_prices/`
+      `${import.meta.env.VITE_BACKEND_API}/apis/competitor/market_prices/`
     );
     setMarketprice(response.data?.posts);
   };
@@ -165,37 +157,37 @@ const competitor = () => {
               <h2>Geography</h2>
               <table className="stat">
                 <thead id="head">
-                <tr id="rowww">
-                <th >Competitor</th>
-                <th >Traffic</th>
-                <th >Changes</th>
-                </tr>
+                  <tr id="rowww">
+                    <th>Competitor</th>
+                    <th>Traffic</th>
+                    <th>Changes</th>
+                  </tr>
                 </thead>
                 <tbody>
                   <tr id="row">
                     <td id="column">United States</td>
                     <td id="column">67.66%</td>
-                    <td id="column">9.15%</td>
+                    <td id="coluumn">9.15%</td>
                   </tr>
                   <tr id="row">
                     <td id="column">United Kingdom</td>
                     <td id="column">30.97%</td>
-                    <td id="column">2.03%</td>
+                    <td id="coluumn">2.03%</td>
                   </tr>
                   <tr id="row">
                     <td id="column">Germany</td>
                     <td id="column">30.41%</td>
-                    <td id="column">4.59%</td>
+                    <td id="coluumn">4.59%</td>
                   </tr>
                   <tr id="row">
                     <td id="column">Mexico</td>
                     <td id="column">39.95%</td>
-                    <td id="column">1.05%</td>
+                    <td id="colummn">1.05%</td>
                   </tr>
-                  <tr id="row"> 
+                  <tr id="row">
                     <td id="column">Canada</td>
                     <td id="column">38.01%</td>
-                    <td id="column">8.99%</td>
+                    <td id="colummn">8.99%</td>
                   </tr>
                 </tbody>
               </table>
@@ -221,23 +213,9 @@ const competitor = () => {
             </thead>
             <tbody>
               <tr>
-                <td id="share-content"><img className="big_img3" src={Ebay} alt="" /></td>
-                <td id="share-content">1,236,000</td>
-                <td id="share-content">11.18%</td>
-                <td id="share-content">11.18%</td>
-                <td id="share-content">11.18%</td>
-                <td id="share-content">11.18%</td>
-                <td id="share-content">19.45%</td>
-                <td id="share-content">11.18%</td> 
-                <td id="share-content">11.18%</td>
-                <td id="share-content">11.18%</td>
-              </tr>
-              <tr>
-                <td id="share-content"><img
-                  className="big_img3"
-                  src={Amazon}
-                  alt=""
-                /></td>
+                <td id="share-content">
+                  <img className="big_img3" src={Ebay} alt="" />
+                </td>
                 <td id="share-content">1,236,000</td>
                 <td id="share-content">11.18%</td>
                 <td id="share-content">11.18%</td>
@@ -249,11 +227,9 @@ const competitor = () => {
                 <td id="share-content">11.18%</td>
               </tr>
               <tr>
-               <td id="share-content"><img
-                  className="big_img3"
-                  src={Flipkart}
-                  alt=""
-                /></td> 
+                <td id="share-content">
+                  <img className="big_img3" src={Amazon} alt="" />
+                </td>
                 <td id="share-content">1,236,000</td>
                 <td id="share-content">11.18%</td>
                 <td id="share-content">11.18%</td>
@@ -265,11 +241,23 @@ const competitor = () => {
                 <td id="share-content">11.18%</td>
               </tr>
               <tr>
-                <td id="share-content"><img
-                  className="big_img3"
-                  src={Myntra}
-                  alt=""
-                /></td>
+                <td id="share-content">
+                  <img className="big_img3" src={Flipkart} alt="" />
+                </td>
+                <td id="share-content">1,236,000</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">19.45%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+              </tr>
+              <tr>
+                <td id="share-content">
+                  <img className="big_img3" src={Myntra} alt="" />
+                </td>
                 <td id="share-content">1,236,000</td>
                 <td id="share-content">11.18%</td>
                 <td id="share-content">11.18%</td>
@@ -282,7 +270,9 @@ const competitor = () => {
               </tr>
 
               <tr>
-                <td id="share-content"><img className="big_img3" src={Ajio} alt="" /></td>
+                <td id="share-content">
+                  <img className="big_img3" src={Ajio} alt="" />
+                </td>
                 <td id="share-content">1,236,000</td>
                 <td id="share-content">11.18%</td>
                 <td id="share-content">11.18%</td>

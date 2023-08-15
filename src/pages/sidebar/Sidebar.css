@@ -15,9 +15,13 @@
     height: calc(100vh - var(--sl-header-height) );
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 0 5px;
     
+}
+
+.Group-info{
+    margin-top: 4rem;
 }
 
 .user_info{
@@ -72,10 +76,10 @@
     border-radius: 12px;
 }
 
-.support{
+/* .support{
     margin-top: 2rem;
-}
+} */
 
 .Support{
-    margin-top:4rem;
+    margin-top:3rem;
 }
