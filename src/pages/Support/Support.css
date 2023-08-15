@@ -11,3 +11,21 @@
     background: #f6f6f6;
     border-radius: 12px;
   }
+
+  @media screen and (min-width: 1300px) {
+    /* .first_line{
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+    }
+    .sec_line{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        gap: 1%;
+        margin-top: 10px;
+    } */
+    .support-container{
+        width: 85%;
+     }
+  
+}

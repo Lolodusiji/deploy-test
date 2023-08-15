@@ -198,6 +198,24 @@
     opacity: 0.7;
 }
 
+@media screen and (min-width: 1300px) {
+    /* .first_line{
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+    }
+    .sec_line{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        gap: 1%;
+        margin-top: 10px;
+    } */
+     .discovery{
+        width: 85%;
+     }
+  
+}
+
 @media screen and (max-width: 500px) and (min-width: 0px){
   
     .discovery{

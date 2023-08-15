@@ -164,8 +164,8 @@ gap: 10px;
 }
 
 
-@media screen and (max-width: 750px) and (min-width: 0px){
-    .first_line{
+@media screen and (min-width: 1300px) {
+    /* .first_line{
         display: flex;
         flex-direction: column;
         gap: 3%;
@@ -175,7 +175,9 @@ gap: 10px;
         grid-template-columns: 49% 49%;
         gap: 1%;
         margin-top: 10px;
-    }
-     
+    } */
+     .dashboard{
+        width: 85%;
+     }
   
 }
