@@ -85,6 +85,10 @@ const Segmentation = () => {
   const option = {
     responsive: true,
     maintainAspectRatio: true,
+    indexAxis: 'x',
+    barThickness: 72,
+    barPercentage: 0.9,
+    categoryPercentage: 0.9,
     plugins: {
       legend: {
         position: "bottom",
@@ -104,6 +108,7 @@ const Segmentation = () => {
             y: {
               beginAtZero: false,
               display: false, // Remove vertical gridlines
+              // lineWidth: 30,
             },
             plugins: {
               legend: {
@@ -184,7 +189,7 @@ const Segmentation = () => {
                   "India",
                 ].map((country) => (
                   <p
-                    style={{ display: "flex", gap: "5px", fontWeight: "600" }}
+                    style={{ display: "flex", gap: "5px", fontWeight: "600", color: "#565656"}}
                     key={country}
                   >
                     <span>&gt;</span>
@@ -268,7 +273,7 @@ const Segmentation = () => {
           <div className="Income-cont">
           <div className="Text">
             <h3 id="heading">Income</h3></div>
-            <div className="flex-cont">
+            {/* <div className="flex-cont">
               <div class="flex-income">
                 <span>
                   <h4>Low</h4>
@@ -282,10 +287,10 @@ const Segmentation = () => {
                   <h4>High</h4>
                   <p>9.25%</p>
                 </span>
-              </div>
+              </div> */}
               <div className="graph" style={{width:"500px"}}>
                 <Income />
-              </div>
+              {/* </div> */}
             </div>
           </div>
 
@@ -303,7 +308,7 @@ const Segmentation = () => {
 
               <div className="Edu-progress">
                 <div className="flex-Edu">
-                  <p>Univerity or College</p>
+                  <p>University or College</p>
                   <h5 id="h5">42.85%</h5>
                 </div>
                 <ProgressBar value={42.85} variant="md" />
@@ -328,7 +333,7 @@ const Segmentation = () => {
           </div>
 
           <div className="Household-container">
-          <div className="Text">
+          <div className="Text-house">
             <h3 id="heading">Household Size</h3></div>
             <div className="flex-general">
               <div className="flex-ontop">
@@ -367,7 +372,7 @@ const Segmentation = () => {
             <h3 id="heading">Employment</h3></div>
             <div className="groupflex">
               <div className="Edu-progress">
-                <div className="flex-Edu">
+                <div className="flex-Edu1">
                   <p>Full-time work</p>
                   <h5 id="h5">42.68%</h5>
                 </div>

@@ -7,12 +7,22 @@
 }
 
 .columnn {
-  width: 150px;
+  width: 140px;
   height: 180px;
   position: relative;
   border-radius: 6px;
   background-color: #d9d9d9;
-  gap: 2rem;
+  /* gap: 2rem; */
+}
+
+.container > div > h2{
+  font-size: 16px;
+  font-weight:600;
+}
+
+.container > div > p{
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .inner {

@@ -1,5 +1,6 @@
 .sidebar{
     border-right-width:0 !important;
+    position:sticky !important;
 }
 
 .css-kpxwru{

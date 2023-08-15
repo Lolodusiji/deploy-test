@@ -1,6 +1,6 @@
 .socail {
   display: grid;
-  grid-template-columns: 66% 30%;
+  grid-template-columns: 67% 30%;
   justify-content: space-between;
   width: 78%;
   padding: 0 0 0 10px;
@@ -56,6 +56,7 @@
 .facts_header {
   display: flex;
   justify-content: space-between;
+  width:100%;
 }
 
 .facts_body {
@@ -75,15 +76,16 @@
 }
 
 .facts_title {
-  font-size: 17px;
+  font-size: 12px;
   font-weight: 700;
-  width: fit-content;
+  width: 70%;
 }
 
 .facts_date {
   color: rgba(0, 0, 0, 0.6);
   font-size: 10px;
   text-align: end;
+  width:30%;
 }
 
 .facts_hr {
@@ -91,7 +93,7 @@
 }
 .facts_bodyy {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .keywords_header {
@@ -107,14 +109,16 @@
   gap: 10px;
 }
 
-table {
+.social-table {
   font-family: arial, sans-serif;
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
+  border-radius: 12px;
+  border:1px solid #dddddd;
   width: 100%;
   border-spacing: 0;
 }
 
-th {
+.table-head {
   background-color: #dddddd;
   text-align: left;
   padding: 8px;
@@ -125,14 +129,14 @@ td {
   padding: 8px;
 }
 
-tr:nth-child(odd) {
+#roww:nth-child(odd) {
   background-color: #dddddd41;
 }
-table tr:last-child td:first-child {
+.social-table #roww:last-child td:first-child {
   border-bottom-left-radius: 10px;
 }
 
-table tr:last-child td:last-child {
+.social-table #roww:last-child td:last-child {
   border-bottom-right-radius: 10px;
 }
 .table_card {

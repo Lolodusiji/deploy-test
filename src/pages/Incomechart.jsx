@@ -49,9 +49,16 @@ const StackedBarsOnTopWithoutScales = () => {
 
       {/* CUSTOM BAR CHART SETUP */}
       <div className="container">
-        {[59.97, 31.16, 25.0].map((item) => (
+      {[
+          { data: "59.97%", text: "Low" },
+          { data: "11.16%", text: "Medium"},
+          { data: "25.5%", text: "High" },].map((item) => (
+            <div>
+            <h2>{item.text}</h2>
+            <p>{item.data}</p>
           <div className="columnn">
-            <div className="inner" style={{ height: `${item}%` }}></div>
+            <div className="inner" style={{ height: item.data }}></div>
+          </div>
           </div>
         ))}
       </div>

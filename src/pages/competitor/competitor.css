@@ -17,7 +17,7 @@
 
 .percent {
   width: 16%;
-  background: #c0bbbb;
+  background: #F9F9F9;
   padding: 12px 24px;
   height: 9em;
   margin-top: 2rem;
@@ -25,7 +25,8 @@
 }
 
 .percent > span > p {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .percent > span > h3 {
@@ -40,8 +41,9 @@
   gap: 2rem;
 }
 
-h1 {
+.competitive >h1 {
   font-size: 30px;
+  font-weight: 600;
 }
 
 /* .competitive > h1{
@@ -49,7 +51,7 @@ h1 {
   } */
 
 .competitive {
-  background: #e9e9e9;
+  background: #E9E9E9;
   padding: 20px 20px;
   margin: 12px 5px;
   border-radius: 12px;
@@ -74,6 +76,18 @@ h1 {
 
 .socio {
   width: 52%;
+}
+
+.geography >h2{
+  font-size: 20px;
+  font-weight: 500;
+  color: #747474;
+}
+
+.socio >h2{
+  font-size: 20px;
+  font-weight: 500;
+  color: #747474;
 }
 
 .flex-target {
@@ -115,10 +129,14 @@ h1 {
 
 .household > span > p {
   font-size: 13px;
+  color: #4D4D4D;
+  font-weight: 500;
 }
 
 .household > span > h4 {
   font-size: 16px;
+  color:#000;
+  font-weight: 600;
 }
 
 .flex-geography {
@@ -143,22 +161,22 @@ h3 {
     min-width: 100px;
   } */
 
-h2 {
-  font-size: 20px;
+.market-price > h2 {
+  font-size: 30px;
+  font-weight:600;
 }
 
 .geography {
-  width: 45%;
+  width: 46%;
 }
 
-.share-table {
-  border-collapse: collapse;
+#share-table {
   margin: 25px 0;
-  font-size: 0.9em;
-  /* min-width: 400px; */
-  border-radius: 5px 5px 0 0;
+  width: 100%;
+  border-spacing: 0;
+  border-radius: 6px;
   overflow: hidden;
-  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .head{
@@ -172,23 +190,62 @@ table thead tr {
   font-weight: bold;
 }
 
-table th,
-table td {
+.stat th,
+.stat td {
   padding: 8px 5px;
 }
 
+#share-head{
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+#head{
+  background:#F9F9F9;
+}
+
+
+#row:nth-child(odd){
+  background: #F6F6F6;
+  color:red;
+  color: #4D4D4D;
+}
+
+#share-content:nth-child(odd){
+  background: #F6F6F6;
+}
+
+#share-head{
+  background: #F6F6F6;
+  padding: 8px;
+  color: #505050;
+}
+
+#share-content{
+  color: #767676;
+  text-align: center;
+}
+
+#row:nth-child(even){
+  background: #FAFAFA;
+  color:#4D4D4D
+}
+
 th{
-  border-right:1px solid #dddddd;
+  /* border-right:1px solid #dddddd; */
   /* text-align: center; */
   color: #000;
+  /* background: #F9F9F9; */
 }
 
 td{
-  border-right:1px solid #dddddd;
+  /* border-right:1px solid #dddddd; */
 }
 
 .column{
   border: none ;
+  text-align: left;
 }
 
 /* .column:last-of-type{
@@ -205,21 +262,16 @@ td:last-of-type{
 } */
 
 .stat{
-  /* border-collapse: collapse; */
-  /* margin: 25px 0; */
-  font-size: 0.9em;
-  /* min-width: 400px; */
-  border-radius: 5px;
+  /* font-size: 0.9em; */
+  width: 100%;
+  border-spacing: 0;
+  border-radius: 12px;
   margin-top: 2px;
-  border-bottom: 1px solid #dddddd;
-  overflow: hidden;
-  outline: 1px solid #dddddd;
-  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
 }
 
-table tbody tr:nth-of-type(even) {
+/* table tbody tr:nth-of-type(even) {
   background-color: #f3f3f3;
-}
+} */
 
 table tbody tr:last-of-type {
   /* border-bottom: 2px solid #009879; */
@@ -244,6 +296,7 @@ table tbody tr.active-row {
 .market-share > h1 {
   margin-top: 2rem;
   font-size: 30px;
+  font-weight: 600;
 }
 /* .table-statistics{
   

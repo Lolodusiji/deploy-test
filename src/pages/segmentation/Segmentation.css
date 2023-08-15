@@ -15,7 +15,7 @@
 }
 
 .segmentation {
-  padding: 13px;
+  padding: 13px 0 13px 0;
 }
 
 .Geo-container {
@@ -125,19 +125,56 @@
   margin-top: 3rem;
 }
 
+.demographic > h1{
+  font-size: 22px;
+  font-weight: 600;
+}
 .flex-Edu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24rem;
+  /* gap: 24rem; */
   /* width: 50%; */
+}
+
+.flex-Edu > p{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.groupflex2{
+  line-height: 2.8;
+  width: 100%;
+}
+
+.flex-Edu > h5{
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .flex-Edu1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 28rem;
+  /* gap: 28rem; */
+}
+
+.flex-Edu1 > p{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.flex-Edu1 > h5{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.Edu-progress{
+  width: 100%;
+}
+
+.groupflex{
+  width: 100%;
 }
 
 .Edu-Container {
@@ -146,17 +183,21 @@
   display: flex;
   align-items: baseline;
   justify-content: start;
-  gap: 2rem;
+  gap: 3.5rem;
   width: 100%;
   /* display: flex;
   align-items: flex-start; */
+}
+
+.Text-house{
+  width: 22%;
 }
 
 .Income-cont {
   display: flex;
   align-items: baseline;
   justify-content: flex-start;
-  gap: 3rem;
+  gap: 6rem;
   margin-top: 3rem;
   width: 100%;
 }
@@ -175,7 +216,7 @@
 .gender-cont {
   display: flex;
   align-items: baseline;
-  gap: 3rem;
+  gap: 6rem;
   margin-top: 2rem;
   /* justify-content: center; */
 }
@@ -223,7 +264,7 @@
   display: flex;
   align-items: flex-start;
   width: 100%;
-  gap: 5rem;
+  gap: 9rem;
 }
 
 /* .Text{
@@ -244,6 +285,11 @@
   margin-top: 2rem;
 }
 
+.outside-demographic > h2{
+  font-size: 22px;
+  font-weight: 600;
+}
+
 .Education {
   text-align: center;
 }
@@ -259,6 +305,18 @@ h1 {
   /* font-weight: 500; */
 }
 
+span > h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #454545;
+}
+
+span > p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #7D7D7D;
+}
+
 .flex-ontop {
   display: flex;
   flex-direction: column;
@@ -268,8 +326,8 @@ h1 {
 .flex-beside {
   display: flex;
   align-items: flex-start;
-  gap: 2rem;
-  line-height: 3;
+  gap: 6rem;
+  line-height: 2;
 }
 
 .person > p {
@@ -279,42 +337,42 @@ h1 {
 }
 
 .top_1 {
-  height: 25px;
-  width: 100px;
-  margin-bottom: -2px;
+  height: 35px;
+  width: 130px;
+  margin-bottom: -5px;
   background: #dbdbdb;
   border-radius: 6px 6px 0px 0px;
 }
 
 .top_2 {
-  height: 35px;
-  width: 100px;
-  margin-bottom: -2px;
+  height: 45px;
+  width: 130px;
+  margin-bottom: -5px;
   background: #b9b9b9;
   border-radius: 6px 6px 0px 0px;
 }
 
 .top_3 {
-  height: 45px;
-  width: 100px;
-  margin-bottom: -2px;
+  height: 55px;
+  width: 130px;
+  margin-bottom: -5px;
   background: #7c7c7c;
   border-radius: 6px 6px 0px 0px;
 }
 
 .top_4 {
-  height: 55px;
-  width: 100px;
-  margin-bottom: -2px;
+  height: 65px;
+  width: 130px;
+  margin-bottom: -5px;
   background: #5b5b5b;
   border-radius: 6px 6px 6px 6px;
 }
 
 .Household-container {
-  /* gap: 2rem; */
+  gap: 1rem;
   display: flex;
   align-items: flex-start;
-  margin-top: 2rem;
+  margin-top: 3rem;
   width: 100%;
 }
 
@@ -323,11 +381,22 @@ h1 {
   align-items: baseline;
   gap: 2rem;
   justify-content: space-around;
-  width: 50%;
+  width: 65%;
+}
+
+.person > p{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.percentage >p{
+  font-size: 18px;
+  font-weight: 400;
 }
 
 #heading {
-  font-size: 16px;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .scrollbar::-webkit-scrollbar {

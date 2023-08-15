@@ -13,24 +13,25 @@ const ProgressBar = ({ value, variant }) => {
   switch (variant) {
     case "md":
       width = "100%";
-      height = "14px";
-      radius_out = "8px";
-      radius_in = "8px";
+      height = "18px";
+      radius_out = "4px";
+      radius_in = "4px";
       // borderRadius ="8px";
       break;
       case "fs":
       width = "100%";
-      height = "15px";
-      radius_out = "8px";
-      radius_in = "8px";
+      height = "18px";
+      radius_out = "4px";
+      radius_in = "4px";
       background = "#C8C7C7";
       color = "#C8C7C7";
       break;
     default:
       width = "75%";
-      height = "8px";
+      height = "10px";
       radius_out = "10px";
       radius_in = "10px";
+      color = "#F94144";
   }
 
   useEffect(() => {

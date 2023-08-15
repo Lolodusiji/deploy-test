@@ -57,6 +57,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-top: 1.3rem;
 }
 
 .checklist_header{
@@ -69,7 +70,7 @@
     color: #000;
     font-size: 22px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 18px; 
 }
 

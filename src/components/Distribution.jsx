@@ -19,10 +19,10 @@ import React , { useState, useEffect } from 'react'
             // borderRadius ="8px";
             break;
             case "fs":
-            width = "100%";
-            height = "12px";
-            radius_out = "8px";
-            radius_in = "8px";
+            width = "97%";
+            height = "18px";
+            radius_out = "5px";
+            radius_in = "5px";
             background = "#C8C7C7";
             color = "#C8C7C7";
             break;

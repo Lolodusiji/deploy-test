@@ -8,7 +8,7 @@
   justify-content: flex-end;
   position: sticky !important;
   top: var(--sl-header-height);
-  z-index: 99999999;
+  /* z-index: 99999999; */
 }
 
 .market_input {

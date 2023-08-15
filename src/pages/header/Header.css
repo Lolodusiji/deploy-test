@@ -1,8 +1,6 @@
-
-
 .header{
     background-color: #171717;
-    padding: 17px 10PX;
+    padding: 12px 10PX;
     display: grid;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +30,7 @@ letter-spacing: 0.44px;
 
 .calender{
     display: grid;
-    grid-template-columns: 9% 9% 9% 9% 9% 9% 9%;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10%;
     width: 100%;
     justify-items: center;
     justify-content: center
@@ -57,9 +55,9 @@ letter-spacing: 0.44px;
 }
 
 .today{
-    border-radius: 20px;
+    border-radius: 10px;
     background: #FFF;
-    padding: 5px 16px;
+    padding: 2px 16px;
     color: black;
     display: flex;
     flex-direction: column;

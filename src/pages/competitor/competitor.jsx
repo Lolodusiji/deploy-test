@@ -164,38 +164,38 @@ const competitor = () => {
             <div className="geography">
               <h2>Geography</h2>
               <table className="stat">
-                <thead className="head">
-                <tr className="row">
+                <thead id="head">
+                <tr id="rowww">
                 <th >Competitor</th>
                 <th >Traffic</th>
                 <th >Changes</th>
                 </tr>
                 </thead>
                 <tbody>
-                  <tr className="row">
-                    <td className="column">United States</td>
-                    <td className="column">67.66%</td>
-                    <td className="column">9.15%</td>
+                  <tr id="row">
+                    <td id="column">United States</td>
+                    <td id="column">67.66%</td>
+                    <td id="column">9.15%</td>
                   </tr>
-                  <tr className="row">
-                    <td className="column">United Kingdom</td>
-                    <td className="column">30.97%</td>
-                    <td className="column">2.03%</td>
+                  <tr id="row">
+                    <td id="column">United Kingdom</td>
+                    <td id="column">30.97%</td>
+                    <td id="column">2.03%</td>
                   </tr>
-                  <tr className="row">
-                    <td className="column">Germany</td>
-                    <td className="column">30.41%</td>
-                    <td className="column">4.59%</td>
+                  <tr id="row">
+                    <td id="column">Germany</td>
+                    <td id="column">30.41%</td>
+                    <td id="column">4.59%</td>
                   </tr>
-                  <tr className="row">
-                    <td className="column">Mexico</td>
-                    <td className="column">39.95%</td>
-                    <td className="column">1.05%</td>
+                  <tr id="row">
+                    <td id="column">Mexico</td>
+                    <td id="column">39.95%</td>
+                    <td id="column">1.05%</td>
                   </tr>
-                  <tr className="row"> 
-                    <td className="column">Canada</td>
-                    <td className="column">38.01%</td>
-                    <td className="column">8.99%</td>
+                  <tr id="row"> 
+                    <td id="column">Canada</td>
+                    <td id="column">38.01%</td>
+                    <td id="column">8.99%</td>
                   </tr>
                 </tbody>
               </table>
@@ -204,101 +204,101 @@ const competitor = () => {
         </div>
         <div className="market-share">
           <h1>Market share</h1>
-          <table className="share-table">
+          <table id="share-table">
             <thead className="head2">
               <tr>
-                <th>Competitor</th>
-                <th>Total</th>
-                <th>Direct</th>
-                <th>Referral</th>
-                <th>Organic Search</th>
-                <th>Paid Search</th>
-                <th>Organic Social</th>
-                <th>Paid Social</th>
-                <th>Email</th>
-                <th>Display Ads</th>
+                <th id="share-head">Competitor</th>
+                <th id="share-head">Total</th>
+                <th id="share-head">Direct</th>
+                <th id="share-head">Referral</th>
+                <th id="share-head">Organic Search</th>
+                <th id="share-head">Paid Search</th>
+                <th id="share-head">Organic Social</th>
+                <th id="share-head">Paid Social</th>
+                <th id="share-head">Email</th>
+                <th id="share-head">Display Ads</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><img className="big_img3" src={Ebay} alt="" /></td>
-                <td>1,236,000</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>19.45%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
+                <td id="share-content"><img className="big_img3" src={Ebay} alt="" /></td>
+                <td id="share-content">1,236,000</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">19.45%</td>
+                <td id="share-content">11.18%</td> 
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
               </tr>
               <tr>
-                <td><img
+                <td id="share-content"><img
                   className="big_img3"
                   src={Amazon}
                   alt=""
                 /></td>
-                <td>1,236,000</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>19.45%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
+                <td id="share-content">1,236,000</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">19.45%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
               </tr>
               <tr>
-               <td><img
+               <td id="share-content"><img
                   className="big_img3"
                   src={Flipkart}
                   alt=""
                 /></td> 
-                <td>1,236,000</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>19.45%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
+                <td id="share-content">1,236,000</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">19.45%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
               </tr>
               <tr>
-                <td><img
+                <td id="share-content"><img
                   className="big_img3"
                   src={Myntra}
                   alt=""
                 /></td>
-                <td>1,236,000</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>19.45%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
+                <td id="share-content">1,236,000</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">19.45%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
               </tr>
 
               <tr>
-                <td><img className="big_img3" src={Ajio} alt="" /></td>
-                <td>1,236,000</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>19.45%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
-                <td>11.18%</td>
+                <td id="share-content"><img className="big_img3" src={Ajio} alt="" /></td>
+                <td id="share-content">1,236,000</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">19.45%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
+                <td id="share-content">11.18%</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <div className="market-price">
-          <h2>Market Price</h2>
+          <h2>Market Prices</h2>
           <div className="coming-soon">
             <h3>Coming Soon</h3>
           </div>

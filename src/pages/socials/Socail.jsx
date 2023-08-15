@@ -85,7 +85,7 @@ function Socail() {
     <div className="socail">
       <div className="market">
         <div className="market_stats">
-          <h2 style={{ fontWeight: "700", fontSize: "20px" }}>
+          <h2 style={{ fontWeight: "700", fontSize: "30px" }}>
             Market Sentiment
           </h2>
           <div className="stats_wrapper">
@@ -132,15 +132,15 @@ function Socail() {
           <h2 style={{ fontSize: "28px", fontWeight: "700" }}>
             What People Are Searching
           </h2>
-          <table>
+          <table className="social-table">
             <tr>
-              <th style={{ borderRadius: "10px 0 0 0" }}>Query</th>
-              <th>Monthly Searches</th>
-              <th style={{ borderRadius: "0 10px 0 0" }}>Competition</th>
+              <th className="table-head" style={{ borderRadius: "10px 0 0 0" }}>Query</th>
+              <th className="table-head">Monthly Searches</th>
+              <th className="table-head"style={{ borderRadius: "0 10px 0 0" }}>Competition</th>
             </tr>
             {table?.items.map((e, i) => {
               return (
-                <tr key={i}>
+                <tr id="roww" key={i}>
                   <td>{e.query}</td>
                   <td>{e.monthly_searches}</td>
                   <td>
@@ -176,7 +176,7 @@ function Socail() {
                 </tr>
               );
             })}
-            <tr>
+            <tr id="roww">
               <td>market survey</td>
               <td>4,400</td>
               <td>
@@ -188,7 +188,7 @@ function Socail() {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr id="roww">
               <td>paid focus groups </td>
               <td>1,900</td>
               <td>
@@ -200,7 +200,7 @@ function Socail() {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr id="roww">
               <td>market research companies</td>
               <td>4,400</td>
               <td>
@@ -216,7 +216,7 @@ function Socail() {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr id="roww">
               <td>paid market research</td>
               <td>4,400</td>
               <td>
@@ -228,7 +228,7 @@ function Socail() {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr id="roww">
               <td>market study</td>
               <td>4,400</td>
               <td>
@@ -244,7 +244,7 @@ function Socail() {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr id="roww">
               <td>market study</td>
               <td>4,400</td>
               <td>
@@ -260,7 +260,7 @@ function Socail() {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr id="roww">
               <td>market survey</td>
               <td>4,400</td>
               <td>
@@ -272,7 +272,7 @@ function Socail() {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr id="roww">
               <td>market survey</td>
               <td>4,400</td>
               <td>
@@ -284,7 +284,7 @@ function Socail() {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr id="roww">
               <td>market research companies</td>
               <td>4,400</td>
               <td>
@@ -300,7 +300,7 @@ function Socail() {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr id="roww">
               <td>paid market research</td>
               <td>4,400</td>
               <td>
@@ -312,7 +312,7 @@ function Socail() {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr id="roww">
               <td>market study</td>
               <td>4,400</td>
               <td>
@@ -328,7 +328,7 @@ function Socail() {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr id="roww">
               <td>market study</td>
               <td>4,400</td>
               <td>

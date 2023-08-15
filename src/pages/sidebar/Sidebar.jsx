@@ -152,7 +152,11 @@ function sidebar() {
                 Channels
               </MenuItem>
 
-            <MenuItem className="Support"
+
+            </Menu>
+            {/* <button onClick={handleLogOut} style={{color: 'red', width: '100%'}}>Log out</button> */}
+            <Menu>
+                <MenuItem className="Support"
             component={<Link to="/support" />}
             active={window.location.pathname === "/support"}
             icon={<PiChatTeardropTextBold size={25} />}
@@ -160,10 +164,9 @@ function sidebar() {
             {" "}
             Support
             </MenuItem>
-            </Menu>
-            {/* <button onClick={handleLogOut} style={{color: 'red', width: '100%'}}>Log out</button> */}
-
+              </Menu>
             {closed == false && (
+              
               <div className="user_info">
                 <div className="user_img">
                   {/* <img src={profilePic} alt="" /> */}
