@@ -16,7 +16,7 @@
 
 
 .dashboard{
-    width: 100%;
+    width: 78%;
     padding: 6px 6px 6px 12px;
     background: #F6F6F6;
     border-radius: 12px;
@@ -58,7 +58,7 @@ font-weight: 600;
 
 .first_line{
     display: grid;
-    grid-template-columns: 65% 33%;
+    grid-template-columns: 66% 33%;
     gap: 1%;
     margin-top: .6rem;
 }
@@ -68,7 +68,7 @@ width: 100% !important;
 }
 .sec_line{
     display: grid;
-    grid-template-columns: 24% 40% 33%;
+    grid-template-columns: 24% 41% 33%;
     gap: 1%;
     /* margin-top: 10px; */
 }
