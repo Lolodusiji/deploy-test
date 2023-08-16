@@ -9,7 +9,7 @@ import TawkTo from '../../components/Tawkto';
 
 
 function Support () {
-console.log(window.location.pathname);
+// console.log(window.location.pathname);
   //   const [message, setmessage] = useState('')
 
   // useEffect(() => {
@@ -21,7 +21,12 @@ console.log(window.location.pathname);
   //     })
   //   }).then((res)=> res.json())
   //   .then((data)=>{
-     
+
+    useEffect(() => {
+      Tawk_API
+      Tawk_API.showWidget;
+      // console.log(window.Tawk_API);
+    }, []);
 
   //   })
   
