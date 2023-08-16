@@ -1,5 +1,0 @@
-{
-    "rewrites": [
-      { "source": "/segmentation", "destination": "/segmentation", "permanent": 301 }
-    ]
-  }
