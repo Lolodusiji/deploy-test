@@ -9,7 +9,11 @@
   z-index: 99999999;
   height: unset !important;
   border-radius:10px;
+  /* padding-top: 1.3rem; */
+}
 
+.css-ewdv3l{
+  padding-top: 1.3rem;
 }
 
 .limited_sidebar {
@@ -19,7 +23,7 @@
   flex-direction: column;
   gap: 1rem;
   /* justify-content: space-between; */
-  padding: 24px 5px;
+  padding: 0 5px;
 }
 
 /* .Group-info {
