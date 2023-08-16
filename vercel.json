@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+      { "source": "/segmentation", "destination": "/segmentation", "status": 301 }
+    ]
+  }
+  
