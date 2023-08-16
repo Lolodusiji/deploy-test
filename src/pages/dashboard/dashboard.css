@@ -179,5 +179,16 @@ gap: 10px;
      .dashboard{
         width: 85%;
      }
-  
+
+     .line_grid{
+        height: 90%;
+     }
+
+     .sec_line{
+        height: 32%;
+     }
+
+     .first_line{
+        height: 66%;
+     }
 }
