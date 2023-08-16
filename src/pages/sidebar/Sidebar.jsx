@@ -79,16 +79,18 @@ function sidebar() {
                 //     '&:hover': {
                 //        backgroundColor: 'green',
                 //     },
-                // },
+                // }
 
                 button: ({ level, active, disabled }) => {
                   // only apply styles on first level elements of the tree
                   if (level === 0)
                     return {
                       color: active ? "white" : "#9FA8C7",
+                      marginBottom: ".2rem",
                       backgroundColor: active ? "#2A2D34" : undefined,
                       "&:hover": {
                         backgroundColor: "#2A2D34",
+                        borderRadius:"10px",
                       },
                     };
                 },
@@ -173,6 +175,8 @@ function sidebar() {
                     backgroundColor: active ? "#2A2D34" : undefined,
                     "&:hover": {
                       backgroundColor: "#2A2D34",
+                      borderRadius:"10px",
+
                     },
                   };
               },
@@ -238,6 +242,8 @@ function sidebar() {
                           backgroundColor: active ? "#2A2D34" : undefined,
                           "&:hover": {
                             backgroundColor: "#2A2D34",
+                        borderRadius:"10px",
+
                           },
                         };
                     },

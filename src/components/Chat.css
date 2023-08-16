@@ -1,5 +1,9 @@
+.random-chat {
+  border-radius: 0px 12px 12px 0px !important;
+}
 .chat_market {
-  border-radius: 0px 12px 12px 0px;
+  border-radius: 0px 12px 12px 0px !important;
+  overflow: hidden;
   background: rgba(120, 120, 120, 0.1);
   box-shadow: -24px 0px 80px 0px rgba(49, 79, 124, 0.02);
   height: calc(100vh - var(--sl-header-height));

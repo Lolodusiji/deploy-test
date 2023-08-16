@@ -162,7 +162,7 @@ console.log(window.location.pathname);
   <div className='btn_div'>
   <button className='genrate_btn'>Generate Data</button>
 </div> */}
-{window.location.pathname === '/support' && <TawkTo/>}
+ <TawkTo/>
 
 </div>
 // </div>

@@ -155,7 +155,7 @@ const competitor = () => {
 
             <div className="geography">
               <h2>Geography</h2>
-              <table className="stat">
+              <table id="stat">
                 <thead id="head">
                   <tr id="rowww">
                     <th>Competitor</th>

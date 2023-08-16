@@ -61,7 +61,7 @@ const Chat = () => {
     }
   };
   return (
-    <section>
+    <section className="random-chat">
       <div className="chat_market">
         <div className="chat_body scrollbar" style={{ background: "unset" }}>
           {/* <div className='sent_message'>

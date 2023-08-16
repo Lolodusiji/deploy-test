@@ -8,14 +8,16 @@
   grid-template-columns: 66% 30%;
   justify-content: space-between;
   width: 78%;
-  padding: 0 0 0 10px;
+  padding: 10px 10px;
   background: #f6f6f6;
   border-radius: 12px;
+  /* overflow: hidden; */
   /* background-color: red !important; */
 }
 
 .segmentation {
   padding: 13px 0 13px 0;
+  /* overflow: hidden; */
 }
 
 .Geo-container {
@@ -29,8 +31,6 @@
   gap: 30px;
   margin-top: 10px;
 }
-
-
 
 .flex-geo {
   display: flex;
@@ -125,7 +125,7 @@
   margin-top: 3rem;
 }
 
-.demographic > h1{
+.demographic > h1 {
   font-size: 22px;
   font-weight: 600;
 }
@@ -137,17 +137,17 @@
   /* width: 50%; */
 }
 
-.flex-Edu > p{
+.flex-Edu > p {
   font-size: 16px;
   font-weight: 400;
 }
 
-.groupflex2{
+.groupflex2 {
   line-height: 2.8;
   width: 100%;
 }
 
-.flex-Edu > h5{
+.flex-Edu > h5 {
   font-size: 16px;
   font-weight: 600;
 }
@@ -159,21 +159,21 @@
   /* gap: 28rem; */
 }
 
-.flex-Edu1 > p{
+.flex-Edu1 > p {
   font-size: 14px;
   font-weight: 500;
 }
 
-.flex-Edu1 > h5{
+.flex-Edu1 > h5 {
   font-size: 14px;
   font-weight: 600;
 }
 
-.Edu-progress{
+.Edu-progress {
   width: 100%;
 }
 
-.groupflex{
+.groupflex {
   width: 100%;
 }
 
@@ -189,7 +189,7 @@
   align-items: flex-start; */
 }
 
-.Text-house{
+.Text-house {
   width: 22%;
 }
 
@@ -285,7 +285,7 @@
   margin-top: 2rem;
 }
 
-.outside-demographic > h2{
+.outside-demographic > h2 {
   font-size: 22px;
   font-weight: 600;
 }
@@ -311,10 +311,10 @@ span > h4 {
   color: #454545;
 }
 
-span > p{
+span > p {
   font-size: 14px;
   font-weight: 400;
-  color: #7D7D7D;
+  color: #7d7d7d;
 }
 
 .flex-ontop {
@@ -384,12 +384,12 @@ span > p{
   width: 65%;
 }
 
-.person > p{
+.person > p {
   font-size: 18px;
   font-weight: 400;
 }
 
-.percentage >p{
+.percentage > p {
   font-size: 18px;
   font-weight: 400;
 }
@@ -416,8 +416,7 @@ span > p{
       gap: 1%;
       margin-top: 10px;
   } */
-   .General{
-      width: 85%;
-   }
-
+  .General {
+    width: 85%;
+  }
 }

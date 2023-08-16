@@ -72,15 +72,24 @@ const Segmentation = () => {
     fetchAudience();
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (window.Tawk_API) {
       window.Tawk_API.hideWidget();
+
+      const isHidden = window.Tawk_API.isChatHidden();
+      console.log("Is chat hidden:", isHidden);
+
+      if (isHidden) {
+        // Show the chat widget if it's hidden
+        window.Tawk_API.showWidget();
+      }
+
+      // Set up the onChatHidden callback
+      window.Tawk_API.onChatHidden = function() {
+        console.log("Chat is now hidden.");
+        // You can perform additional actions when the chat is hidden
+      };
     }
-    // return () => {
-    //   if (window.Tawk_API) {
-    //     window.Tawk_API.showWidget();
-    //   }
-    // };
   }, []);
   const option = {
     responsive: true,
