@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 1.4rem;
-  gap: 8px;
+  gap: 12px;
   max-width: 100%;
 }
 
@@ -42,4 +42,82 @@ text{
   width: 100%;
   border-radius: 0 0 6px 6px;
   background: #9c9c9c;
+}
+
+@media screen and (max-width: 1000px){
+  .column1 {
+    width:68px;
+  }
+}
+
+@media screen and (min-width: 1001px){
+  .column1 {
+    width: 68px;
+  }
+
+  .container1 {
+    gap: 3px;
+  }
+  }
+
+  @media screen and (min-width: 1045px){
+    .column1 {
+      width: 60px;
+    }
+
+    .container1 {
+      gap: 1px;
+    }
+  }
+
+  @media screen and (min-width: 1070px){
+    .column1 {
+      width: 74px;
+    }
+  }
+
+  @media screen and (min-width: 1123px){
+    .column1 {
+      width: 70px;
+    }
+  }
+
+
+  @media screen and (min-width: 1142px){
+    .container1 {
+      gap: 5px;
+    }
+    .column1 {
+      width: 85px;
+    }
+  }
+
+  @media screen and (min-width: 1258px){
+    .column1 {
+      width: 87px;
+    }
+  } 
+
+@media screen and (min-width: 1355px){
+  .column1 {
+    width: 98px;
+  }
+}
+
+@media screen and (min-width: 1500px){
+  .column1 {
+    width: 117px;
+  }
+}
+
+@media screen and (min-width: 1700px){
+  .column1 {
+    width: 130px;
+  }
+}
+
+@media screen and (min-width: 1900px){
+  .column1 {
+    width: 140px;
+  }
 }

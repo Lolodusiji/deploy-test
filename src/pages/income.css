@@ -34,3 +34,15 @@
   border-radius: 6px;
   background: #9c9c9c;
 }
+
+@media screen and (max-width: 1210px){
+  .columnn {
+    width: 110px;
+  }
+
+}
+@media screen and (max-width: 830px){
+.columnn {
+  width: 130px;
+}
+}

@@ -404,6 +404,50 @@ span > p {
   /* height: 2em */
 }
 
+@media screen and (max-width: 1140px){
+  .countries{
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width: 1118px){
+  .countries{
+    min-width: 150px;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1900px ) {
+  .Text-house{
+    width:18%;
+  }
+
+  .Household-container{
+    gap:5rem;
+  }
+
+}
+
+@media screen and (min-width: 1400px){
+  .Household-container{
+    gap:3rem;
+}
+}
+
+@media screen and (min-width: 1206px){
+  .flex-beside{
+    gap:3.5rem;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  #Age-bar{
+    width:400px;
+  }
+
+  .bar-cont{
+    width: 400px;
+  }
+}
+
 @media screen and (min-width: 1300px) {
   /* .first_line{
       display: flex;
@@ -419,4 +463,78 @@ span > p {
   .General {
     width: 85%;
   }
+
+  .Text-house{
+    width:12%;
+  }
+
+  .Traffic{
+    width:30%;
+  }
+
+  .countries{
+    width: 30%;
+  }
+
+  .Trend{
+    width:30%;
+  }
+}
+
+@media screen and (max-width: 1295px){
+  .bar-cont{
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1295px){
+  .flex-beside{
+    gap:1.7rem;
+  }
+  .Household-container{
+    gap:3rem;
+  }
+}
+
+@media screen and (max-width: 1000px){
+.General{
+  display:flex;
+  flex-direction: column;
+  width: 67%;
+}
+}
+
+@media screen and (max-width: 830px){
+  .flex-beside{
+    gap:2.5rem;
+  }
+  .Household-container{
+    gap:3rem;
+  }
+  .countries{
+    min-width: 217px;
+  }
+
+  .bar-cont{
+    width: 400px;
+  }
+  
+}
+
+@media screen and (min-width: 1240px) and (max-width: 1240px) {
+  .Household-container{
+    gap:0;
+  }
+}
+
+@media screen and (max-width: 1084px){
+  .flex-beside{
+    gap:1.2rem;
+  }
+  .person > p{
+    font-size: 14px;
+  }
+.percentage > p {
+  font-size: 14px;
+}
 }

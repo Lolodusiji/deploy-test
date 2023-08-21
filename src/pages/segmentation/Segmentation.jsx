@@ -84,7 +84,7 @@ const Segmentation = () => {
     responsive: true,
     maintainAspectRatio: true,
     indexAxis: 'x',
-    barThickness: 72,
+    barThickness: 72, 
     barPercentage: 0.9,
     categoryPercentage: 0.9,
     plugins: {
@@ -162,6 +162,22 @@ const Segmentation = () => {
       },
     ],
   };
+  var myBarChart = document.getElementById('Age-bar');
+
+// Add a listener for screen width changes
+window.addEventListener('resize', function () {
+    if (window.innerWidth < 830) { // Adjust the screen width as needed
+        // Inside this block, you can change the bar thickness
+        myBarChart.options.scales.xAxes[0].barThickness = 60; // Adjust the percentage as needed
+        // myBarChart.options.scales.xAxes[0].categoryPercentage = 0.7; // Adjust the percentage as needed
+        myBarChart.update(); // Update the chart to reflect the changes
+    } else {
+        // Reset the bar thickness for larger screens
+        myBarChart.options.scales.xAxes[0].barThickness = 72; // Default value
+        // myBarChart.options.scales.xAxes[0].categoryPercentage = 1.0; // Default value
+        myBarChart.update(); // Update the chart to reflect the changes
+    }
+});
 
   return (
     <div className="General">
@@ -254,7 +270,7 @@ const Segmentation = () => {
             <div className="Text">
             <h3 id="heading">Age</h3></div>
             <div className="bar-cont" style={{width:"500px"}}>
-            <Bar options={option} data={data} />
+            <Bar id='Age-bar' options={option} data={data} />
           </div>
           </div>
 

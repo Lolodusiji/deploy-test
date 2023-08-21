@@ -192,3 +192,21 @@ gap: 10px;
         height: 66%;
      }
 }
+
+@media screen and (max-width: 1300px){
+    .sec_line{
+        height: 40%;
+     }
+
+     .first_line{
+        height: 70%;
+     }
+
+     .line_grid{
+        height: 89%;
+     }
+
+     .line_div{
+        height: 40vh;
+     }
+}

@@ -348,10 +348,57 @@ td:last-of-type{
      .General{
         width: 85%;
      }
+
+     .percent{
+      width: 18%;
+     }
+
+     .stats_wrapper{
+      gap:0;
+     }
   
 }
-   @media screen and (max-width: 1000px){
-    .General{
-      display: flow;
+
+@media screen and (max-width: 1180px) {
+  .flex-target {
+    flex-direction: column;
+  }
+  .socio {
+    width: 100%;
+  }
+  .geography {
+    width: 100%;
+  }
+  .household{
+    width:45%;
+  }
+}
+
+@media screen and (max-width: 1158px) {
+  .stats_wrapper{
+    gap:1rem;
+}
+}
+
+@media screen and (max-width: 1084px) {
+.percent{
+  width: 16%;
+  height:8em;
+  padding:12px 20px;
+}
+}
+   
+@media screen and (max-width: 1054px) {
+  .household{
+    width:44%;
+  }
+}
+
+@media screen and (max-width: 1000px){
+    .General {
+      display: flex;
     }
-   }
+    .household{
+      width:46%;
+    }
+  }

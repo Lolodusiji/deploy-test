@@ -1,6 +1,20 @@
 .sidebar {
   border-right-width: 0 !important;
-  position: sticky !important;
+  /* position: fixed !important; */
+  top: 0;
+  bottom: 0;
+  /* height: 100vh;
+  overflow: hidden !important; */
+}
+@media (max-width: 1000px) {
+  .sidebar {
+    position: absolute !important;
+    left: -1000px;
+  }
+
+  .sidebar_active {
+    left: 0;
+  }
 }
 
 .css-kpxwru {

@@ -70,6 +70,11 @@ letter-spacing: 0.44px;
     line-height: normal;
 }
 
+@media screen and (max-width: 1000px){
+    #ham-burger{
+        display: block;
+    }
+}
 @media screen and (max-width: 800px) and (min-width: 501px){
    
     .calender{

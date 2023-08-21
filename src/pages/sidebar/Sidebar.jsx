@@ -17,6 +17,7 @@ import { MainContext } from "../../../utils/MainContext";
 // import {auth} from '../../firebase'
 
 function sidebar() {
+  const [toggleSidebar, settoggleSidebar] = useState(false);
   const [closed, setclosed] = useState(false);
   const [menu, setmenu] = useState(false);
   const { username, setusername } = useContext(MainContext);
@@ -55,6 +56,7 @@ function sidebar() {
     // localStorage.clear()
     // navigate('/signup')
   }
+  console.log(toggleSidebar);
 
   return (
     <>
@@ -63,11 +65,15 @@ function sidebar() {
         active={() => {
           setmenu(!menu);
         }}
+        
+        settoggleSidebar={settoggleSidebar}
+        toggleSidebar={toggleSidebar}
+
       />
       <div style={{ display: "flex", position: "relative" }}>
         <Sidebar
           backgroundColor="#131313"
-          className="sidebar"
+          className={toggleSidebar ? "sidebar sidebar_active": "sidebar"}
           collapsed={closed == true ? true : false}
           collapsedWidth={0}
         >

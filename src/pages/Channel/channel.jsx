@@ -62,6 +62,7 @@ const channel = () => {
     <div className="General">
       <section>
         <div className="Website">
+          <div className="Website-cont">
           <h2>Website Benchmarking</h2>
           <div className="flex-content">
             {/* <div className="flex-bench">
@@ -109,6 +110,7 @@ const channel = () => {
               </div>
             </div> */}
             <Benchmark />
+          </div>
           </div>
         </div>
 

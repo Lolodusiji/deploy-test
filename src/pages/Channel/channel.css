@@ -38,7 +38,13 @@
   margin: 12px 5px;
 }
 
-.Website > h2 {
+.Website-cont{
+width:100%;
+max-width: 600px; 
+/* margin: auto; */
+}
+
+.Website-cont > h2 {
   font-size: 22px;
 }
 
@@ -110,6 +116,13 @@ h5 {
   width: 100%;
 }
 
+@media screen and (max-width: 1000px){
+  .General {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media screen and (min-width: 1300px) {
   /* .first_line{
       display: flex;
@@ -133,3 +146,4 @@ h5 {
     width: 600px;
   }
 }
+
