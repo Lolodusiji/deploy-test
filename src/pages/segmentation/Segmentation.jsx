@@ -348,7 +348,7 @@ window.addEventListener('resize', function () {
 
           <div className="Household-container">
           <div className="Text-house">
-            <h3 id="heading">Household Size</h3></div>
+            <h3 id="heading">Household <br/>Size</h3></div>
             <div className="flex-general">
               <div className="flex-ontop">
                 <div className="top_1"></div>

@@ -189,9 +189,9 @@
   align-items: flex-start; */
 }
 
-.Text-house {
+/* .Text-house {
   width: 22%;
-}
+} */
 
 .Income-cont {
   display: flex;
@@ -369,7 +369,7 @@ span > p {
 }
 
 .Household-container {
-  gap: 1rem;
+  gap: 3rem;
   display: flex;
   align-items: flex-start;
   margin-top: 3rem;
@@ -381,7 +381,7 @@ span > p {
   align-items: baseline;
   gap: 2rem;
   justify-content: space-around;
-  width: 65%;
+  /* width: 65%; */
 }
 
 .person > p {
@@ -404,6 +404,7 @@ span > p {
   /* height: 2em */
 }
 
+
 @media screen and (max-width: 1140px){
   .countries{
     min-width: 200px;
@@ -419,17 +420,6 @@ span > p {
   .Text-house{
     width:18%;
   }
-
-  .Household-container{
-    gap:5rem;
-  }
-
-}
-
-@media screen and (min-width: 1400px){
-  .Household-container{
-    gap:3rem;
-}
 }
 
 @media screen and (min-width: 1206px){
@@ -449,17 +439,6 @@ span > p {
 }
 
 @media screen and (min-width: 1300px) {
-  /* .first_line{
-      display: flex;
-      flex-direction: column;
-      gap: 3%;
-  }
-  .sec_line{
-      display: grid;
-      grid-template-columns: 49% 49%;
-      gap: 1%;
-      margin-top: 10px;
-  } */
   .General {
     width: 85%;
   }
@@ -491,9 +470,7 @@ span > p {
   .flex-beside{
     gap:1.7rem;
   }
-  .Household-container{
-    gap:3rem;
-  }
+  
 }
 
 @media screen and (max-width: 1000px){
@@ -508,9 +485,7 @@ span > p {
   .flex-beside{
     gap:2.5rem;
   }
-  .Household-container{
-    gap:3rem;
-  }
+ 
   .countries{
     min-width: 217px;
   }
@@ -519,12 +494,6 @@ span > p {
     width: 400px;
   }
   
-}
-
-@media screen and (min-width: 1240px) and (max-width: 1240px) {
-  .Household-container{
-    gap:0;
-  }
 }
 
 @media screen and (max-width: 1084px){

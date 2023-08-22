@@ -226,6 +226,7 @@ table thead tr {
 
 #share-content:nth-child(odd){
   background: #F6F6F6;
+  width: 8%;
 }
 
 #share-head{
@@ -237,7 +238,15 @@ table thead tr {
 #share-content{
   color: #767676;
   text-align: center;
+  width: 8%;
 }
+
+#share-content1{
+  background: #F6F6F6;
+  text-align: center;
+  width: 20%;
+}
+
 
 #row:nth-child(even){
   background: #FAFAFA;
@@ -402,3 +411,28 @@ td:last-of-type{
       width:46%;
     }
   }
+
+@media screen and (max-width: 850px){
+  .household{
+    width:44%;
+  }
+}
+
+@media screen and (min-width: 1885px) {
+  #share-head{
+    font-size: 12px;
+  }
+
+  #share-content{
+    font-size: 16px;
+}
+}
+
+@media screen and (min-width: 2020px) {
+  #share-head{
+    font-size: 14px;
+  }
+  #share-content{
+    font-size: 18px;
+}
+}

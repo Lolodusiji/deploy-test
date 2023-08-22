@@ -213,7 +213,7 @@ const competitor = () => {
             </thead>
             <tbody>
               <tr>
-                <td id="share-content">
+                <td id="share-content1">
                   <img className="big_img3" src={Ebay} alt="" />
                 </td>
                 <td id="share-content">1,236,000</td>
@@ -227,7 +227,7 @@ const competitor = () => {
                 <td id="share-content">11.18%</td>
               </tr>
               <tr>
-                <td id="share-content">
+                <td id="share-content1">
                   <img className="big_img3" src={Amazon} alt="" />
                 </td>
                 <td id="share-content">1,236,000</td>
@@ -241,7 +241,7 @@ const competitor = () => {
                 <td id="share-content">11.18%</td>
               </tr>
               <tr>
-                <td id="share-content">
+                <td id="share-content1">
                   <img className="big_img3" src={Flipkart} alt="" />
                 </td>
                 <td id="share-content">1,236,000</td>
@@ -255,7 +255,7 @@ const competitor = () => {
                 <td id="share-content">11.18%</td>
               </tr>
               <tr>
-                <td id="share-content">
+                <td id="share-content1">
                   <img className="big_img3" src={Myntra} alt="" />
                 </td>
                 <td id="share-content">1,236,000</td>
@@ -270,7 +270,7 @@ const competitor = () => {
               </tr>
 
               <tr>
-                <td id="share-content">
+                <td id="share-content1">
                   <img className="big_img3" src={Ajio} alt="" />
                 </td>
                 <td id="share-content">1,236,000</td>

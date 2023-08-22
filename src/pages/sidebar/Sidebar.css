@@ -40,9 +40,11 @@
   padding: 0 5px;
 }
 
-/* .Group-info {
-  margin-top: 4rem;
-} */
+.Group-info {
+  position: absolute;
+  bottom: 0;
+  width:96%;
+}
 
 .user_info {
   background-color: #232323;
