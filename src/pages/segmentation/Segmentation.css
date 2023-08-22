@@ -411,6 +411,66 @@ span > p {
   }
 }
 
+@media screen and (max-width: 2500px){
+  .Household-container {
+    gap:0;
+  }
+}
+
+@media screen and (max-width: 2147px){
+  .Household-container {
+    gap:1rem;
+  }
+}
+
+@media screen and (max-width: 1980px){
+  .Household-container {
+    gap:2rem;
+  }
+}
+
+@media screen and (max-width: 1960px){
+  .Household-container {
+    gap:3rem;
+  }
+}
+
+@media screen and (max-width: 1710px){
+  .Household-container {
+    gap:4rem;
+  }
+}
+
+@media screen and (max-width: 1550px){
+  .Household-container {
+    gap:4.3rem;
+  }
+}
+
+@media screen and (max-width: 1478px){
+  .Household-container {
+    gap:5rem;
+  }
+}
+
+@media screen and (max-width: 1350px){
+  .Household-container {
+    gap:7rem;
+  }
+}
+
+@media screen and (max-width: 1344px){
+  .Household-container {
+    gap:6rem;
+  }
+}
+
+@media screen and (max-width: 1299px){
+  .Household-container {
+    gap:3rem;
+  }
+}
+
 @media screen and (max-width: 1118px){
   .countries{
     min-width: 150px;
@@ -420,6 +480,7 @@ span > p {
   .Text-house{
     width:18%;
   }
+ 
 }
 
 @media screen and (min-width: 1206px){
