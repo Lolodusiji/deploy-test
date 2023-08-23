@@ -32,7 +32,7 @@ function sidebar() {
 
     const styles = window.getComputedStyle(header);
     // window.onload=()=>{
-    const real = header.clientHeight;
+    const real = "92";
     // const headerHeight = styles.height;
     // const paddHeight = styles.paddingTop;
     // const real_height = parseFloat(headerHeight)+( parseFloat(paddHeight)*2)
