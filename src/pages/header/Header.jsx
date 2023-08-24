@@ -3,7 +3,7 @@ import './Header.css'
 import { AiOutlineMenu } from 'react-icons/ai';
 import Calender from './Calender';
 // import { BsFillPersonFill } from "react-icons/bs";
-// import {LiaTimesSolid} from "react-icon/lia";
+import {MdClose} from "react-icons/md";
 import {GiHamburgerMenu} from "react-icons/gi";
 
 function Header({menu, settoggleSidebar, toggleSidebar, ...props }){
@@ -16,7 +16,9 @@ function Header({menu, settoggleSidebar, toggleSidebar, ...props }){
             <div className="logo_name">savanna</div>
         </div>
         <Calender/>
-        <GiHamburgerMenu id='ham-burger' color='white' size={24} cursor='pointer' display='none' onClick={()=>{settoggleSidebar(!toggleSidebar)}}/>
+        <div className="hamburger" onClick={()=>{settoggleSidebar(!toggleSidebar)}}>
+       {toggleSidebar ? <MdClose id='ham-burger' color='white' size={24} cursor='pointer' display='none' /> : <GiHamburgerMenu id='ham-burger' color='white' size={24} cursor='pointer' display='none' />}
+        </div>
         {menu == true &&
             <AiOutlineMenu color='white' size={24} onClick={()=>{props.active()}}/>
         }

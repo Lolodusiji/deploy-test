@@ -127,7 +127,7 @@ h5 {
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 1300px) and (max-width: 1700px) {
   /* .first_line{
       display: flex;
       flex-direction: column;

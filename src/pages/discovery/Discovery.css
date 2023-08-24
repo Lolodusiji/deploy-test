@@ -204,6 +204,7 @@
 @media screen and (max-width: 1000px){
    .discovery{
     margin-left: 0;
+    width: 99.5%;
    }
 }
 

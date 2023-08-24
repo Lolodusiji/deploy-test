@@ -72,7 +72,13 @@ letter-spacing: 0.44px;
     line-height: normal;
 }
 
+
 @media screen and (max-width: 1000px){
+    .hamburger{
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: 3.4rem;
+    }
     #ham-burger{
         display: block;
     }
