@@ -437,6 +437,13 @@ span > p {
   }
 }
 
+@media screen and (max-width: 1800px){
+.General{
+  width: 96%;
+}
+}
+
+
 @media screen and (max-width: 1710px){
   .Household-container {
     gap:4rem;
@@ -501,7 +508,7 @@ span > p {
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) and (max-width: 1700px) {
   .General {
     width: 85%;
   }
@@ -540,8 +547,8 @@ span > p {
 .General{
   display:flex;
   flex-direction: column;
-  width: 67%;
   margin-left: 0;
+  width: 100%;
 }
 }
 
@@ -570,4 +577,10 @@ span > p {
 .percentage > p {
   font-size: 14px;
 }
+}
+
+@media screen and (min-width: 2000px){
+  .General{
+    width:100%;
+  }
 }

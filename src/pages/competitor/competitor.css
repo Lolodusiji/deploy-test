@@ -409,6 +409,7 @@ td:last-of-type{
     .General {
       display: flex;
       margin-left: 0;
+      width: 100%;
     }
     .household{
       width:46%;
@@ -438,4 +439,10 @@ td:last-of-type{
   #share-content{
     font-size: 18px;
 }
+}
+
+@media screen and (min-width:2000px){
+  .General{
+    width:100%;
+  }
 }

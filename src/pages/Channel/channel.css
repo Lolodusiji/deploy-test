@@ -123,11 +123,11 @@ h5 {
     display: flex;
     flex-direction: column;
     margin-left: 0;
-
+    width: 100%;
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (max-width: 1300px) {
   /* .first_line{
       display: flex;
       flex-direction: column;
