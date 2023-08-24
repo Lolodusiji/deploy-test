@@ -27,7 +27,7 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 1rem;
-    height: 85%;
+    height: 84%;
 }
 
 .search_res{
@@ -223,3 +223,13 @@ gap: 10px;
         height: 88%;
      }
     }
+
+    @media screen and (min-width: 1600px) {
+
+        .dashboard{
+           height: 90.5%;
+        }
+        .line_grid{
+            height: 93.5%;
+         }
+       }
