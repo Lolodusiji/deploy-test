@@ -437,9 +437,9 @@ span > p {
   }
 }
 
-@media screen and (max-width: 1800px){
+@media screen and (min-width: 1800px){
 .General{
-  width: 96%;
+  width: 85%;
 }
 }
 
@@ -581,6 +581,12 @@ span > p {
 
 @media screen and (min-width: 2000px){
   .General{
-    width:100%;
+    width:90%;
+  }
+}
+
+@media screen and (min-width: 1100px)and (max-width:1200px) {
+  .General{
+    width: 76%;
   }
 }

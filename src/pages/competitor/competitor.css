@@ -414,6 +414,17 @@ td:last-of-type{
     .household{
       width:46%;
     }
+    .percent{
+      width: 19.2%;
+    }
+
+  .geography{
+    margin-top: 2rem;
+  }
+
+.stats_wrapper {
+  justify-content:flex-start;
+}
   }
 
 @media screen and (max-width: 850px){
@@ -443,6 +454,18 @@ td:last-of-type{
 
 @media screen and (min-width:2000px){
   .General{
-    width:100%;
+    width:90%;
+  }
+}
+
+@media screen and (min-width: 1800px){
+  .General{
+    width: 85%;
+  }
+  }
+
+@media screen and (min-width: 1100px)and (max-width:1200px) {
+  .General{
+    width: 76%;
   }
 }

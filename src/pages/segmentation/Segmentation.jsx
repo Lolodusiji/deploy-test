@@ -80,7 +80,7 @@ const Segmentation = () => {
       // Tawk_API.ischatHidden = null ;
     }
   }, []);
-  const option = {
+  const chartOptions = {
     responsive: true,
     maintainAspectRatio: true,
     indexAxis: 'x',
@@ -95,7 +95,6 @@ const Segmentation = () => {
         labels: {
           usePointStyle: true,
           pointStyle: "circle",
-          // padding: 20,
           color: "#D2D2D2",
           scales: {
             x: {
@@ -106,7 +105,6 @@ const Segmentation = () => {
             y: {
               beginAtZero: false,
               display: false, // Remove vertical gridlines
-              // lineWidth: 30,
             },
             plugins: {
               legend: {
@@ -121,7 +119,6 @@ const Segmentation = () => {
       x: {
         ticks: {
           color: "black",
-          // autoSkip: true,
           maxTicksLimit: 6,
         },
         grid: {
@@ -132,21 +129,16 @@ const Segmentation = () => {
       y: {
         ticks: {
           color: "#999999",
-          // color: "black",
           maxTicksLimit: 6,
         },
       },
     },
   };
-  const data = {
-    // labels: graph_data,
-    labels : ['18-24','25-34','35-44','45-54','55-65','66+'],
-
-
+  
+  const chartData = {
+    labels: ['18-24','25-34','35-44','45-54','55-65','66+'],
     datasets: [
       {
-        // label:"Sep 1, 2022",
-        // data: graph_val,
         data:[15,50,21,11,5,3],
         backgroundColor: [
           '#B8B8B8', // Red
@@ -157,27 +149,25 @@ const Segmentation = () => {
           '#7F7F7F', // Purple
         ],
         borderRadius: 6,
-        // width:[500]
         minBarLength: 6,
       },
     ],
   };
-  var myBarChart = document.getElementById('Age-bar');
-
-// Add a listener for screen width changes
-window.addEventListener('resize', function () {
-    if (window.innerWidth < 830) { // Adjust the screen width as needed
-        // Inside this block, you can change the bar thickness
-        myBarChart.options.scales.xAxes[0].barThickness = 60; // Adjust the percentage as needed
-        // myBarChart.options.scales.xAxes[0].categoryPercentage = 0.7; // Adjust the percentage as needed
-        myBarChart.update(); // Update the chart to reflect the changes
+  
+  const myBarChart = document.getElementById('Age-bar');
+  
+  // Add a listener for screen width changes
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 1300) { // Adjust the screen width as needed
+      chartOptions.scales.x.barThickness = 60; // Adjust the percentage as needed
+      myBarChart.update(); // Update the chart to reflect the changes
     } else {
-        // Reset the bar thickness for larger screens
-        myBarChart.options.scales.xAxes[0].barThickness = 72; // Default value
-        // myBarChart.options.scales.xAxes[0].categoryPercentage = 1.0; // Default value
-        myBarChart.update(); // Update the chart to reflect the changes
+      // Reset the bar thickness for larger screens
+      chartOptions.scales.x.barThickness = 72; // Default value
+      myBarChart.update(); // Update the chart to reflect the changes
     }
-});
+  });
+  
 
   return (
     <div className="General">
@@ -270,7 +260,7 @@ window.addEventListener('resize', function () {
             <div className="Text">
             <h3 id="heading">Age</h3></div>
             <div className="bar-cont" style={{width:"500px"}}>
-            <Bar id='Age-bar' options={option} data={data} />
+            <Bar id='Age-bar' options={chartOptions} data={chartData} />
           </div>
           </div>
 

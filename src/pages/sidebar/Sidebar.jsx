@@ -90,7 +90,7 @@ function sidebar() {
                   if (level === 0)
                     return {
                       color: active ? "white" : "#9FA8C7",
-                      marginTop: ".6rem",
+                      marginTop: ".9rem",
                       marginBottom: ".2rem",
                       backgroundColor: active ? "#2A2D34" : undefined,
                       borderRadius: active ? "10px" : "",
