@@ -26,7 +26,7 @@ function sidebar() {
   // const navigate = useNavigate()
   // const displayEmail = localStorage.getItem("email")
   // const profilePic = localStorage.getItem('profilePic')
-  
+
   useEffect(() => {
     const header = document.querySelector(".header");
 
@@ -55,25 +55,23 @@ function sidebar() {
     // signOut(auth)
     // localStorage.clear()
     // navigate('/signup')
-  }
+  };
   console.log(toggleSidebar);
 
   return (
-    <>
+    <div className="main-container">
       <Header
         menu={closed}
         active={() => {
           setmenu(!menu);
         }}
-        
         settoggleSidebar={settoggleSidebar}
         toggleSidebar={toggleSidebar}
-
       />
-      <div style={{ display: "flex", position: "relative" }}>
+      <div style={{ display: "flex", flex:"1", position: "relative" }}>
         <Sidebar
           backgroundColor="#131313"
-          className={toggleSidebar ? "sidebar sidebar_active": "sidebar"}
+          className={toggleSidebar ? "sidebar sidebar_active" : "sidebar"}
           collapsed={closed == true ? true : false}
           collapsedWidth={0}
         >
@@ -95,10 +93,10 @@ function sidebar() {
                       marginTop: ".6rem",
                       marginBottom: ".2rem",
                       backgroundColor: active ? "#2A2D34" : undefined,
-                      borderRadius : active ? "10px" : "",
+                      borderRadius: active ? "10px" : "",
                       "&:hover": {
                         backgroundColor: "#2A2D34",
-                        borderRadius:"10px",
+                        borderRadius: "10px",
                       },
                     };
                 },
@@ -161,71 +159,68 @@ function sidebar() {
                 {" "}
                 Channels
               </MenuItem>
-
-
             </Menu>
             {/* <button onClick={handleLogOut} style={{color: 'red', width: '100%'}}>Log out</button> */}
             <div className="Group-info">
-            <Menu
-            menuItemStyles={{
-              // button: {
+              <Menu
+                menuItemStyles={{
+                  // button: {
 
-              //     '&:hover': {
-              //        backgroundColor: 'green',
-              //     },
-              // },
+                  //     '&:hover': {
+                  //        backgroundColor: 'green',
+                  //     },
+                  // },
 
-              button: ({ level, active, disabled }) => {
-                // only apply styles on first level elements of the tree
-                if (level === 0)
-                  return {
-                    color: active ? "white" : "#9FA8C7",
-                    backgroundColor: active ? "#2A2D34" : undefined,
-                    "&:hover": {
-                      backgroundColor: "#2A2D34",
-                      borderRadius:"10px",
-
-                    },
-                  };
-              },
-            }}
-            >
-                <MenuItem className="Support"
-            component={<Link to="/support" />}
-            active={window.location.pathname === "/support"}
-            icon={<PiChatTeardropTextBold size={25} />}
-            >
-            {" "}
-            Support
-            </MenuItem>
+                  button: ({ level, active, disabled }) => {
+                    // only apply styles on first level elements of the tree
+                    if (level === 0)
+                      return {
+                        color: active ? "white" : "#9FA8C7",
+                        backgroundColor: active ? "#2A2D34" : undefined,
+                        "&:hover": {
+                          backgroundColor: "#2A2D34",
+                          borderRadius: "10px",
+                        },
+                      };
+                  },
+                }}
+              >
+                <MenuItem
+                  className="Support"
+                  component={<Link to="/support" />}
+                  active={window.location.pathname === "/support"}
+                  icon={<PiChatTeardropTextBold size={25} />}
+                >
+                  {" "}
+                  Support
+                </MenuItem>
               </Menu>
-            {closed == false && (
-              
-              <div className="user_info">
-                <div className="user_img">
-                  {/* <img src={profilePic} alt="" /> */}
-                  <div className="user_status">Legacy User</div>
-                </div>
+              {closed == false && (
+                <div className="user_info">
+                  <div className="user_img">
+                    {/* <img src={profilePic} alt="" /> */}
+                    <div className="user_status">Legacy User</div>
+                  </div>
 
-                <div className="user_data">
-                  {/* <h3>{displayName}</h3> */}
-                  {/* <h3>Josh Willer</h3> */}
-                  <p
-                    style={{
-                      fontSize: "10px",
-                      color: "#E9E9E9",
-                      fontWeight: "300",
-                    }}
-                  >
-                    {/* {displayEmail?.length > 25
+                  <div className="user_data">
+                    {/* <h3>{displayName}</h3> */}
+                    {/* <h3>Josh Willer</h3> */}
+                    <p
+                      style={{
+                        fontSize: "10px",
+                        color: "#E9E9E9",
+                        fontWeight: "300",
+                      }}
+                    >
+                      {/* {displayEmail?.length > 25
                   ? `${displayEmail?.slice(0, 25)}...`
                   : displayEmail} */}
-                    {/* {displayEmail} */}
-                  </p>
-                  {/* <p style={{fontSize:"10px",color:"#E9E9E9",fontWeight:"300"}}>joshwiller@gmail.com</p> */}
+                      {/* {displayEmail} */}
+                    </p>
+                    {/* <p style={{fontSize:"10px",color:"#E9E9E9",fontWeight:"300"}}>joshwiller@gmail.com</p> */}
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
             </div>
           </div>
         </Sidebar>
@@ -250,8 +245,7 @@ function sidebar() {
                           backgroundColor: active ? "#2A2D34" : undefined,
                           "&:hover": {
                             backgroundColor: "#2A2D34",
-                        borderRadius:"10px",
-
+                            borderRadius: "10px",
                           },
                         };
                     },
@@ -316,12 +310,10 @@ function sidebar() {
                   </MenuItem>
                 </Menu>
 
-                    
                 <div className="user_info">
                   <div className="user_img">
                     <img src="/imgs/user.png" alt="" />
-                    <div className="user_status">Legacy User
-                    </div>
+                    <div className="user_status">Legacy User</div>
                   </div>
 
                   <div className="user_data">
@@ -344,7 +336,7 @@ function sidebar() {
         )}
         <Outlet />
       </div>
-    </>
+    </div>
   );
 }
 
