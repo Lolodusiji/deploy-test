@@ -20,14 +20,14 @@
     padding: 6px 6px 6px 12px;
     background: #F6F6F6;
     flex: 1;
-
+    margin-top:77px;
     margin-left:250px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 1rem;
-    height: 97%;
+    height: 85%;
 }
 
 .search_res{

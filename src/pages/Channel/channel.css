@@ -15,6 +15,7 @@
   border-radius: 8px;
   padding: 0 0 0 10px;
   width: 79%;
+  margin-top: 77px;
 }
 
 
@@ -34,9 +35,9 @@
 
 .Website {
   background: #eaeaea;
-  padding: 12px 9px;
+  padding:  12px 9px ;
   border-radius: 12px;
-  margin: 12px 5px;
+  margin:12px 5px 0 0;
 }
 
 .Website-cont{
@@ -91,7 +92,7 @@ h5 {
 }
 
 .Channel-strategy{
-  margin: 12px 5px;
+  margin: 12px 5px 12px 0;
 }
 
 .Channel-strategy > h2 {

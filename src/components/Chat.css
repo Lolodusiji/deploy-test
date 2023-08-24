@@ -6,12 +6,15 @@
     background: rgba(120,120,120,.1);
     box-shadow: -24px 0 80px #314f7c05;
     height: calc(100vh - var(--sl-header-height));
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    position: sticky!important;
+    position: fixed !important;
     top: var(--sl-header-height);
     z-index: 99999999;
+    right: 0;
+    width: 300px;
 }
 
 .market_input {
