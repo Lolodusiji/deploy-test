@@ -22,11 +22,11 @@ function Support () {
   //   }).then((res)=> res.json())
   //   .then((data)=>{
 
-    useEffect(() => {
-      Tawk_API
-      Tawk_API.showWidget;
-      // console.log(window.Tawk_API);
-    }, []);
+    // useEffect(() => {
+    //   Tawk_API
+    //   Tawk_API.showWidget;
+    //   // console.log(window.Tawk_API);
+    // }, []);
 
   //   })
   
@@ -96,6 +96,7 @@ function Support () {
 
   return (
     <div className='support-container'>
+      <h1>SUPPORT</h1>
       {/* <h1>heyy</h1> */}
 
     {/* <div className='chat'>
@@ -167,7 +168,7 @@ function Support () {
   <div className='btn_div'>
   <button className='genrate_btn'>Generate Data</button>
 </div> */}
- <TawkTo/>
+ {/* <TawkTo/> */}
 
 </div>
 // </div>

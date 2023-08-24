@@ -61,7 +61,7 @@ const Chat = () => {
     }
   };
   return (
-    <section className="random-chat">
+    // <section className="random-chat">
       <div className="chat_market">
         <div className="chat_body scrollbar" style={{ background: "unset" }}>
           {/* <div className='sent_message'>
@@ -90,7 +90,7 @@ const Chat = () => {
           <BsSendFill color="#8C8C8C" size={20} onClick={send} />
         </div>
       </div>
-    </section>
+    // </section>
   );
 };
 
