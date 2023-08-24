@@ -7,13 +7,14 @@
   background: #fff;
   /* overflow: hidden; */
   display: grid;
+  margin-left:250px;
   grid-template-columns: 68% 31%;
   justify-content: space-between;
   gap: 1rem;
   /* padding: 13px; */
   border-radius: 8px;
   padding: 0 0 0 10px;
-  width: 78%;
+  width: 79%;
 }
 
 
@@ -120,6 +121,8 @@ h5 {
   .General {
     display: flex;
     flex-direction: column;
+    margin-left: 0;
+
   }
 }
 

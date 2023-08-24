@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 68% 32%;
     width: 79.5%;
+    margin-left:250px;
     background: white;
     /* padding: 10px; */
 
@@ -196,6 +197,12 @@
 
 .genrate_btn:hover{
     opacity: 0.7;
+}
+
+@media screen and (max-width: 1000px){
+   .discovery{
+    margin-left: 0;
+   }
 }
 
 @media screen and (min-width: 1300px) {

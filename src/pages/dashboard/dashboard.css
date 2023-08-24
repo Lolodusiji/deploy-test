@@ -19,6 +19,7 @@
     width: 78%;
     padding: 6px 6px 6px 12px;
     background: #F6F6F6;
+    margin-left:250px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -211,3 +212,11 @@ gap: 10px;
         height: 40vh;
      }
 }
+
+@media screen and (max-width: 1000px) {
+
+     .dashboard{
+        width: 85%;
+        margin-left: 0;
+     }
+    }

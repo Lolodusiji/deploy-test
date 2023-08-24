@@ -7,12 +7,13 @@
   background: #fff;
   display: grid;
   display: flex;
+  margin-left:250px;
   grid-template-columns: 68% 31%;
   justify-content: space-between;
   gap: 1rem;
   /* padding: 13px; */
   border-radius: 12px;
-  width: 76%;
+  width: 79%;
 }
 
 .percent {
@@ -406,6 +407,7 @@ td:last-of-type{
 @media screen and (max-width: 1000px){
     .General {
       display: flex;
+      margin-left: 0;
     }
     .household{
       width:46%;
