@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height:301px;
+    height:25rem;
 }
 
 
@@ -27,7 +27,8 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 1rem;
-    height: 85%;
+    margin-right: 5px;
+    /* height: 85%; */
 }
 
 .search_res{
@@ -168,7 +169,7 @@ gap: 10px;
 }
 
 
-@media screen and (min-width: 1300px) {
+/* @media screen and (min-width: 1300px) { */
     /* .first_line{
         display: flex;
         flex-direction: column;
@@ -183,7 +184,7 @@ gap: 10px;
    
 
      
-
+/* 
      .sec_line{
         height: 32%;
      }
@@ -191,9 +192,9 @@ gap: 10px;
      .first_line{
         height: 66%;
      }
-}
+} */
 
-@media screen and (max-width: 1300px){
+/* @media screen and (max-width: 1300px){
     .sec_line{
         height: 40%;
      }
@@ -229,7 +230,7 @@ gap: 10px;
             height: 93.5%;
          }
        } */
-    @media screen and (min-width: 1001px) and (max-width:1099px) {
+    /* @media screen and (min-width: 1001px) and (max-width:1099px) {
        .dashboard{
         height: 90%;
         margin-right: 4px;
@@ -273,9 +274,9 @@ gap: 10px;
         margin-right: 5px;
         height: 88.5%;
       }
-}
+} */
 
-@media screen and (min-width: 1300px)and (max-width:1500px) {
+/* @media screen and (min-width: 1300px)and (max-width:1500px) {
     .dashboard{
       margin-right: 5px;
       height: 88%;
@@ -338,9 +339,9 @@ gap: 10px;
     .line_grid{
         height: 91%;
      }
-}
+} */
 
-@media screen and (min-width: 2000px) and (max-width:2500px) {
+/* @media screen and (min-width: 2000px) and (max-width:2500px) {
     .dashboard{
         margin-right: 5px;
         height: 88.5%;
@@ -351,4 +352,4 @@ gap: 10px;
      .sec_line{
         height: 35%;
 }
-}
+} */ 
