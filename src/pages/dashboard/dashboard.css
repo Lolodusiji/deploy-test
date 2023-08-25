@@ -219,7 +219,7 @@ gap: 10px;
         height: 88%;
      }
     }
-
+/* 
     @media screen and (min-width: 1600px) {
 
         .dashboard{
@@ -228,11 +228,11 @@ gap: 10px;
         .line_grid{
             height: 93.5%;
          }
-       }
+       } */
     @media screen and (min-width: 1001px) and (max-width:1099px) {
-.dashboard{
-    height: 90%;
-    margin-right: 4px;
+       .dashboard{
+        height: 90%;
+        margin-right: 4px;
 }
 .line_grid{
     height: 92%;
@@ -258,10 +258,10 @@ gap: 10px;
     @media screen and (min-width: 1271px) and (max-width:1279px) {
         .dashboard{
             margin-right: 5px;
-            height: 85%;
+            height: 88%;
           }
           .line_grid{
-            height: 87%;
+            height: 91%;
          }
     }
 
@@ -278,16 +278,16 @@ gap: 10px;
 @media screen and (min-width: 1300px)and (max-width:1500px) {
     .dashboard{
       margin-right: 5px;
-      height: 91%;
+      height: 88%;
     }
     .line_grid{
-        height: 93%;
+        height: 90%;
      }
   }
 
 @media screen and (min-width: 1501px)and (max-width:1599px) {
     .dashboard{
-        height: 91%;
+        height: 88%;
     }
     .line_grid{
         height: 94%;
@@ -295,31 +295,60 @@ gap: 10px;
 }
 @media screen and (min-width: 1550px)and (max-width:1599px) {
     .dashboard{
-        height: 91%;
+        height: 88%;
     }
     .line_grid{
-        height: 94%;
+        height: 92%;
      }
 }
 @media screen and (min-width: 1600px) and (max-width:1800px) {
     .dashboard{
         margin-right: 5px;
-        /* height: 91.5%; */
-    }
-}
-
-@media screen and (min-width: 1810px) and (max-width:1899px) {
-    .dashboard{
-        margin-right: 5px;
-        height: 92%;
+        height: 88%;
     }
     .line_grid{
         height: 91%;
      }
 }
 
-@media screen and (min-width: 1900px) and (max-width:2500px) {
+@media screen and (min-width: 1810px) and (max-width:1899px) {
     .dashboard{
         margin-right: 5px;
+        height: 88%;
     }
+    .line_grid{
+        height: 91%;
+     }
+}
+
+@media screen and (min-width: 1900px) and (max-width:1950px) {
+    .dashboard{
+        margin-right: 5px;
+        height: 88%;
+    }
+    .line_grid{
+        height: 91%;
+     }
+}
+@media screen and (min-width: 1955px) and (max-width:1999px) {
+    .dashboard{
+        margin-right: 5px;
+        height: 88%;
+    }
+    .line_grid{
+        height: 91%;
+     }
+}
+
+@media screen and (min-width: 2000px) and (max-width:2500px) {
+    .dashboard{
+        margin-right: 5px;
+        height: 88.5%;
+    }
+    .line_grid{
+        height: 91%;
+     }
+     .sec_line{
+        height: 35%;
+}
 }
