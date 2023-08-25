@@ -124,4 +124,25 @@
   .chat_market{
     width:25%;
   }
+.market_input {
+  margin: 12px 25px 12px 12px;
+}
+}
+
+@media screen and (min-width: 1180px) and (max-width:1200px) {
+  .market_input {
+    margin: 12px 30px 12px 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1300px) {
+  .market_input {
+    margin: 12px 38px 12px 12px;
+  }
+}
+
+@media screen and (min-width: 1300px)and (max-width:1500px) {
+  .market_input {
+    margin: 12px 18px 12px 12px;
+  }
 }

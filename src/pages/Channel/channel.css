@@ -167,5 +167,23 @@ h5 {
   .General{
     width: 76%;
   }
+  .Channel{
+    margin: 12px 0 12px 0;
+  }
+
+  .Website{
+  padding:  12px 5px 9px 12px ;
+  }
 }
 
+@media screen and (min-width: 1300px)and (max-width:1500px) {
+  .General{
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width:1800px) {
+  .General{
+    margin-right: 5px;
+  }
+}

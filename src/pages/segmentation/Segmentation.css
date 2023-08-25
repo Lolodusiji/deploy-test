@@ -590,3 +590,15 @@ span > p {
     width: 76%;
   }
 }
+
+@media screen and (min-width: 1300px)and (max-width:1500px) {
+  .General{
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width:1800px) {
+  .General{
+    margin-right: 5px;
+  }
+}

@@ -226,3 +226,27 @@ td {
     width:90%;
   }
 }
+
+@media screen and (min-width: 1100px) and (max-width:1200px) {
+.market_stats {
+  width: 98%;
+}
+.per_num{
+  font-size: 18px;
+}
+.socail{
+  margin-right: 4px;
+}
+}
+
+@media screen and (min-width: 1300px)and (max-width:1500px) {
+  .socail{
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width:1800px) {
+  .socail{
+    margin-right: 5px;
+  }
+}

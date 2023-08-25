@@ -364,9 +364,7 @@ td:last-of-type{
       width: 18%;
      }
 
-     .stats_wrapper{
-      gap:0;
-     }
+     
   
 }
 
@@ -467,5 +465,23 @@ td:last-of-type{
 @media screen and (min-width: 1100px)and (max-width:1200px) {
   .General{
     width: 76%;
+  }
+  .competitive{
+    margin: 12px 0 0 0;
+  }
+}
+
+@media screen and (min-width: 1300px)and (max-width:1500px) {
+  .General{
+    margin-right: 5px;
+  }
+  .stats_wrapper{
+    gap:1;
+   }
+}
+
+@media screen and (min-width: 1600px) and (max-width:1800px) {
+  .General{
+    margin-right: 5px;
   }
 }
