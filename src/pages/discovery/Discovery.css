@@ -290,6 +290,14 @@
     }
 }
 
+@media screen and (min-width: 1283px) {
+    .discovery{
+        margin-right: 5px;
+        width: 86%;
+        height: 90%;
+    }
+}
+
 @media screen and (min-width: 1810px) and (max-width:1899px) {
     .discovery{
         width: 86.5%;
