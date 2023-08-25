@@ -252,11 +252,11 @@
     .discovery{
         width:80% ;
         height: 90%;
-
+        margin-right:9px;
     }
     .chat{
         height: 100%;
-        border-radius: 20px 0 0 20px
+        border-radius: 20px 0 0 20px;
         }
 }
 
