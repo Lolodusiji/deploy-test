@@ -246,13 +246,13 @@ gap: 10px;
      }
     }
 
-    @media screen and (min-width: 1200px) and (max-width:1299px) {
+    @media screen and (min-width: 1251px) and (max-width:1299px) {
     .line_grid{
-        height: 93%;
+        height: 91%;
      }
      .dashboard{
         margin-right: 5px;
-        height: 91%;
+        height: 88.5%;
       }
 }
 
