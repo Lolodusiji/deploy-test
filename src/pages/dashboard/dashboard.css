@@ -250,5 +250,6 @@ gap: 10px;
 @media screen and (min-width: 1600px) and (max-width:1800px) {
     .dashboard{
         margin-right: 5px;
+        /* height: 91.5%; */
     }
 }

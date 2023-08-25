@@ -160,7 +160,7 @@ const competitor = () => {
                   <tr id="rowww">
                     <th>Competitor</th>
                     <th>Traffic</th>
-                    <th>Changes</th>
+                    <th id="unique-th">Changes</th>
                   </tr>
                 </thead>
                 <tbody>

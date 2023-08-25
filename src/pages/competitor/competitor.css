@@ -215,6 +215,10 @@ table thead tr {
   font-weight: 500;
 }
 
+#unique-th{
+  text-align: center;
+}
+
 #head{
   background:#F9F9F9;
 }
