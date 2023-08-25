@@ -255,17 +255,17 @@ gap: 10px;
             height: 90%;
          }
     }
-    @media screen and (min-width: 1271px) and (max-width:1279px) {
+    @media screen and (min-width: 1271px) and (max-width:1280px) {
         .dashboard{
             margin-right: 5px;
-            height: 88%;
+            height: 85%;
           }
           .line_grid{
-            height: 91%;
+            height: 87%;
          }
     }
 
-    @media screen and (min-width: 1280px) and (max-width:1299px) {
+    @media screen and (min-width: 1281px) and (max-width:1299px) {
     .line_grid{
         height: 91%;
      }
