@@ -229,12 +229,31 @@ gap: 10px;
             height: 93.5%;
          }
        }
+@media screen and (min-width: 1001px) and (max-width:1099px) {
+.dashboard{
+    height: 90%;
+    margin-right: 4px;
+}
+.line_grid{
+    height: 92%;
+ }
+    }
 
 @media screen and (min-width: 1100px) and (max-width:1200px) {
     .dashboard{
         height: 90.5%;
         margin-right: 4px;
      }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1299px) {
+    .line_grid{
+        height: 93%;
+     }
+     .dashboard{
+        margin-right: 5px;
+        height: 91%;
+      }
 }
 
 @media screen and (min-width: 1300px)and (max-width:1500px) {
@@ -247,6 +266,22 @@ gap: 10px;
      }
   }
 
+@media screen and (min-width: 1501px)and (max-width:1599px) {
+    .dashboard{
+        height: 91%;
+    }
+    .line_grid{
+        height: 94%;
+     }
+}
+@media screen and (min-width: 1550px)and (max-width:1599px) {
+    .dashboard{
+        height: 91%;
+    }
+    .line_grid{
+        height: 94%;
+     }
+}
 @media screen and (min-width: 1600px) and (max-width:1800px) {
     .dashboard{
         margin-right: 5px;
