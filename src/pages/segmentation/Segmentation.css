@@ -443,6 +443,12 @@ span > p {
   }
 }
 
+@media screen and (min-width: 2000px){
+  .Household-container {
+    gap:3rem;
+  }
+}
+
 @media screen and (min-width: 1800px){
 .General{
   width: 85%;
