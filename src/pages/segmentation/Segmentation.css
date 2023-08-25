@@ -378,6 +378,11 @@ span > p {
   width: 100%;
 }
 
+.Audience-cont{
+  /* width: 100%; */
+  /* max-width: 600px; */
+}
+
 .flex-general {
   display: flex;
   align-items: baseline;
@@ -485,12 +490,12 @@ span > p {
     min-width: 150px;
   }
 }
-@media screen and (min-width: 1300px) and (max-width: 1900px ) {
+/* @media screen and (min-width: 1300px) and (max-width: 1900px ) {
   .Text-house{
     width:18%;
   }
  
-}
+} */
 
 @media screen and (min-width: 1206px){
   .flex-beside{
@@ -600,5 +605,21 @@ span > p {
 @media screen and (min-width: 1600px) and (max-width:1800px) {
   .General{
     margin-right: 5px;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1810px) and (max-width:1899px) {
+  .General{
+    margin-right: 5px;
+    width: 90.5%;
+  }
+
+}
+
+@media screen and (min-width: 1900px) and (max-width:2500px) {
+  .General{
+    margin-right: 5px;
+    width: 91%;
   }
 }

@@ -453,7 +453,7 @@ const Segmentation = () => {
 
         <div class="outside-demographic">
           <h2>Audience interests and Behaviors</h2>
-
+              <div className="Audience-cont">
           <div className="flex-Aundience">
             <div className="Education">
               <span>
@@ -494,6 +494,7 @@ const Segmentation = () => {
                 <p>Government</p>
               </span>
             </div>
+          </div>
           </div>
         </div>
       </section>

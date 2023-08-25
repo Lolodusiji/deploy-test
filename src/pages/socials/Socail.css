@@ -178,9 +178,9 @@ td {
       gap: 1%;
       margin-top: 10px;
   } */
-   .socail{
+   /* .socail{
       width: 85%;
-   }
+   } */
 
 }
 
@@ -221,11 +221,11 @@ td {
   }
 }
 
-@media screen and (min-width:2000px){
+/* @media screen and (min-width:2000px){
   .socail{
     width:90%;
   }
-}
+} */
 
 @media screen and (min-width: 1100px) and (max-width:1200px) {
 .market_stats {
@@ -236,17 +236,35 @@ td {
 }
 .socail{
   margin-right: 4px;
+  width: 85%;
 }
 }
 
 @media screen and (min-width: 1300px)and (max-width:1500px) {
   .socail{
     margin-right: 5px;
+    width: 85%;
+
   }
 }
 
 @media screen and (min-width: 1600px) and (max-width:1800px) {
   .socail{
     margin-right: 5px;
+    width: 85.5%;
+  }
+}
+
+@media screen and (min-width: 1810px) and (max-width:1899px) {
+  .socail{
+    margin-right: 5px;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1900px) and (max-width:2500px) {
+  .socail{
+    margin-right: 5px;
+    width: 91%;
   }
 }

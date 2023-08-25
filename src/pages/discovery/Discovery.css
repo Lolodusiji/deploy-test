@@ -248,6 +248,19 @@
     }
 }
 
+@media screen and (min-width: 1210px) and (max-width:1299px) {
+    .discovery{
+        width:80% ;
+        height: 90%;
+
+    }
+    .chat{
+        height: 100%;
+        border-radius: 20px 0 0 20px
+        }
+}
+
+
 @media screen and (min-width: 1300px)and (max-width:1500px) {
     .discovery{
         margin-right: 5px;
@@ -256,12 +269,26 @@
 
 @media screen and (min-width: 1600px) and (max-width:1800px) {
     .discovery{
-        /* margin-right: 2px; */
-        width: 85.5%;
+        margin-right: 5px;
+        width: 86%;
         height: 92%;
     }
     .chat{
     height: 100%;
     border-radius: 20px 0 0 20px
+    }
+}
+
+@media screen and (min-width: 1810px) and (max-width:1899px) {
+    .discovery{
+        width: 86.5%;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (min-width: 1900px) and (max-width:2500px) {
+    .discovery{
+        width: 87%;
+        margin-right: 5px;
     }
 }

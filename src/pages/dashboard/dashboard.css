@@ -229,7 +229,7 @@ gap: 10px;
             height: 93.5%;
          }
        }
-@media screen and (min-width: 1001px) and (max-width:1099px) {
+    @media screen and (min-width: 1001px) and (max-width:1099px) {
 .dashboard{
     height: 90%;
     margin-right: 4px;
@@ -239,14 +239,14 @@ gap: 10px;
  }
     }
 
-@media screen and (min-width: 1100px) and (max-width:1200px) {
+    @media screen and (min-width: 1100px) and (max-width:1200px) {
     .dashboard{
         height: 90.5%;
         margin-right: 4px;
      }
-}
+    }
 
-@media screen and (min-width: 1200px) and (max-width:1299px) {
+    @media screen and (min-width: 1200px) and (max-width:1299px) {
     .line_grid{
         height: 93%;
      }
@@ -286,5 +286,17 @@ gap: 10px;
     .dashboard{
         margin-right: 5px;
         /* height: 91.5%; */
+    }
+}
+
+@media screen and (min-width: 1810px) and (max-width:1899px) {
+    .dashboard{
+        margin-right: 5px;
+    }
+}
+
+@media screen and (min-width: 1900px) and (max-width:2500px) {
+    .dashboard{
+        margin-right: 5px;
     }
 }
