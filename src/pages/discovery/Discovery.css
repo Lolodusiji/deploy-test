@@ -248,7 +248,7 @@
     }
 }
 
-@media screen and (min-width: 1210px) and (max-width:1299px) {
+@media screen and (min-width: 1210px) and (max-width:1279px) {
     .discovery{
         width:80% ;
         height: 90%;
@@ -259,6 +259,13 @@
         border-radius: 20px 0 0 20px;
         }
 }
+
+@media screen and (min-width: 1280px) and (max-width:1299px) {
+    .discovery{
+        height: 87%;
+    }
+}
+
 
 
 @media screen and (min-width: 1300px)and (max-width:1500px) {
