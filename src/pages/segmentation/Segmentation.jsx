@@ -170,6 +170,7 @@ const Segmentation = () => {
   
 
   return (
+    // <div className="p">
     <div className="General">
       <section className="segmentation">
         <div className="Geo-container">
@@ -499,6 +500,7 @@ const Segmentation = () => {
 
       <Chat />
     </div>
+    // {/* </div> */}
   );
 };
 
