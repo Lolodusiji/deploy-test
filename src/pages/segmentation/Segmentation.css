@@ -281,11 +281,13 @@
   display: flex;
   margin-top: 3rem;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  margin-bottom: 3rem;
 }
 
 .outside-demographic {
   margin-top: 2rem;
+  margin-left: 3rem;
 }
 
 .outside-demographic > h2 {
