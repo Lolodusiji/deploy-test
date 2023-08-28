@@ -93,6 +93,7 @@ function sidebar() {
                       marginTop: ".9rem",
                       marginBottom: ".2rem",
                       backgroundColor: active ? "#2A2D34" : undefined,
+                      // fontFamily: "Lexend",
                       borderRadius: active ? "10px" : "",
                       "&:hover": {
                         backgroundColor: "#2A2D34",
@@ -183,6 +184,7 @@ function sidebar() {
                         "&:hover": {
                           backgroundColor: "#2A2D34",
                           borderRadius: "10px",
+                          // fontFamily: "Lexend",
                         },
                       };
                   },

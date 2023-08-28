@@ -3,8 +3,14 @@ import "./Socail.css";
 import Important from "./market_info/Important";
 import Latest from "./market_info/Latest";
 import { Bar } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+} from "chart.js";
+ChartJS.register(CategoryScale, LinearScale, BarElement);
 import Chat from "../../components/Chat";
-
 function Socail() {
   const [bar_info, setbar_info] = useState();
   const [graph_data, setgraph_data] = useState();
@@ -21,6 +27,7 @@ function Socail() {
     fetch(`${import.meta.env.VITE_BACKEND_API}/apis/social/correlated_keywords`)
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         setgraph_data(Object.keys(data));
         setgraph_val(Object.values(data));
       });
@@ -33,9 +40,11 @@ function Socail() {
       });
   }, []);
 
+  // ChartJS.defaults.canvas.style.width = '128px';
   const option = {
     responsive: true,
-    maintainAspectRatio: true,
+    maintainAspectRatio: false,
+    aspectRatio:4,
     plugins: {
       legend: {
         position: "bottom",
@@ -53,6 +62,7 @@ function Socail() {
       x: {
         ticks: {
           color: "black",
+          beginAtZero:true,
         },
         grid: {
           drawBorder: false,
@@ -62,6 +72,7 @@ function Socail() {
       y: {
         ticks: {
           color: "#7E7E7E",
+          beginAtZero:true,
         },
       },
     },
@@ -85,7 +96,7 @@ function Socail() {
     <div className="socail">
       <div className="market">
         <div className="market_stats">
-          <h2 style={{ fontWeight: "700", fontSize: "30px" }}>
+          <h2 style={{ fontWeight: "700", fontSize: "30px", fontFamily: "poppins" }}>
             Market Sentiment
           </h2>
           <div className="stats_wrapper">
@@ -118,25 +129,26 @@ function Socail() {
 
         <div className="bar_market">
           <div className="keywords_header">
-            <h2 style={{ fontSize: "27px" }}>Correlated Keywords</h2>
-            <h4 style={{ color: "#9A9A9A", fontWeight: "500" }}>
+            <h2 style={{ fontSize: "27px" , fontWeight: "600", fontFamily: "poppins" }}>Correlated Keywords</h2>
+            <h4 style={{ color: "#9A9A9A", fontWeight: "500" ,fontFamily: "poppins" }}>
               Market Research
             </h4>
           </div>
-          <div>
+          <div className="Market-bar">
             <Bar options={option} data={data} />
           </div>
         </div>
 
         <div className="search_table">
-          <h2 style={{ fontSize: "28px", fontWeight: "700" }}>
+          <h2 style={{ fontSize: "28px", fontWeight: "700",fontFamily:"poppins"}}>
             What People Are Searching
           </h2>
-          <table className="social-table">
+        
+            <table className="social-table">
             <tr>
-              <th className="table-head" style={{ borderRadius: "10px 0 0 0" }}>Query</th>
-              <th className="table-head">Monthly Searches</th>
-              <th className="table-head"style={{ borderRadius: "0 10px 0 0" }}>Competition</th>
+            <th className="table-head" style={{ borderRadius: "10px 0 0 0",fontFamily: "poppins"}}>Query</th>
+              <th className="table-head" style={{fontFamily: "poppins"}}>Monthly Searches</th>
+              <th className="table-head"style={{ borderRadius: "0 10px 0 0",fontFamily: "poppins" }}>Competition</th>
             </tr>
             {table?.items.map((e, i) => {
               return (

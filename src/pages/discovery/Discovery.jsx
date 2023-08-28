@@ -117,7 +117,7 @@ React.useEffect(() => {
 
             <div className='lower_chat'>
               <div className='market_input' style={{width:"94%"}}>
-                  <input type="text" placeholder='Ask Savanna for insights' value={message} onKeyDown={(e)=>{enter_clicked(e)}} onChange={(e)=>{setmessage(e.target.value)}} />
+                  <input style={{fontFamily:"poppins"}} type="text" placeholder='Ask Savanna for insights' value={message} onKeyDown={(e)=>{enter_clicked(e)}} onChange={(e)=>{setmessage(e.target.value)}} />
                   <BsSendFill color='#8C8C8C' size={20} onClick={send}/>
               </div>
             </div>
@@ -149,7 +149,7 @@ React.useEffect(() => {
               />
                           
                   <div className='checklist_item_header'>
-                      <div>Tutorial Video</div>
+                      <div style={{fontFamily: "poppins"}}>Tutorial Video</div>
                       <img  className="tutorial" src="/imgs/tutorial.png" alt="" />
                   </div>
                   
@@ -170,8 +170,8 @@ React.useEffect(() => {
               />
                   
                   <div className='checklist_item_header'>
-                     <div>Explain Your Business To Savanna</div>
-                     <div style={{fontSize:"12px",color:"#525151",fontWeight:"400"}}>Tell her about your idea and answer her questions</div>
+                     <div style={{fontFamily: "poppins"}}>Explain Your Business To Savanna</div>
+                     <div style={{fontSize:"12px",color:"#525151",fontWeight:"400",fontFamily: "poppins"}}>Tell her about your idea and answer her questions</div>
                   </div>
                   
               </div>

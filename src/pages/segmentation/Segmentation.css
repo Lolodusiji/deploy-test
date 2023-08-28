@@ -1,10 +1,14 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
 * {
-  font-family: "Poppins", sans-serif;
   font-size: 12px;
+  font-family: "poppins";
 }
+
 
 .General {
   display: grid;
+  font-family: "poppins";
   grid-template-columns: 66% 30%;
   justify-content: space-between;
   width: 79%;
@@ -84,6 +88,7 @@
 .countries > h3 {
   background: #b8b8b8;
   padding-left: 6px;
+  font-family: "poppins";
 }
 
 .countries > div {
@@ -94,11 +99,13 @@
   background: #d9d9d9;
   padding-left: 60px;
   padding-right: 294px;
+  font-family: "poppins";
 }
 
 .Trend > h3 {
   background: #d9d9d9;
   padding-right: 30px;
+  font-family:"poppins";
 }
 
 .Trend > div {
@@ -122,15 +129,18 @@
 
 #h5 {
   font-size: 14px;
+  font-family: "poppins";
 }
 
 .demographic > div:nth-child(3) > h3 {
   margin-top: 3rem;
+  font-family: "poppins";
 }
 
 .demographic > h1 {
   font-size: 22px;
   font-weight: 600;
+  font-family: "poppins";
 }
 .flex-Edu {
   display: flex;
@@ -143,6 +153,7 @@
 .flex-Edu > p {
   font-size: 16px;
   font-weight: 400;
+  font-family: "poppins";
 }
 
 .groupflex2 {
@@ -153,6 +164,7 @@
 .flex-Edu > h5 {
   font-size: 16px;
   font-weight: 600;
+  font-family:"poppins";
 }
 
 .flex-Edu1 {
@@ -165,11 +177,13 @@
 .flex-Edu1 > p {
   font-size: 14px;
   font-weight: 500;
+  font-family: "poppins";
 }
 
 .flex-Edu1 > h5 {
   font-size: 14px;
   font-weight: 600;
+  font-family: "poppins";
 }
 
 .Edu-progress {
@@ -232,22 +246,26 @@
   gap: 5px;
   font-size: 16px;
   color: #fff;
+  font-family: "poppins";
 }
 
 .female > p {
   font-size: 16px;
   font-weight: 600;
+  font-family: "poppins";
 }
 
 .male > p {
   font-size: 16px;
   font-weight: 600;
+  font-family: "poppins";
 }
 
 .male {
   display: flex;
   gap: 5px;
   font-size: 16px;
+  font-family:"poppins";
 }
 
 .Employment-container {
@@ -293,6 +311,7 @@
 .outside-demographic > h2 {
   font-size: 22px;
   font-weight: 600;
+  font-family: "poppins";
 }
 
 .Education {
@@ -307,18 +326,21 @@
 
 h1 {
   font-size: 22px;
+  font-family: "poppins";
   /* font-weight: 500; */
 }
 
-span > h4 {
+span > .headings {
   font-size: 24px;
   font-weight: 700;
   color: #454545;
+  font-family: "poppins";
 }
 
 span > p {
   font-size: 14px;
   font-weight: 400;
+  /* font-family: 'Lexend', sans-serif !important; */
   color: #7d7d7d;
 }
 
@@ -339,6 +361,7 @@ span > p {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-family: "poppins";
 }
 
 .top_1 {
@@ -397,16 +420,19 @@ span > p {
 .person > p {
   font-size: 18px;
   font-weight: 400;
+  font-family: "poppins";
 }
 
 .percentage > p {
   font-size: 18px;
   font-weight: 400;
+  font-family: "poppins";
 }
 
 #heading {
   font-size: 22px;
   font-weight: 400;
+  font-family: "poppins";
 }
 
 .scrollbar::-webkit-scrollbar {

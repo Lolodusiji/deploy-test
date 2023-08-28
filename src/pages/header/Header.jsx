@@ -12,8 +12,8 @@ function Header({menu, settoggleSidebar, toggleSidebar, ...props }){
   return (
     <div className="header">
         <div className="logo">
-            <img src="/imgs/image 1508.png"/>
-            <div className="logo_name">savanna</div>
+            <img src="/imgs/SAVANNA.svg"/>
+            {/* <div className="logo_name">savanna</div> */}
         </div>
         <Calender/>
         <div className="hamburger" onClick={()=>{settoggleSidebar(!toggleSidebar)}}>

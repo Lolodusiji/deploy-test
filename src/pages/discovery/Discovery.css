@@ -5,10 +5,11 @@
     margin-left:250px;
     background: white;
     /* padding: 10px; */
-    margin-top: 60px;
+    /* margin-top: 60px; */
     border-radius: 12px;
     height: fit-content;
-    margin-top:78px;
+    margin-top:76px;
+    margin-bottom: .4rem;
 }
 
 .tutorial{
@@ -75,6 +76,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 18px; 
+    font-family: "poppins";
 }
 
 .sent_message{
@@ -87,7 +89,7 @@
 .inner_sent{
     margin-right: 35px;
     color: #363636;
-    font-family: "Roboto";
+    font-family: "poppins";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -118,7 +120,7 @@
 .inner_received{
     margin-left: 38px;
     color: #363636;
-    font-family: "Roboto";
+    font-family: "poppins";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -194,6 +196,7 @@
     border: none;
     outline: none;
     padding: 12px 10px;
+    font-family: "poppins";
     width: 100%;
 }
 
@@ -251,23 +254,23 @@
 @media screen and (min-width: 1210px) and (max-width:1279px) {
     .discovery{
         width:80% ;
-        height: 90%;
+        /* height: 90%; */
         margin-right:9px;
     }
-    .chat{
+    /* .chat{
         height: 100%;
         border-radius: 20px 0 0 20px;
-        }
+        } */
 }
 
 @media screen and (min-width: 1280px) and (max-width:1299px) {
     .discovery{
-        height: 87%;
+        /* height: 87%; */
     }
-    .chat{
+    /* .chat{
         height: 100%;
         border-radius: 20px 0 0 20px;
-        }
+        } */
 }
 
 
@@ -282,7 +285,7 @@
     .discovery{
         margin-right: 5px;
         width: 86%;
-        height: 90%;
+        /* height: 90%; */
     }
     .chat{
     height: 100%;
@@ -294,12 +297,12 @@
     .discovery{
         margin-right: 5px;
         width: 86%;
-        height: 90%;
+        /* height: 90%; */
     }
-    .chat{
+    /* .chat{
         height: 100%;
         border-radius: 20px 0 0 20px
-        }
+        } */
 }
 
 @media screen and (min-width: 1810px) and (max-width:1899px) {

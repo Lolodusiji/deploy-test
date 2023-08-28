@@ -83,7 +83,7 @@ const competitor = () => {
         <div className="competitive">
           <h1>Competitive Targeting</h1>
 
-          <div className="stats_wrapper">
+          <div className="stats-wrapper">
             <div className="percent">
               <span>
                 <p>Reach</p>
@@ -95,7 +95,7 @@ const competitor = () => {
               <span>
                 <p>Age</p>
                 <h3>228.1M</h3>
-                <p>39.95%</p>
+                <p style={{fontFamily:"poppins"}}>39.95%</p>
               </span>
             </div>
 
@@ -103,7 +103,7 @@ const competitor = () => {
               <span>
                 <p>Gender</p>
                 <h3>Male</h3>
-                <p>65.19%</p>
+                <p style={{fontFamily:"poppins"}}>65.19%</p>
               </span>
             </div>
 
@@ -121,33 +121,33 @@ const competitor = () => {
               <div className="Grid-socio">
                 <div className="household" id="household">
                   <span>
-                    <p>Household-size</p>
-                    <h4>3-4 Person</h4>
-                    <p>41.4%</p>
+                    <p style={{fontFamily:"poppins"}}>Household-size</p>
+                    <h4 style={{fontFamily:"poppins"}}>3-4 Person</h4>
+                    <p style={{fontFamily:"poppins"}}>41.4%</p>
                   </span>
                 </div>
 
                 <div className="household" id="education">
                   <span>
-                    <p>Education-level</p>
-                    <h4>High Schoool</h4>
-                    <p>49.29%</p>
+                    <p style={{fontFamily:"poppins"}}>Education-level</p>
+                    <h4 className="heading" style={{fontFamily:"poppins"}}>High Schoool</h4>
+                    <p style={{fontFamily:"poppins"}}>49.29%</p>
                   </span>
                 </div>
 
                 <div className="household" id="employment">
                   <span>
-                    <p>Employment-Status</p>
-                    <h4>Full-time</h4>
-                    <p>43.82%</p>
+                    <p style={{fontFamily:"poppins"}}>Employment-Status</p>
+                    <h4  className="heading" style={{fontFamily:"poppins"}}>Full-time</h4>
+                    <p style={{fontFamily:"poppins"}}>43.82%</p>
                   </span>
                 </div>
 
                 <div className="household" id="interest">
                   <span>
-                    <p>Interest</p>
-                    <h4>Low</h4>
-                    <p>64.66%</p>
+                    <p style={{fontFamily:"poppins"}}>Interest</p>
+                    <h4 className="heading" style={{fontFamily:"poppins"}}>Low</h4>
+                    <p style={{fontFamily:"poppins"}}>64.66%</p>
                   </span>
                 </div>
               </div>
@@ -288,9 +288,9 @@ const competitor = () => {
         </div>
 
         <div className="market-price">
-          <h2>Market Prices</h2>
+          <h2 style={{fontFamily: "poppins"}}>Market Prices</h2>
           <div className="coming-soon">
-            <h3>Coming Soon</h3>
+            <h3 style={{fontFamily: "poppins"}}>Coming Soon</h3>
           </div>
         </div>
       </section>

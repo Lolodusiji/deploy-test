@@ -3,10 +3,17 @@ import "./Segmentation.css";
 // import '../socials/socail.css'
 import Chat from "../../components/Chat";
 import ProgressBar from "../../components/ProgressBar";
-import Chart from "../Chart";
+// import Chart from "../Chart";
 import Income from "../Incomechart";
 import axios from "axios";
-import { Bar } from "react-chartjs-2";
+import { Bar} from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+} from "chart.js";
+ChartJS.register(CategoryScale, LinearScale, BarElement);
 import One from "/imgs/1person.svg";
 import Two from "/imgs/2person.svg";
 import Three from "/imgs/3person.svg";
@@ -80,6 +87,7 @@ const Segmentation = () => {
       // Tawk_API.ischatHidden = null ;
     }
   }, []);
+  ChartJS.defaults.font.family = "poppins";
   const chartOptions = {
     responsive: true,
     maintainAspectRatio: true,
@@ -87,39 +95,46 @@ const Segmentation = () => {
     barThickness: 72, 
     barPercentage: 0.9,
     categoryPercentage: 0.9,
-    plugins: {
-      legend: {
-        position: "bottom",
-        ltr: true,
-        display: false,
-        labels: {
-          usePointStyle: true,
-          pointStyle: "circle",
-          color: "#D2D2D2",
-          scales: {
-            x: {
-              grid: {
+    // options:{
+      plugins: {
+        legend: {
+          position: "bottom",
+          ltr: true,
+          display: false,
+          labels: {
+            font: {
+              family: 'poppins',
+            },
+            usePointStyle: true,
+            pointStyle: "circle",
+            color: "#D2D2D2",
+            scales: {
+              x: {
+                grid: {
+                  display: false, // Remove vertical gridlines
+                },
+              },
+              y: {
+                beginAtZero: false,
                 display: false, // Remove vertical gridlines
               },
-            },
-            y: {
-              beginAtZero: false,
-              display: false, // Remove vertical gridlines
-            },
-            plugins: {
-              legend: {
-                display: false,
+              plugins: {
+                legend: {
+                  display: false,
+                },
               },
             },
           },
         },
       },
-    },
+    // },
+
     scales: {
       x: {
         ticks: {
           color: "black",
           maxTicksLimit: 6,
+        fontFamily: "poppins",
         },
         grid: {
           drawBorder: false,
@@ -130,23 +145,24 @@ const Segmentation = () => {
         ticks: {
           color: "#999999",
           maxTicksLimit: 6,
+        fontFamily: "poppins",
         },
       },
     },
   };
   
   const chartData = {
-    labels: ['18-24','25-34','35-44','45-54','55-65','66+'],
+    labels: ['18-24', '25-34', '35-44', '45-54', '55-65', '66+'],
     datasets: [
       {
-        data:[15,50,21,11,5,3],
+        data: [15, 50, 21, 11, 5, 3],
         backgroundColor: [
-          '#B8B8B8', // Red
-          '#D2D2D2', // Blue
-          '#C5C4C4', // Yellow
-          '#AEAEAE', // Green
-          '#999999', // Purple
-          '#7F7F7F', // Purple
+          '#B8B8B8', // Gray
+          '#D2D2D2', // Gray
+          '#C5C4C4', // Gray
+          '#AEAEAE', // Gray
+          '#999999', // Gray
+          '#7F7F7F', // Gray
         ],
         borderRadius: 6,
         minBarLength: 6,
@@ -194,7 +210,7 @@ const Segmentation = () => {
                   "India",
                 ].map((country) => (
                   <p
-                    style={{ display: "flex", gap: "5px", fontWeight: "600", color: "#565656"}}
+                    style={{ display: "flex", gap: "5px", fontWeight: "600", color: "#565656", fontFamily: "poppins"}}
                     key={country}
                   >
                     <span>&gt;</span>
@@ -221,7 +237,7 @@ const Segmentation = () => {
                   { text: "1.73%", value: 1.73 },
                 ].map((traffic) => (
                   <div className="flex-traffic" key={traffic.text}>
-                    <p>{traffic.text}</p>
+                    <p style={{fontFamily: "poppins"}}>{traffic.text}</p>
                     <ProgressBar
                       className="progress"
                       variant="sm"
@@ -248,7 +264,7 @@ const Segmentation = () => {
                   "-4.76%",
                   "+1.76%",
                 ].map((trend) => (
-                  <p key={trend}>{trend}</p>
+                  <p style={{fontFamily: "poppins"}} key={trend}>{trend}</p>
                 ))}
               </div>
             </div>
@@ -458,7 +474,7 @@ const Segmentation = () => {
             <div className="Education">
               <span>
                 <img className="retail" src={Retail} alt="" />
-                <h4>60.46%</h4>
+                <h4 className="headings">60.46%</h4>
                 <p>Retail</p>
               </span>
             </div>
@@ -466,7 +482,7 @@ const Segmentation = () => {
             <div className="Education">
               <span>
                 <img className="retail" src={Education} alt="" />
-                <h4>60.36%</h4>
+                <h4 className="headings">60.36%</h4>
                 <p>Education</p>
               </span>
             </div>
@@ -474,7 +490,7 @@ const Segmentation = () => {
             <div className="Education">
               <span>
                 <img className="retail" src={Computer} alt="" />
-                <h4>59.31%</h4>
+                <h4 className="headings">59.31%</h4>
                 <p>Software</p>
               </span>
             </div>
@@ -482,7 +498,7 @@ const Segmentation = () => {
             <div className="Education">
               <span>
                 <img className="retail" src={Finance} alt="" />
-                <h4>41.05%</h4>
+                <h4 className="headings">41.05%</h4>
                 <p>Finance</p>
               </span>
             </div>
@@ -490,7 +506,7 @@ const Segmentation = () => {
             <div className="Education">
               <span>
                 <img className="retail" src={Government} alt="" />
-                <h4>37.23%</h4>
+                <h4 className="headings">37.23%</h4>
                 <p>Government</p>
               </span>
             </div>

@@ -1,3 +1,7 @@
+*{
+  font-family: "poppins";
+}
+
 .container1 {
   min-width: 90%;
   display: flex;

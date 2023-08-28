@@ -29,14 +29,16 @@
 
 .percent > span > p {
   font-size: 20px;
+  font-family: "poppins";
   font-weight: 500;
 }
 
 .percent > span > h3 {
   font-size: 28px;
+  font-family: "poppins";
 }
 
-.stats_wrapper {
+.stats-wrapper {
   width: auto 90%;
   display: flex;
   align-items: center;
@@ -47,6 +49,7 @@
 .competitive >h1 {
   font-size: 30px;
   font-weight: 600;
+  font-family: "Poppins";
 }
 
 /* .competitive > h1{
@@ -79,6 +82,7 @@
 
 .socio {
   width: 52%;
+  font-family: "poppins";
 }
 
 .geography >h2{
@@ -196,6 +200,7 @@ table thead tr {
   color: #ffffff;
   text-align: left;
   font-weight: bold;
+  font-family: "poppins";
   border-radius: 10px;
 }
 
@@ -204,6 +209,7 @@ table thead tr {
   /* padding: 8px 5px; */
     color: #444444;
     font-size: 12px;
+  font-family: "poppins";
     font-weight: 500;
     border-bottom: 1px solid #C3C3C3;
   /* border-radius: 10px; */
@@ -213,6 +219,7 @@ table thead tr {
 #share-head{
   text-align: center;
   font-size: 10px;
+  font-family: "poppins";
   font-weight: 500;
 }
 
@@ -272,17 +279,20 @@ th{
 #column{
   border: none ;
   text-align: left;
+  font-weight: "poppins";
 }
 
 #coluumn{
   border: none ;
   text-align: center; 
+  font-weight: "poppins";
   color:#06B818
 }
 
 #colummn{
   border: none ;
   text-align: center; 
+  font-weight: "poppins";
   color:#E01717
 }
 
@@ -389,7 +399,7 @@ td:last-of-type{
 }
 
 @media screen and (max-width: 1158px) {
-  .stats_wrapper{
+  .stats-wrapper{
     gap:1rem;
 }
 }
@@ -425,7 +435,7 @@ td:last-of-type{
     margin-top: 2rem;
   }
 
-.stats_wrapper {
+.stats-wrapper {
   justify-content:flex-start;
 }
   }
@@ -480,7 +490,7 @@ td:last-of-type{
   .General{
     margin-right: 5px;
   }
-  .stats_wrapper{
+  .stats-wrapper{
     gap:1;
    }
 }

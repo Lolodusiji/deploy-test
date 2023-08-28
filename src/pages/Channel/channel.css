@@ -29,7 +29,6 @@
 }
 
 
-
 .directt {
   margin-left: 1.5rem;
 }
@@ -49,16 +48,19 @@ max-width: 600px;
 
 .Website-cont > h2 {
   font-size: 22px;
+  font-family: "Poppins";
 }
 
 h6 {
   font-size: 10px;
   color: #0c78c7;
+  font-family: "Poppins";
 }
 
 h5 {
   font-size: 14px;
   font-weight: 600;
+  font-family: "Poppins";
 }
 
 .flex-channel {
@@ -74,6 +76,7 @@ h5 {
   gap: 12px;
   font-size: 14px;
   font-weight: 500;
+  font-family: "Poppins";
   /* justify-content: space-around; */
 }
 
@@ -90,6 +93,7 @@ h5 {
   margin-top: 2rem;
   font-size: 22px;
   font-weight: 600;
+  font-family: "Poppins";
 }
 
 .Channel-strategy{
@@ -98,6 +102,7 @@ h5 {
 
 .Channel-strategy > h2 {
   font-size: 30px;
+  font-family: "Poppins";
 }
 
 .coming-soon {
@@ -109,10 +114,12 @@ h5 {
 
 .coming-soon > h3 {
   font-size: 20px;
+  font-family: "Poppins";
 }
 
 .Channel-strategy > h2 {
   margin-top: 2rem;
+  font-family: "Poppins";
 }
 
 .big_img3 {

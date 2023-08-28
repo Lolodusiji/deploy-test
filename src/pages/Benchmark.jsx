@@ -64,7 +64,7 @@ const StackedBarsOnTopWithoutScales = () => {
           { data: "11.16%", text: "Referral", background: "#9ED56A" },
           { data: "25.5%", text: "Organic Search", background: "#FA4D5C" },
           { data: "3.2%", text: "Paid Search", background: "#7116CB" },
-          { data: "5.1%", text: "Oganic Social", background: "#93CFFB" },
+          { data: "5.1%", text: "Organic Social", background: "#93CFFB" },
           { data: "2.2%", text: "Paid Social", background: "#FA4D5C" },
           { data: "3%", text: "Email", background: "#2594F2" },
         ].map((item) => (

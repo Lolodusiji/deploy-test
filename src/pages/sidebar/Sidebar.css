@@ -1,8 +1,13 @@
+/* *{
+  font-Family: 'Lexend, sans-serif' !important
+} */
+
 .sidebar {
   border-right-width: 0 !important;
   position: fixed !important;
   top: 0;
   bottom: 0;
+  font-Family: "poppins"
   /* height: 100vh;
   overflow: hidden !important; */
 }
@@ -51,6 +56,11 @@
   position: absolute;
   bottom: 0;
   width: 96%;
+  font-Family: "poppins"
+}
+
+.css-1cmf074 >.ps-menu-button{
+  font-Family: "poppins"
 }
 
 .user_info {
@@ -88,6 +98,7 @@
     rgba(170, 136, 16, 0.96) 100%
   );
   font-size: 0.5rem;
+  font-Family: "poppins";
   color: white;
   padding: 5px;
   text-align: center;

@@ -18,11 +18,13 @@
 .container > div > h2{
   font-size: 16px;
   font-weight:600;
+  font-family: "poppins";
 }
 
 .container > div > p{
   font-size: 20px;
   font-weight: 400;
+  font-family: "poppins";
 }
 
 .inner {

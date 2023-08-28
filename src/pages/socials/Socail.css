@@ -9,6 +9,15 @@
   background: #f6f6f6;
   border-radius: 12px;
   margin-top: 77px;
+  font-family: "poppins";
+}
+
+.Market-bar > canvas{
+  width:100% !important;
+}
+
+.Market-bar{
+  width:100%;
 }
 
 .market {
@@ -35,13 +44,16 @@
 }
 
 .per_num {
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 700;
+  font-family: "poppins";
 }
 
 .per_name {
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "poppins";
+
 }
 
 .market_info {
@@ -82,11 +94,13 @@
   font-size: 12px;
   font-weight: 700;
   width: 70%;
+  font-family:  "poppins";
 }
 
 .facts_date {
   color: rgba(0, 0, 0, 0.6);
   font-size: 10px;
+  font-family:  "poppins";
   text-align: end;
   width:30%;
 }
@@ -119,6 +133,7 @@
   border:1px solid #dddddd;
   width: 100%;
   border-spacing: 0;
+  font-family:  "poppins";
 }
 
 .table-head {
@@ -126,10 +141,13 @@
   text-align: left;
   padding: 8px;
 }
-td {
+
+td{
   /* border: 1px solid #dddddd; */
   text-align: left;
   padding: 8px;
+  font-family: "poppins";
+  font-weight: 600;
 }
 
 #roww:nth-child(odd) {
@@ -148,6 +166,7 @@ td {
   border-radius: 15px;
   margin: 0 auto;
   width: fit-content;
+  font-family: "poppins";
 }
 
 .facts_url {
@@ -196,6 +215,10 @@ td {
     margin-top: 77px;
   }
 
+  .market_stats{
+    width:98%;
+  }
+
   .market {
     display: flex;
     flex-direction: column;
@@ -213,12 +236,18 @@ td {
     font-weight: 700;
   }
 
-  .market_stats {
+  /* .market_stats {
     padding: unset;
-  }
+  } */
 
   .market_stats > h2 {
     margin: 5px 0 0 10px;
+  }
+
+  .stats_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 }
 
